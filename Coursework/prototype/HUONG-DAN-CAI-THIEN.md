@@ -1,10 +1,10 @@
 # Hướng dẫn cải thiện `final-coursework.rp`
 
-Có 6 cải thiện. Mục 4 có script tự chạy, các mục còn lại bạn làm tay trong Axure RP 11 (vừa sửa file, vừa luyện kỹ năng).
+Có 7 cải thiện. Mục 4 có script tự chạy, các mục còn lại bạn làm tay trong Axure RP 11 (vừa sửa file, vừa luyện kỹ năng).
 
 **Trước khi bắt đầu:** copy `final-coursework.rp` ra một bản dự phòng (ví dụ `final-coursework.backup.rp`). Làm xong mỗi mục thì bấm **Preview (Ctrl+.)** kiểm tra và **Ctrl+S**.
 
-Thứ tự nên làm: **4 (script) → 1 → 2 → 6 → 3 → 5** (dễ đến khó).
+Thứ tự nên làm: **4 (script) → 1 → 2 → 6 → 7 → 3 → 5** (dễ đến khó).
 
 ---
 
@@ -130,6 +130,25 @@ Trang **07 Your plan** → OnPageLoad → thêm 3 case, mỗi case là **khối 
 Trang **06 Check requirements** → `app_build` → thêm action: Set `TetherDone1`, `TetherDone2`, `TetherDone3` = (trống), `TetherCurrent` = `0`.
 
 Preview: Plan → Start step 2 → Finish this step → về Plan → Step 2 hiện ✓.
+
+---
+
+## Mục 7: Avatar ở góc phải và lời chào theo tên
+
+Lúc tạo tài khoản app bắt nhập tên, nhưng sau đó không hiện tên ở đâu. Đặt avatar ở góc **trên bên phải** (vị trí quen thuộc như Gmail, YouTube; góc trái đã có logo và thường dành cho nút quay lại).
+
+1. **Project → Global Variables** → thêm `TetherName`, mặc định `Alex`.
+2. Trang **02 Create account** → nút `app_signup` → case cuối (không điều kiện) → thêm **Set Variable Value** `TetherName` = **text on widget** `signup_name`, đặt **trước** Open Link.
+3. Trang **04 Today**:
+   - Ẩn hoặc xóa chữ `Today` ở góc phải trên.
+   - Vẽ **Ellipse** 40×40 ở x=360, y=62, màu nền `#175C59`, chữ trắng đậm cỡ 18, đặt tên `avatar`.
+   - Thêm text `greeting` dưới logo (x=28, y=100), cỡ 15, màu `#526B70`.
+4. **OnPageLoad** của trang 04 (thêm action vào case đang có):
+   - Set Text `avatar` = bấm **fx** → `[[TetherName.substr(0,1)]]` (lấy chữ cái đầu).
+   - Set Text `greeting` = **fx** → `Hi, [[TetherName]]`.
+5. `avatar` → OnClick → **Open Link** → `10 Your space`.
+
+Preview: Welcome → Create account → gõ tên `Minh` → … → Today hiện `Hi, Minh` và avatar chữ `M`.
 
 ---
 
