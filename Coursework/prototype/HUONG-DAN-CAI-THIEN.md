@@ -1,10 +1,10 @@
 # Hướng dẫn cải thiện `final-coursework.rp`
 
-Có 7 cải thiện. Mục 4 có script tự chạy, các mục còn lại bạn làm tay trong Axure RP 11 (vừa sửa file, vừa luyện kỹ năng).
+Có 9 cải thiện. Mục 4 có script tự chạy, các mục còn lại bạn làm tay trong Axure RP 11 (vừa sửa file, vừa luyện kỹ năng).
 
 **Trước khi bắt đầu:** copy `final-coursework.rp` ra một bản dự phòng (ví dụ `final-coursework.backup.rp`). Làm xong mỗi mục thì bấm **Preview (Ctrl+.)** kiểm tra và **Ctrl+S**.
 
-Thứ tự nên làm: **4 (script) → 1 → 2 → 6 → 7 → 3 → 5** (dễ đến khó).
+Thứ tự nên làm: **4 (script) → 8 → 1 → 2 → 6 → 7 → 9 → 3 → 5** (dễ đến khó).
 
 ---
 
@@ -149,6 +149,51 @@ Lúc tạo tài khoản app bắt nhập tên, nhưng sau đó không hiện tê
 5. `avatar` → OnClick → **Open Link** → `10 Your space`.
 
 Preview: Welcome → Create account → gõ tên `Minh` → … → Today hiện `Hi, Minh` và avatar chữ `M`.
+
+---
+
+## Mục 8: Cảnh báo trước khi thay kế hoạch (rất dễ)
+
+Bấm xác nhận bài mới sẽ **xóa** kế hoạch cũ mà không báo. Chỉ cần sửa 1 dòng chữ để người dùng biết trước.
+
+1. Trang **06 Check requirements** → double-click dòng `Something missing? Go back and edit the brief.`
+2. Sửa thành: `⚠ This replaces your current plan.`
+3. Panel **Style**: màu chữ `#B3412F` (đỏ), **in đậm**.
+
+Xong. Không cần thêm tương tác.
+
+---
+
+## Mục 9: Đồng hồ 10 phút bằng Dynamic Panel
+
+**Ý tưởng:** một ô có 3 "trạng thái" (state), giống 3 tấm ảnh xếp chồng, mỗi lúc chỉ hiện 1 tấm:
+
+| State | Hiện gì |
+|---|---|
+| `Ready` | ▶ Start 10 minutes |
+| `Running` | ⏱ Timer on. Stop anytime. |
+| `Done` | ✓ Time's up! Well done. |
+
+### Bước 1: Tạo Dynamic Panel
+1. Trang **02 Continue your work** → xóa (hoặc ẩn) ô tím `Try it for a few minutes.`
+2. Từ thư viện **Default** kéo **Dynamic Panel** vào đúng chỗ đó, kích thước khoảng 230×50. Đặt tên `timer`.
+3. Double-click `timer` → trong panel **Outline**, đổi tên `State1` thành `Ready`, rồi bấm **+** để thêm `Running` và `Done`.
+
+### Bước 2: Vẽ nội dung từng state
+Double-click vào từng state để vẽ bên trong:
+- `Ready`: hình chữ nhật bo góc màu tím `#E7DDF6`, chữ `▶ Start 10 minutes`.
+- `Running`: copy hình đó, sửa chữ `⏱ Timer on. Stop anytime.`
+- `Done`: nền xanh nhạt `#D9EBE5`, chữ `✓ Time's up! Well done.`
+
+### Bước 3: Gắn tương tác cho `timer`
+Chọn `timer` → **Interactions** → **OnClick** → thêm 3 action theo thứ tự:
+1. **Set Panel State** → `timer` → state `Running`.
+2. **Wait** → `10000` ms (10 giây, để demo cho nhanh; app thật là 10 phút).
+3. **Set Panel State** → `timer` → state `Done`.
+
+Preview: bấm ô → hiện "Timer on" → 10 giây sau hiện "Time's up!".
+
+> Khi thuyết trình, nói rõ: "Prototype dùng 10 giây thay cho 10 phút để demo."
 
 ---
 
