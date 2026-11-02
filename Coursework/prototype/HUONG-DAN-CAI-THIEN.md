@@ -137,6 +137,26 @@ Preview: Plan → Start step 2 → Finish this step → về Plan → Step 2 hi�
 
 Lúc tạo tài khoản app bắt nhập tên, nhưng sau đó không hiện tên ở đâu. Đặt avatar ở góc **trên bên phải** (vị trí quen thuộc như Gmail, YouTube; góc trái đã có logo và thường dành cho nút quay lại).
 
+### Phần script làm (chạy 1 lệnh)
+
+```powershell
+& 'E:/Runtimes/python312-3.12.14/python.exe' Coursework/prototype/tether-final-build/improve-nav-me.py
+```
+
+Script đổi chữ **Settings → Me** ở thanh dưới của 4 trang (Today, Plan, Study time saved, Your space) và xóa chữ `Today` ở góc phải trên trang 04 để chừa chỗ cho avatar. Bản dự phòng: `final-coursework.before-me.rp`.
+
+### Phần bạn làm tay (bản đơn giản, khoảng 2 phút)
+
+Script không vẽ được hình tròn có màu trên trang đã có nội dung, nên bước này làm tay:
+
+1. Trang **04 Today** → kéo **Circle** từ thư viện Default vào góc phải trên: kích thước **40×40**, **x=360, y=62**.
+2. Màu nền `#175C59`. Double-click vào hình, gõ **A**, chữ trắng, đậm, cỡ 18.
+3. Chọn hình tròn → **Interactions → OnClick → Open Link → 10 Your space**.
+
+Preview: Today có avatar **A**, thanh dưới ghi **Me**; bấm avatar hoặc **Me** đều sang trang cài đặt.
+
+### Bản nâng cao (tuỳ chọn): hiện đúng tên người dùng
+
 1. **Project → Global Variables** → thêm `TetherName`, mặc định `Alex`.
 2. Trang **02 Create account** → nút `app_signup` → case cuối (không điều kiện) → thêm **Set Variable Value** `TetherName` = **text on widget** `signup_name`, đặt **trước** Open Link.
 3. Trang **04 Today**:

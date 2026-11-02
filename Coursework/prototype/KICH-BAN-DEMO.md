@@ -52,7 +52,7 @@ Luồng này đã được chạy thử tự động trên bản HTML xuất t�
 
 Chèn thêm 1 câu ở đúng bước, không cần đổi luồng:
 
-- **Bước 2 (mục 7, avatar):** chỉ vào avatar: "My name and profile are here." *(Tên và hồ sơ ở đây.)*
+- **Bước 2 (mục 7, avatar + Me):** chỉ vào avatar: "My profile is here. I can also tap Me." *(Hồ sơ ở đây, hoặc bấm Me ở thanh dưới.)*
 - **Bước 4 (mục 8, cảnh báo):** chỉ dòng đỏ: "It warns me before replacing my old plan." *(App báo trước khi thay kế hoạch cũ.)*
 - **Bước 6 (mục 9, đồng hồ):** bấm ô tím: "I can start a short timer. In the demo it is 10 seconds." *(Bật đồng hồ ngắn; demo dùng 10 giây.)*
 
