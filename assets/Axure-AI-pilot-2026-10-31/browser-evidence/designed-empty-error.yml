@@ -1,0 +1,21 @@
+- generic [active] [ref=f3e1]:
+  - generic:
+    - generic:
+      - paragraph [ref=f3e9]: MỞ / KHÔNG GIAN HỌC
+      - paragraph [ref=f3e13]:
+        - generic [ref=f3e14]: Một ý tưởng.Nhiều khả năng.
+      - paragraph [ref=f3e18]:
+        - generic [ref=f3e19]: Từ phác thảo đến prototype.Từng phần tử đều có thể sửangay trong Axure.
+      - paragraph [ref=f3e25]:
+        - generic [ref=f3e26]: 01 / BẢN THỬ TẠO THIẾT KẾAxvg + Axure RP 11
+      - paragraph [ref=f3e32]: BẮT ĐẦU HÀNH TRÌNH
+      - paragraph [ref=f3e36]: Chào bạn, bắt đầu nhé.
+      - paragraph [ref=f3e40]:
+        - generic [ref=f3e41]: Giao diện được tạo bằng dữ liệu có cấu trúc,sau đó chuyển thành phần tử Axure.
+      - paragraph [ref=f3e45]: Tên của bạn
+      - generic [ref=f3e50] [cursor=pointer]
+      - paragraph [ref=f3e55] [cursor=pointer]: Tiếp tục →
+      - paragraph [ref=f3e59]: Bản thử giao diện • Các chữ và hình đều sửa được
+      - paragraph [ref=f3e63]: TẠO BẰNG AXVG / LƯU BẰNG AXURE / CHỈNH SỬA TỪNG PHẦN
+    - textbox [ref=f3e66]: "Ví dụ: Trung"
+    - paragraph [ref=f3e70]: Bạn hãy nhập tên trước khi tiếp tục.

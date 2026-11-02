@@ -1,0 +1,20 @@
+- generic [active] [ref=f1e1]:
+  - generic:
+    - generic:
+      - paragraph [ref=f1e11]: 9:41
+      - paragraph [ref=f1e15]: tether
+      - paragraph [ref=f1e19]: Continue
+      - paragraph [ref=f1e31]:
+        - generic [ref=f1e32]: One step.At your pace.
+      - paragraph [ref=f1e36]: You do not have to finish everything today.
+      - paragraph [ref=f1e42]: Discussion section
+      - paragraph [ref=f1e46]:
+        - generic [ref=f1e47]: Add one exampleto the secondparagraph.
+      - paragraph [ref=f1e51]: A small move is enough.
+      - paragraph [ref=f1e57]: Try it for a few minutes.
+      - paragraph [ref=f1e63]: I feel stuck
+      - paragraph [ref=f1e69]: Pause and leave a thread
+      - paragraph [ref=f1e75]: Finish this step
+    - generic [ref=f1e76] [cursor=pointer]
+    - generic [ref=f1e78] [cursor=pointer]
+    - generic [ref=f1e80] [cursor=pointer]

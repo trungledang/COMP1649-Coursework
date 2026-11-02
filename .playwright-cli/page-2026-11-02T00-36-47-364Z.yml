@@ -1,0 +1,20 @@
+- generic [active] [ref=f5e1]:
+  - generic:
+    - generic:
+      - paragraph [ref=f5e11]: 9:41
+      - paragraph [ref=f5e15]: tether
+      - paragraph [ref=f5e19]: Save your place
+      - paragraph [ref=f5e31]:
+        - generic [ref=f5e32]: Leave a notefor future you.
+      - paragraph [ref=f5e36]: A sentence is enough. You can change it later.
+      - paragraph [ref=f5e40]: Where did you stop?
+      - paragraph [ref=f5e46]: What is the next small move?
+      - paragraph [ref=f5e52]:
+        - generic [ref=f5e53]: Think of an action you could doin a few minutes.
+      - paragraph [ref=f5e59]: Save my place
+      - paragraph [ref=f5e65]: Back to my work
+    - textbox [ref=f5e68]: e.g. halfway through a paragraph
+    - textbox [ref=f5e71]: e.g. find one supporting example
+    - generic [ref=f5e72] [cursor=pointer]
+    - generic [ref=f5e74] [cursor=pointer]
+    - generic [ref=f5e76] [cursor=pointer]

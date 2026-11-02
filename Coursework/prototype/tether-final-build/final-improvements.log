@@ -1,0 +1,6 @@
+﻿Variable {'name': 'TetherSuggestion', 'varid': 'a26f182b-77fb-4c2b-bfd6-df650a76219c', 'count': 4, 'dirty': False}
+Input limit {'before': 2147483647, 'after': 48}
+Input limit {'before': 2147483647, 'after': 48}
+Edit note load {'created': True, 'count': 2}
+Hint {'before': 'Think of an action you could do\nin a few minutes.', 'after': {'id': '5b194b6d-2b7c-4ddb-9d62-02932a7cdffe', 'type': 'Axure.DocumentModel.Objects.VectorShape', 'name': '', 'text': 'Keep each note under 48 characters.', 'bounds': {'x': 67, 'y': 555, 'width': 310, 'height': 55}, 'inputType': None, 'placeholder': None}, 'dirty': True}
+Saved {'path': 'E:\\Hoc tap\\Mon hoc\\Năm 3 kì 1\\COMP1649_HCI\\Coursework\\prototype\\final-coursework.rp', 'bytes': 127031, 'dirty': False}

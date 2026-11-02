@@ -1,0 +1,1 @@
+$a=[Reflection.Assembly]::LoadFrom('E:/AxureRP11.dll');$t=$a.GetType('FJlc.QJlk');$t.GetMethods([Reflection.BindingFlags]'Public,NonPublic,Instance')|?{$_.ReturnType -eq [Guid] -or $_.Name -eq 'get_Name'}|%{$_.ToString()}

@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Hướng dẫn dựng Axure — bản mobile v2 "Focus deck" — COMP1649</title>
+<style>
+  :root{--ink:#2b2b2b;--paper:#fafaf8;--line:#8a8a8a;--soft:#e4e2dc;
+        --accent:#B77817;--note:#a05a2c;--ok:#3c7a3c}
+  *{box-sizing:border-box}
+  body{font-family:'Segoe UI',system-ui,sans-serif;background:var(--paper);color:var(--ink);
+       margin:0 auto;max-width:1240px;padding:28px 18px 60px;line-height:1.55}
+  h1{font-size:24px;border-bottom:3px solid var(--ink);padding-bottom:10px}
+  h2{font-size:18px;margin:36px 0 8px}
+  h3{font-size:15.5px;margin:26px 0 6px}
+  .pill{font-size:10px;font-weight:700;padding:2px 9px;border-radius:10px;color:#fff;margin-left:6px}
+  .rq{background:var(--accent)}.np{background:var(--note)}.fin{background:var(--ok)}
+  code{background:#efece4;padding:1px 5px;border-radius:4px;font-size:12.5px}
+  .row{display:flex;gap:22px;flex-wrap:wrap;align-items:flex-start;margin:14px 0}
+  .col{flex:1;min-width:300px}
+  .phone{width:310px;border:3px solid #14151C;border-radius:26px;overflow:hidden;
+         background:#14151C;box-shadow:4px 4px 0 var(--soft);flex-shrink:0;color:#F4F4F8}
+  .notch{height:20px;background:#14151C}
+  .screen{position:relative;height:540px;padding:0 14px 56px}
+  .hdr{display:flex;justify-content:space-between;align-items:center;height:34px;
+       border-bottom:1px solid #2F3240;font-size:14px;font-weight:700}
+  .hdr .back{color:#F5B301;font-size:12px;font-weight:500}
+  .fbody{padding-top:10px}
+  .tabbar{position:absolute;bottom:0;left:0;right:0;border-top:1px solid #2F3240;background:#171820;
+          display:flex;justify-content:space-around;font-size:9.5px;padding:7px 4px;color:#666B80}
+  .tabbar .on{font-weight:700;color:#F5B301}
+  .callout{background:#fff8ee;border:1px dashed var(--note);border-radius:8px;
+           padding:10px 14px;font-size:12.5px;margin:12px 0}
+  .callout b{color:var(--note)}
+  .axure{background:#f4efe8;border:1px solid var(--accent);border-radius:8px;
+         padding:10px 14px;font-size:13px;margin:10px 0}
+  .axure b{color:var(--accent)}
+  .w-card{border:1px solid #2F3240;border-radius:12px;padding:10px 11px;margin-bottom:8px;
+          background:#1E2027}
+  .w-card.sel{border:1.5px solid rgba(245,179,1,.45);background:rgba(245,179,1,.14)}
+  .w-title{font-size:12.5px;font-weight:600}
+  .w-sub{font-size:10.5px;color:#9BA0B3;margin-top:2px}
+  .w-line{height:6px;background:#2F3240;border-radius:4px;margin:6px 0}
+  .w-line.short{width:40%}
+  .w-btn{display:inline-block;border:1px solid #2F3240;border-radius:10px;padding:6px 14px;
+         font-size:11.5px;background:#1E2027;color:#F4F4F8;margin:4px 6px 2px 0}
+  .w-btn.acc{background:#F5B301;color:#14151C;border-color:#F5B301;font-weight:700}
+  .w-btn.dis{color:#5B5E70;border-style:dashed;background:#171820}
+  .w-tag{display:inline-block;font-size:9px;font-weight:800;padding:2px 8px;border-radius:8px;
+         background:#F5B301;color:#14151C}
+  .w-tag.g{background:#3ECF8E}
+  .w-aux{font-size:10.5px;color:#666B80}
+  .w-kick{font-size:9px;font-weight:800;letter-spacing:1.2px;text-transform:uppercase;color:#F5B301}
+  .w-kick.gy{color:#666B80}
+  table.cmp{border-collapse:collapse;width:100%;font-size:12.5px;margin:10px 0}
+  table.cmp th,table.cmp td{border:1px solid var(--soft);padding:7px 10px;text-align:left;vertical-align:top}
+  table.cmp th{background:var(--soft)}
+  .warn{background:#fdf0f0;border:1px solid #c0392b;border-radius:8px;
+        padding:10px 14px;font-size:12.5px;margin:12px 0}
+  .warn b{color:#c0392b}
+  .sw{display:inline-block;width:12px;height:12px;border-radius:3px;vertical-align:-2px;margin-right:6px;border:1px solid rgba(0,0,0,.2)}
+</style>
+</head>
+<body>
+
+<h1>Hướng dẫn TỰ TAY dựng prototype Axure RP 11 — mobile v2 «Focus deck»</h1>
+<p><b>Quyết định chốt:</b> mobile 8 trang, token thị giác = bản v2 (nền tối tĩnh + 1 accent hổ phách),
+cấu trúc trang = đúng <i>lookahead-demo-v2.html</i> (nguồn hình ảnh chốt). Logic sâu (validate, timer,
+guard) nằm trong <i>student-final-design-spec.html</i> Phần H — guide này chỉ dẫn vị trí dựng + câu lệnh
+nối. Hai file phải luôn khớp nhau: <b>demo v2 = nhìn</b>, <b>spec = công thức</b>, <b>guide = cách dựng</b>.</p>
+
+<div class="warn"><b>Nhắc lại quy chế:</b> bạn tự dựng trong Axure, file này chỉ là hướng dẫn
+(planning/learning support — được phép). Dựng xong từng gói nhớ <b>File → Save As v1, v2, v3…</b>
+và tự ghi bản ghi thay đổi — đó là bằng chứng "design process" report cần ở mục 3.1.</div>
+
+<h2>Phần A — Chốt platform: những ý bạn cần tự diễn đạt vào report (mục 3.1)</h2>
+<div class="callout"><b>Gợi ý luận điểm</b> (1) Brief đưa mobile app làm ví dụ cho Option A; (2) đối tượng
+sinh viên ADHD dùng điện thoại thường xuyên — app theo người dùng mọi lúc; (3) màn nhỏ + một nội dung
+mỗi màn phù hợp Zhu et al. (2026): tránh hiện nhiều bước cùng lúc gây quá tải. Thêm ý riêng v2:
+nền tối tĩnh + 1 accent duy nhất là <b>giả thuyết giảm nhiễu thị giác</b> — khai báo như assumption
+sẽ test, không trình bày như "đã chứng minh". Tất cả phải <b>bạn diễn đạt lại</b> bằng lời bạn.</div>
+<p style="font-size:13px;color:#666">Ở đây thêm 1 câu: "kích thước khung 375×812 px là màn phổ thông,
+không gắn thiết bị Apple cụ thể" — vì TOC mục 3.1 nói rõ không tập trung đặc tính phần cứng.</p>
+
+<h2>Phần B — Setup ban đầu (10 phút)</h2>
+<div class="axure"><b>Cách làm trong Axure:</b>
+<ol>
+  <li>Axure RP 11 → New File.</li>
+  <li><b>Project → Global Variables</b> → tạo 11 biến:
+      <code>Step1Text, Step2Text, Step3Text, Step4Text, SessionDay, SessionTime, DoneCount, Step3aText,
+      TimeLeft, Active, Done3a</code>. (J.2 sẽ thêm <code>ProgressState</code> sau — mô tả ở Phần G.)</li>
+  <li>Kích thước: chọn 1 trang → Inspector nhập <b>375 × 812</b>; 8 trang làm y như thế.
+      (Cách nhanh: dựng 1 trang xong, chuột phải → Duplicate, đổi tên + xoá nội dung.)</li>
+  <li>Đặt tên 8 trang đúng bảng dưới — tên trang xuất hiện khi Publish và trong report.</li>
+</ol></div>
+
+<table class="cmp">
+  <tr><th>#</th><th>Tên trang trong Axure</th><th>RQ</th><th>Norman chính</th></tr>
+  <tr><td>1</td><td>00 Start</td><td>— (login-lite)</td><td>Consistency</td></tr>
+  <tr><td>2</td><td>01 Today</td><td>RQ1 (mở đầu) + kết journeys</td><td>Visibility</td></tr>
+  <tr><td>3</td><td>02 Requirements</td><td>RQ1</td><td>Visibility</td></tr>
+  <tr><td>4</td><td>03 Plan</td><td>RQ1 — chọn first action</td><td>Constraints</td></tr>
+  <tr><td>5</td><td>04 Schedule</td><td>RQ2</td><td>Constraints + Feedback</td></tr>
+  <tr><td>6</td><td>05 Session</td><td>RQ3 — nút hỗ trợ dễ thấy</td><td>Signifiers</td></tr>
+  <tr><td>7</td><td>06 Help</td><td>RQ3</td><td>Feedback + user control</td></tr>
+  <tr><td>8</td><td>07 Plan updated</td><td>kết cả 3 journeys</td><td>Feedback</td></tr>
+</table>
+
+<h2>Phần B2 — Token thị giác v2 «Focus deck» (áp dụng khi vẽ mọi shape)</h2>
+<table class="cmp">
+  <tr><th>Token</th><th>Giá trị</th><th>Áp dụng ở đâu</th></tr>
+  <tr><td><span class="sw" style="background:#14151C"></span>Nền trang</td><td>#14151C</td><td>Page Fill của cả 8 trang</td></tr>
+  <tr><td><span class="sw" style="background:#1E2027"></span>Card / surface</td><td>#1E2027</td><td>Mọi card, banner, khối nội dung</td></tr>
+  <tr><td><span class="sw" style="background:#262932"></span>Pillar (raised)</td><td>#262932</td><td>Badge số, progress track, tag nền phụ</td></tr>
+  <tr><td><span class="sw" style="background:#F5B301"></span>Accent duy nhất</td><td>#F5B301</td><td>Nút chính, "Start here", slot chọn, tab đang mở, timer ring. <b>Quy tắc: mỗi tối đa 1–2 điểm accent/màn</b></td></tr>
+  <tr><td><span class="sw" style="background:#3ECF8E"></span>Success</td><td>#3ECF8E</td><td>Banner "Saved / done"</td></tr>
+  <tr><td><span class="sw" style="background:#F26D6D"></span>Error</td><td>#F26D6D</td><td>Banner lỗi validate</td></tr>
+  <tr><td>Chữ chính</td><td>#F4F4F8</td><td>Tiêu đề, nội dung card</td></tr>
+  <tr><td>Chữ phụ</td><td>#9BA0B3</td><td>Caption, sublabel</td></tr>
+  <tr><td>Chữ tắt / disabled</td><td>#666B80</td><td>Nút disabled, "Me" tab</td></tr>
+  <tr><td>Viền hairline</td><td>#2F3240</td><td>Border card, divider, TabBar nền #171820</td></tr>
+  <tr><td>Corner radius</td><td>12–16px</td><td>Card dùng 14; nút dùng 12; avatar/tròn dùng 50%</td></tr>
+</table>
+<div class="callout"><b>Cách nhanh trong Axure:</b> dựng xong 1 card chuẩn ở trang 01 (fill #1E2027,
+corner 14, viền #2F3240) → Format Painter hoặc Copy Style để đổ cho mọi card sau, khỏi lặp bộ màu thủ công.
+Chữ: dùng font hệ thống, Heading 17–18 bold, Body 13–14, Caption 10.5–11.</div>
+
+<h2>Phần C — 2 Master dùng chung + bản đồ luồng (làm trước, dùng anh cù)</h2>
+<div class="row">
+<div class="phone"><div class="notch"></div>
+  <div class="screen">
+    <div class="hdr"><span class="w-aux">MON 9 NOV</span><b>Today</b>
+      <span style="font-size:10px">A</span></div>
+    <div class="fbody">
+      <div class="w-card sel"><div class="w-kick">One thing now</div>
+        <div class="w-title" style="font-size:15px;margin-top:4px">Skim 10 papers</div>
+        <div class="w-sub">About 45 min · from your plan</div>
+        <div class="w-line short" style="margin-top:8px"></div>
+        <div class="w-aux">1 of 5 steps done</div></div>
+      <div class="w-card"><div class="w-kick gy">Up next</div>
+        <div class="w-sub">2 · Write 6 summaries — 2 h</div>
+        <div class="w-sub">3 · Compare methods in a table — 90 min</div></div>
+      <div class="w-card" style="opacity:.5"><div class="w-title" style="font-size:11px">Alex · profile</div>
+        <div class="w-aux">disabled</div></div>
+    </div>
+    <div class="tabbar"><span class="on">Today</span><span>Plan</span><span>Me</span></div>
+  </div>
+</div>
+<div class="col">
+  <div class="axure"><b>Làm master như sau:</b>
+  <ol>
+    <li><b>Master TabBar</b>: Rectangle nền đáy fill <code>#171820</code> + 3 text:
+        Today · Plan · Me (tab hiện hành màu <code>#F5B301</code>, còn lại <code>#666B80</code>;
+        "Me" chữ màu #4A4E5E + áp Disabled — ví dụ constraints).</li>
+    <li><b>Master Header</b>: Rectangle trên đỉnh Để trống tiêu đề — mỗi trang đặt text riêng đè lên;
+        có slot chữ phụ góc trái (date/back) + avatar "A" góc phải.</li>
+    <li>Trang "tab" chỉ có <b>01 Today và 03 Plan, 07 Plan updated</b> đặt TabBar.
+        Các màn detail (02, 04, 05, 06) <b>không TabBar</b> — dùng header Back kiểu push.</li>
+  </ol></div>
+  <div class="callout"><b>Bản đồ luồng — mọi link phải đúng bảng này:</b><br>
+  00 →(Continue as Alex)→ 01 · 01A →(Add your assignment)→ 02 → 03 → 04 → Save →(tab Today)→ 01B ·
+  01B →(Start session)→ 05 →(This step feels difficult)→ 06 →(Use this action)→ 07 →(tab Today)→ 01B.<br>
+  Hồi đầu Back: 02→01, 04→03, 05→01, 06→05, 07→03. <b>02 chỉ vào được bằng 1 cửa duy nhất (01A)</b> —
+  đây là cửa phụ test RQ1: người dùng tự tìm đường bắt đầu.</div>
+</div>
+</div>
+
+<div class="axure"><b>Home = Dynamic Panel 2 state (logic xoay quanh biến có sẵn):</b>
+<ol>
+  <li>DP "HomeState" phủ khu nội dung: <b>State A = rỗng</b> (ring xám + "No plan yet" +
+      nút <b>Add your assignment</b>), <b>State B = hero</b> (One thing now + Up next + profile).</li>
+  <li>Trang 01 <b>OnPageLoad</b> → Case: <code>SessionTime == ""</code> → Set Panel State A;
+      else → State B. Không cần biến mới — dùng chính thời gian đã Save ở 04 làm cờ.</li>
+  <li>OnPageLoad cả 2 state đều Set Text hero/banner theo <code>[[Step1Text]]…[[Step4Text]]</code>
+      + <code>DoneCount</code> (Phần E).</li>
+</ol></div>
+
+<h2>Phần D — 8 trang theo từng bước</h2>
+
+<h3>Trang 1 — 00 Start <span class="pill fin">splash + login-lite</span></h3>
+<div class="row">
+<div class="phone"><div class="notch"></div>
+  <div class="screen">
+    <div style="text-align:center;padding-top:56px">
+      <div style="width:56px;height:56px;border-radius:16px;background:#F5B301;color:#14151C;
+                  display:flex;align-items:center;justify-content:center;font-size:24px;font-weight:800;margin:0 auto 12px">S</div>
+      <div style="font-size:19px;font-weight:800">Study Plan</div>
+      <div class="w-aux" style="margin-top:3px">Break a big assignment into small steps.</div>
+    </div>
+    <div style="margin-top:22px">
+      <div class="w-card" style="text-align:left"><div class="w-sub" style="display:flex;gap:9px;align-items:center">
+        <span style="width:28px;height:28px;border-radius:50%;background:#262932;color:#F5B301;display:inline-flex;align-items:center;justify-content:center;font-weight:800;font-size:12px">A</span>
+        <span style="flex:1"><span class="w-title" style="color:#F4F4F8">Alex</span><br><span>Undergraduate</span></span>
+        <span style="color:#F5B301">›</span></div></div>
+      <span class="w-btn acc" style="display:block;margin:8px 0;text-align:center">Continue as Alex</span>
+      <div class="w-aux" style="text-align:center">Sign-in is simulated — demo only.</div>
+      <div class="w-card" style="background:#171820;margin-top:12px;text-align:center">
+        <div class="w-aux">AI suggestions in this demo are <b>simulated examples</b>.</div></div>
+    </div>
+  </div>
+</div>
+<div class="col">
+  <div class="axure"><ol>
+    <li><b>OnPageLoad</b> → Set Variable (7 biến): <code>Step1Text="Skim 10 papers"</code>,
+        <code>Step2Text="Write 6 summaries"</code>, <code>Step3Text="Compare methods in a table"</code>,
+        <code>Step4Text="Format and check word count"</code>, <code>SessionDay=""</code>,
+        <code>SessionTime=""</code>, <code>DoneCount="0"</code>.
+        Mỗi lần test đều bắt đầu từ trạng thái như nhau — như protocol thật.</li>
+    <li>Nút <b>Continue as Alex</b> → OnClick Open Link 01 Today.</li>
+    <li>Không TabBar, không Back. Thẻ Alex = login-lite: nhân vật tồn tại, authentication không dựng.</li>
+  </ol></div>
+</div>
+</div>
+
+<h3>Trang 2 — 01 Today <span class="pill rq">RQ1 mở đầu + kết journeys</span> <span class="pill np">DP 2 state</span></h3>
+<p style="font-size:13px">Mockup = khung Phần C. Dựng DP theo Phần C, rồi thêm hành vi:</p>
+<div class="axure"><ol>
+  <li><b>State A</b>: nút <b>Add your assignment</b> → Open Link 02 Requirements. (Chỉ 1 cửa vào luồng.)</li>
+  <li><b>State B</b>: hero card → Open Link 05 Session (thêm nhãn "Start session ▸" dưới khối hero
+      = signifier); khối <b>Up next</b> → Open Link 03 Plan.</li>
+  <li>Tab <b>Plan</b> → Open Link 03; tab <b>Today</b> (đang mở) để nguyên; tab <b>Me</b> Disabled.</li>
+  <li>Hero text = <code>Next action: [[Step1Text]]</code> — khi <code>DoneCount ≥ 1</code> thì
+      <code>[[Step2Text]]</code> (J.3).</li>
+</ol></div>
+
+<h3>Trang 3 — 02 Requirements <span class="pill rq">RQ1</span></h3>
+<div class="row">
+<div class="phone"><div class="notch"></div>
+  <div class="screen">
+    <div class="hdr"><span class="back">‹ Today</span><b>Requirements</b><span></span></div>
+    <div class="fbody">
+      <div class="w-kick">AI read your brief</div>
+      <div class="w-card" style="margin-top:8px">
+        <div class="w-sub">✓ A 2000-word literature review</div>
+        <div class="w-sub">✓ Use at least 6 academic sources</div>
+        <div class="w-sub">✓ Compare at least 2 research methods</div>
+        <div style="border-top:1px solid #2F3240;margin:8px 0"></div>
+        <div class="w-sub" style="display:flex;justify-content:space-between">
+          <span>Current progress</span><span style="color:#F4F4F8">Not started ▾</span></div>
+        <div class="w-aux">Needs your input — used to adapt the first suggestion</div></div>
+      <div class="w-card" style="color:#5B5E70">Add details (optional)</div>
+      <span class="w-btn acc" style="display:block;margin:8px 0;text-align:center">Looks correct → make plan</span>
+    </div>
+  </div>
+</div>
+<div class="col">
+  <div class="axure"><ol>
+    <li>3 dòng yêu cầu = checkbox tick sẵn (feedback từ "AI"), signifier phù hợp Visibility.</li>
+    <li>Droplist <b>Current progress</b> (3 lựa chọn: none/partial/mostly) → OnSelectedChange
+        Set Variable <code>ProgressState</code> (xây khi làm J.2; ở v1 để trống: chỉ vẽ droplist, chưa cần case).</li>
+    <li>Nút chính → Open Link 03 Plan.</li>
+  </ol></div>
+</div>
+</div>
+
+<h3>Trang 4 — 03 Plan <span class="pill rq">RQ1 — chọn first action</span> <span class="pill np">DP 2 state (Edit sheet)</span></h3>
+<div class="row">
+<div class="phone"><div class="notch"></div>
+  <div class="screen">
+    <div class="hdr"><span></span><b>Your plan</b><span class="back">+ Add</span></div>
+    <div class="fbody">
+      <div class="w-aux" style="text-align:center">4 steps · about 4 hours · 1 of 5 done</div>
+      <div class="w-aux" style="text-align:center;font-style:italic">Order follows your deadline and your free evenings.</div>
+      <div class="w-card sel" style="border-left:3px solid #F5B301;margin-top:8px">
+        <div class="w-sub" style="display:flex;gap:8px">
+          <span class="w-tag">Start here</span></div>
+        <div class="w-title" style="margin-top:5px">1 · Skim 10 papers</div>
+        <div class="w-sub">45 min · <span class="back">Edit</span></div></div>
+      <div class="w-card"><div class="w-title">2 · Write 6 summaries</div><div class="w-sub">2 h · Edit</div></div>
+      <div class="w-card"><div class="w-title">3 · Compare methods in a table</div><div class="w-sub">90 min · Edit</div></div>
+      <div class="w-card"><div class="w-title">4 · Format and check word count</div><div class="w-sub">30 min · Edit</div></div>
+      <span class="w-btn acc" style="display:block;margin:8px 0;text-align:center">Choose study times</span>
+    </div>
+    <div class="tabbar"><span>Today</span><span class="on">Plan</span><span>Me</span></div>
+  </div>
+</div>
+<div class="col">
+  <div class="axure"><ol>
+    <li>Chỉ <b>1 tag "Start here"</b> duy nhất — giả thuyết RQ1, tránh 2 tag (kẻ giết measurement).</li>
+    <li>Dòng caption nghiêng = J.1 (trang trí có lý do: explainability theo Zhu et al.).</li>
+    <li><b>Edit</b> → Set Panel State State 2 (bottom sheet: text field + Save + Cancel). Save:
+        rỗng → caption đỏ "Write a short label first"; có chữ → Set Variable <code>Step1Text</code>
+        = giá trị field → Set Panel State → State 1. Dữ liệu chảy tới 05/07/01 qua bảng biến.</li>
+    <li>"Choose study times" → Open Link 04 Schedule.</li>
+    <li>Nhãn theo biến: đang dùng <code>[[Step1Text]]…[[Step4Text]]</code> — Set Text OnPageLoad.</li>
+  </ol></div>
+</div>
+</div>
+
+<h3>Trang 5 — 04 Schedule <span class="pill rq">RQ2</span> <span class="pill fin">banner 2 trạng thái</span></h3>
+<div class="row">
+<div class="phone"><div class="notch"></div>
+  <div class="screen">
+    <div class="hdr"><span class="back">‹ Plan</span><b>Schedule</b><span></span></div>
+    <div class="fbody">
+      <div class="w-card" style="opacity:.45"><div class="w-title">Tue 18:00</div>
+        <div class="w-sub">Busy — classes until 20:00</div></div>
+      <div class="w-card sel"><div style="display:flex;justify-content:space-between;align-items:center">
+        <span><span class="w-title">Wed 18:00</span><br><span class="w-sub">Suggested — free evening</span></span>
+        <span class="w-tag">Suggested</span></div></div>
+      <div class="w-card"><div class="w-sub" style="display:flex;justify-content:space-between"><span>Day</span>
+        <span style="color:#F4F4F8">Wednesday ▾</span></div></div>
+      <div class="w-card"><div class="w-sub" style="display:flex;justify-content:space-between"><span>Start time</span>
+        <span style="color:#F4F4F8">18:00 ▾</span></div></div>
+      <span class="w-btn acc" style="display:block;margin:8px 0;text-align:center">Save study time</span>
+      <div class="w-aux" style="text-align:center;color:#F26D6D">Pick a day and a time first.</div>
+    </div>
+  </div>
+</div>
+<div class="col">
+  <div class="axure"><ol>
+    <li>Slot "Tue 18:00" Disabled — kèm lý do: người đọc hiểu vì sao không chọn được.</li>
+    <li>Bấm card "Wed 18:00" → Set Text 2 droplist (tiền vào sẵn).</li>
+    <li>Save thiếu → banner đỏ (Case điều kiện <code>""</code>); Save đủ → banner xanh
+        "Saved: [[SessionDay]] [[SessionTime]]" + Set Variable. Bảng case lỗi trong spec Phần H.1.</li>
+    <li>Sau Save: Back về 03 hoặc bấm tab Today để thấy state B bật hero — kết thúc setup.</li>
+  </ol></div>
+</div>
+</div>
+
+<h3>Trang 6 — 05 Session <span class="pill rq">RQ3 — nút hỗ trợ dễ thấy</span> <span class="pill np">timer</span></h3>
+<div class="row">
+<div class="phone"><div class="notch"></div>
+  <div class="screen">
+    <div class="hdr"><span class="back">‹ Today</span><b>Session</b><span></span></div>
+    <div style="text-align:center;padding:12px 0 4px">
+      <div style="width:92px;height:92px;border-radius:50%;margin:0 auto;
+                  background:conic-gradient(#F5B301 0 85%,#262932 85% 100%);
+                  display:flex;align-items:center;justify-content:center">
+        <div style="width:76px;height:76px;border-radius:50%;background:#14151C;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:800">30 min</div></div>
+      <div style="font-size:30px;font-weight:800;margin-top:6px">23:47</div>
+      <div class="w-aux">1 s on screen = 1 min of study</div></div>
+    <div class="w-card" style="margin-top:12px"><div class="w-kick gy">Focus on</div>
+      <div class="w-title" style="margin-top:4px">Compare methods in a table</div>
+      <div class="w-sub">Compare the two studies: research method, sample size, findings.
+        Note 3 differences.</div></div>
+    <span class="w-btn" style="display:block;margin:10px 0;text-align:center">This step feels difficult</span>
+  </div>
+</div>
+<div class="col">
+  <div class="axure"><ol>
+    <li>Bài tập thu thành 1 card; đồng hồ to là nhân vật chính (giảm distractor — câu chuyện v2).</li>
+    <li>Nút hỗ trợ nằm đáy, chữ rõ — RQ3 đo tự tìm, KHÔNG caption giải thích.</li>
+    <li><b>Timer</b> theo công thức G.2 của spec: text state biến <code>TimeLeft</code>, tick 1000ms,
+        Fire event → Page loaded, điều kiện dừng theo biến; format
+        <code>m:ss</code> chữ bọc số 0. Simulated pacing 1 s = 1 phút — khai rõ trong report.</li>
+    <li>Hết giờ → banner "Session complete" + nút Mark it done → DoneCount+1 → Open Link 01.</li>
+  </ol></div>
+</div>
+</div>
+
+<h3>Trang 7 — 06 Help <span class="pill rq">RQ3</span> <span class="pill np">DP 3 state</span></h3>
+<div class="axure"><b>Nội dung + hành vi:</b>
+<ol>
+  <li>3 nút lý do: "Too big to start", "Not sure what it means", "I don't have what I need" —
+      nút được chọn nền <code>rgba(245,179,1,.14)</code> viền amber.</li>
+  <li>DP "Suggestion" <b>3 state</b> — mỗi state gợi ý nhỏ hơn tương ứng lý do (spec Phần D7 có bảng nội dung).
+      Nút lý do → Set Panel State tương ứng.</li>
+  <li>State có: "Suggested smaller first action" + [Use this action] + [Never mind].</li>
+  <li><b>Use this action</b>: Set Variable <code>Step3aText</code> = nhãn gợi ý → Open Link 07.
+      <b>Never mind</b> → Open Link 05, không đổi gì (user control).</li>
+</ol></div>
+
+<h3>Trang 8 — 07 Plan updated <span class="pill fin">kết cả 3 journeys</span></h3>
+<div class="axure"><b>Nội dung + hành vi:</b>
+<ol>
+  <li>Banner xanh "✓ Smaller step added to your plan" + list: step 1, <b>3a (tag "New" + "✓ done")</b>, step 3.</li>
+  <li>Row [Undo] và [✓ Mark 3a done]: Mark → guard <code>Done3a</code> chặn double-count rồi
+      DoneCount+1 → rig nút tự disable (opacity .4). Undo → DoneCount−1 → mở lại.</li>
+  <li>Counter "N of 5 steps completed" = <code>[[DoneCount]]</code></li>.
+  <li>Tab Today → hero tiến sang bước kế (J.3) — vòng end-to-end khép ở đây.</li>
+</ol></div>
+
+<h2>Phần E — Bảng biến &amp; nơi dùng</h2>
+<table class="cmp">
+  <tr><th>Biến</th><th>Giá trị mặc định (set ở 00)</th><th>Đọc/ghi ở đâu</th></tr>
+  <tr><td>Step1Text–Step4Text</td><td>10 papers / 6 summaries / table / format</td><td>OnPageLoad 03, 05, 01 (hero), 07</td></tr>
+  <tr><td>SessionDay, SessionTime</td><td>""</td><td>Ghi: 04 Save · Đọc: 04 banner, 01 (cờ chọn state A/B)</td></tr>
+  <tr><td>DoneCount</td><td>0</td><td>Ghi: 05 Done / 07 Mark+Undo · Đọc: 01 hero + counter 07 (J.3)</td></tr>
+  <tr><td>Step3aText</td><td>""</td><td>Ghi: 06 Use this action · Đọc: 07 list</td></tr>
+  <tr><td>TimeLeft, Active</td><td>1700 / "false"</td><td>Timer trang 05 (spec Phần H.2)</td></tr>
+  <tr><td>Done3a</td><td>"false"</td><td>Guard double-count 07</td></tr>
+</table>
+
+<h2>Phần F — Thứ tự dựng + version trail (bằng chứng cho mục 3.1 report)</h2>
+<div class="axure"><ol>
+  <li><b>v1</b>: 8 trang + masters + mọi link theo bản đồ luồng + 2 DP (Home, Edit, Help — 3 DP).
+      Validate 2 case ở 04 (thiếu → đỏ / đủ → xanh). <b>Save As v1</b>. Chạy thủ từng journey 1 lần.</li>
+  <li><b>v2</b> = Gói A trong spec Phần H: DoneCount + counter + guard Done3a + Undo. <b>Save As v2</b>.</li>
+  <li><b>v3</b> = Gói B (timer + pacing) + C (đồng hồ hệ thực) + H.4 (transition 200ms). <b>Save As v3</b>.</li>
+  <li><b>v3.1–v3.2</b> = J.1 caption → J.2 ProgressState. Mỗi cái Save As mới, không nhồi vào v3.</li>
+</ol></div>
+<div class="callout">Sau mỗi version: chạy Phần I worst-case (spec) → chụp màn hình từng lỗi/fix →
+liệt vào build-log của bạn. Đó là "iterations evidence" rubric tính điểm.</div>
+
+<h2>Phần G — Checklist hoàn tất bản nộp</h2>
+<div class="axure"><ol>
+  <li>8 trang có TabBar đúng bản đồ luồng; 02 chỉ 1 cửa vào; 05 Back về Today.</li>
+  <li>Tab "Me" disabled — nêu trong report như constraints.</li>
+  <li>Caption "simulated examples" trên 00; "Sign-in is simulated" dưới nút.</li>
+  <li>Một màu accent duy nhất/màn — soi lại mọi trang bằng Phần B2 table.</li>
+  <li>Timer chạy ổn định (đóng mở preview nhiều lần), guard không double-count.</li>
+  <li>Đồng bộ giữa demo v2 (nhìn) ↔ guide (dựng) ↔ spec (công thức) khi mình tuyệt bản nào bắt.</li>
+</ol></div>
+
+<p style="margin-top:40px;padding-top:14px;border-top:2px solid var(--ink);font-size:13px;color:#666">
+Tài liệu hỗ trợ planning/learning theo quy chế AI trong brief. Bạn tự dựng toàn bộ trong Axure và tự
+diễn đạt mọi nội dung report. File này KHÔNG nộp.</p>
+
+</body>
+</html>

@@ -1,0 +1,16 @@
+- generic [active] [ref=f9e1]:
+  - generic:
+    - generic:
+      - paragraph [ref=f9e11]: 9:41
+      - paragraph [ref=f9e15]: tether
+      - paragraph [ref=f9e19]: Saved
+      - paragraph [ref=f9e31]:
+        - generic [ref=f9e32]: Your placeis here.
+      - paragraph [ref=f9e36]: You can step away without losing the thread.
+      - paragraph [ref=f9e42]: A NOTE FOR LATER
+      - paragraph [ref=f9e46]:
+        - generic [ref=f9e47]: Ready whenyou are.
+      - paragraph [ref=f9e51]: Return to your desk anytime.
+      - paragraph [ref=f9e55]: This prototype uses an example thread on the desk.
+      - paragraph [ref=f9e61]: Back to my desk
+    - generic [ref=f9e62] [cursor=pointer]

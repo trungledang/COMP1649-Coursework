@@ -1,0 +1,1 @@
+{"ok":true,"result":{"id":"426dbdc3-7ed1-4574-90dd-2ac50bdcaf6e","events":[{"type":"OnClick","cases":[{"name":"save","newIfGroup":true,"condition":null,"actions":[{"type":"navigate","linkType":"Current","targetType":"Page","page":"ccab93eb-decd-4667-a890-041a0f11b3da"}]}]}]}}

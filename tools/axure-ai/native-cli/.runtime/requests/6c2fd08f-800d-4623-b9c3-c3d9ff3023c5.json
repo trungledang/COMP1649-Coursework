@@ -1,0 +1,1 @@
+{"ok":true,"result":{"interaction":{"id":"e2f28346-ded0-449a-93ba-749e41984248","events":[{"type":"OnClick","cases":[{"name":"V\u1EC1 trang kh\u1EDFi \u0111\u1ED9ng","newIfGroup":true,"condition":null,"actions":[{"type":"navigate","linkType":"Current","targetType":"Page","page":"55eb5b2b-515d-43ac-ad77-7b4e9f8f83ab"}]}]}]},"dirty":true}}

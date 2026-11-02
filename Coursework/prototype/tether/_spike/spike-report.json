@@ -1,0 +1,22 @@
+{
+  "footer_initial": "Tether · prototype spike",
+  "move_text_initial": "Finish the sentence you started, then stop.",
+  "move_text_after_click": "Short.",
+  "move_text_style": {
+    "font": "Inter, sans-serif",
+    "size": "17px",
+    "weight": "400",
+    "color": "rgb(23, 22, 20)"
+  },
+  "error_all_empty": "Two answers first — where you stopped, and the next move.",
+  "q1_after_chip": "Mid-sentence",
+  "error_missing_q2": "What is the next physical move?",
+  "q2_after_chip": "Paste the source link",
+  "url_after_ok": "s2_target.html",
+  "hotspot_visible": {
+    "bg": "rgba(0, 0, 0, 0)",
+    "border": "0px",
+    "opacity": "1",
+    "text": ""
+  }
+}

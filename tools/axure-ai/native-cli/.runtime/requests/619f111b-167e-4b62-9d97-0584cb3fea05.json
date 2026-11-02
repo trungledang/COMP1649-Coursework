@@ -1,0 +1,1 @@
+{"ok":true,"result":{"interaction":{"id":"f645df9a-aaf0-41ef-bcef-3c6c2a0f2ee8","events":[{"type":"OnClick","cases":[{"name":"B\u1EAFt \u0111\u1EA7u b\u00E0i t\u1EADp m\u1EDBi","newIfGroup":true,"condition":null,"actions":[{"type":"navigate","linkType":"Current","targetType":"Page","page":"55eb5b2b-515d-43ac-ad77-7b4e9f8f83ab"}]}]}]},"dirty":true}}

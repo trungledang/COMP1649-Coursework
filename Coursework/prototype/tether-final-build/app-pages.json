@@ -1,0 +1,46 @@
+[
+  {
+    "id": "welcome",
+    "name": "00 Welcome"
+  },
+  {
+    "id": "login",
+    "name": "01 Log in"
+  },
+  {
+    "id": "signup",
+    "name": "02 Create account"
+  },
+  {
+    "id": "onboarding",
+    "name": "03 Set your pace"
+  },
+  {
+    "id": "dashboard",
+    "name": "04 Today"
+  },
+  {
+    "id": "assignment",
+    "name": "05 Add assignment"
+  },
+  {
+    "id": "review",
+    "name": "06 Check requirements"
+  },
+  {
+    "id": "plan",
+    "name": "07 Your plan"
+  },
+  {
+    "id": "schedule",
+    "name": "08 Study time"
+  },
+  {
+    "id": "scheduled",
+    "name": "09 Study time saved"
+  },
+  {
+    "id": "settings",
+    "name": "10 Your space"
+  }
+]

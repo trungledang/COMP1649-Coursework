@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Study Plan — Lookahead v2 (redesign "Focus deck") — COMP1649</title>
+<style>
+  :root{
+    --bg:#14151C; --surface:#1E2027; --raise:#262932; --hair:#2F3240;
+    --ink:#F4F4F8; --sub:#9BA0B3; --dim:#666B80;
+    --amber:#F5B301; --amberSoft:rgba(245,179,1,.14); --amberHair:rgba(245,179,1,.45);
+    --green:#3ECF8E; --greenSoft:rgba(62,207,142,.13);
+    --red:#F26D6D; --redSoft:rgba(242,109,109,.13);
+  }
+  *{box-sizing:border-box}
+  body{font-family:'Segoe UI',system-ui,sans-serif;background:#fafaf8;color:#2b2b2b;
+       margin:0 auto;max-width:1560px;padding:30px 18px 60px;line-height:1.5}
+  h1{font-size:24px;border-bottom:3px solid #2b2b2b;padding-bottom:10px}
+  h2{font-size:17px;margin:40px 0 6px;display:flex;align-items:center;gap:10px}
+  .jpill{font-size:10.5px;font-weight:700;padding:3px 10px;border-radius:12px;color:#fff}
+  .rq1{background:#B77817}.rq2{background:#a05a2c}.rq3{background:#4c5f8f}.zero{background:#3c7a3c}
+  .legend{display:flex;gap:14px;flex-wrap:wrap;font-size:12px;margin:10px 0 18px}
+  .sw{display:inline-block;width:13px;height:13px;border-radius:3px;vertical-align:-2px;margin-right:5px;border:1px solid rgba(0,0,0,.15)}
+  .strip{display:flex;flex-wrap:wrap;gap:26px;align-items:flex-start}
+  .frame{width:300px}
+  .cap{font-size:12px;color:#5d5648;margin-top:10px;border-top:1px dashed #c9c4b8;padding-top:8px}
+  .cap b{color:#8a6207}
+  .why{font-size:11px;color:#7a7466;margin-top:3px}
+  .arrow{font-size:16px;color:#8a6207;font-weight:700}
+
+  /* phone dark */
+  .phone{position:relative;width:300px;border:3px solid #14151C;border-radius:34px;
+         overflow:hidden;background:var(--bg);box-shadow:5px 5px 0 #e4e2dc;color:var(--ink)}
+  .status{display:flex;justify-content:space-between;padding:10px 20px 4px;
+          font-size:12px;font-weight:600}
+  .nav{display:flex;justify-content:space-between;align-items:center;padding:8px 16px 10px;
+       font-size:16px;font-weight:600;border-bottom:1px solid var(--hair);background:var(--bg)}
+  .back{color:var(--amber);font-size:14px;font-weight:500}
+  .body{padding:12px 16px 72px 16px;min-height:470px}
+  .tabbar{position:absolute;bottom:0;left:0;right:0;border-top:1px solid var(--hair);
+          display:flex;justify-content:space-around;font-size:10.5px;font-weight:500;
+          padding:9px 4px 12px;background:#171820;color:var(--dim)}
+  .tabbar .on{color:var(--amber);font-weight:700}
+  .b{background:var(--surface);border:1px solid var(--hair);border-radius:16px;
+     padding:14px;margin-bottom:10px}
+  .b.sel{border:1.5px solid var(--amberHair);background:var(--amberSoft)}
+  .b.dim{opacity:.45}
+  .t1{font-size:18px;font-weight:700;color:var(--ink);letter-spacing:-.2px}
+  .t2{font-size:14px;font-weight:600;color:var(--ink)}
+  .s{font-size:12px;color:var(--sub)}
+  .xs{font-size:10.5px;color:var(--dim)}
+  .kicker{font-size:10px;font-weight:700;letter-spacing:1.4px;text-transform:uppercase;color:var(--amber)}
+  .kicker.gy{color:var(--dim)}
+  .tag{display:inline-block;font-size:9.5px;font-weight:800;padding:3px 9px;border-radius:9px;
+       background:var(--amber);color:#14151C;letter-spacing:.3px}
+  .tag.g{background:var(--green);color:#14151C}
+  .tag.gy{background:var(--raise);color:var(--sub)}
+  .pbtn{display:block;text-align:center;background:var(--amber);color:#14151C;border-radius:14px;
+        padding:12px;font-size:15px;font-weight:700;margin:8px 0}
+  .sbtn{display:block;text-align:center;background:var(--surface);color:var(--ink);border-radius:14px;
+        padding:11px;font-size:14px;font-weight:600;border:1px solid var(--hair);margin:8px 0}
+  .chk{display:flex;gap:10px;align-items:flex-start;margin:8px 0;font-size:13px}
+  .box{width:18px;height:18px;border:2px solid var(--dim);border-radius:6px;flex-shrink:0;background:transparent}
+  .box.on{background:var(--amber);border-color:var(--amber);position:relative}
+  .box.on:after{content:"✓";color:#14151C;font-size:11px;font-weight:800;position:absolute;top:-1px;left:2.5px}
+  .field{background:#191B22;border:1px solid var(--hair);border-radius:12px;padding:10px 12px;
+         font-size:13px;color:var(--ink)}
+  .field.ph{color:var(--dim)}
+  .drop{background:#191B22;border:1px solid var(--hair);border-radius:12px;padding:10px 12px;
+        font-size:13px;display:flex;justify-content:space-between;margin-bottom:8px;color:var(--sub)}
+  .drop .v{color:var(--ink)}
+  .link{color:var(--amber);font-size:13px;font-weight:600}
+  .dot{width:34px;height:34px;border-radius:50%;background:var(--raise);color:var(--amber);
+       display:flex;align-items:center;justify-content:center;font-weight:800;font-size:14px;flex-shrink:0}
+  .rowic{display:flex;gap:10px;align-items:center}
+  .rowic.top{align-items:flex-start}
+  .banner{border-radius:12px;padding:10px 12px;font-size:12.5px;margin-bottom:10px}
+  .ok{background:var(--greenSoft);color:var(--green);border:1px solid rgba(62,207,142,.3)}
+  .err{background:var(--redSoft);color:var(--red);border:1px solid rgba(242,109,109,.3)}
+  .num{width:26px;height:26px;border-radius:9px;background:var(--raise);color:var(--sub);
+       display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700;flex-shrink:0}
+  .num.am{background:var(--amber);color:#14151C}
+  .eff{display:inline-block;font-size:10.5px;font-weight:700;padding:3px 8px;border-radius:8px;
+       background:var(--raise);color:var(--sub)}
+  .ring{width:46px;height:46px;border-radius:50%;
+        background:conic-gradient(var(--amber) 0 20%, var(--raise) 20% 100%);
+        display:flex;align-items:center;justify-content:center;flex-shrink:0}
+  .ring i{width:36px;height:36px;border-radius:50%;background:var(--surface);
+          display:flex;align-items:center;justify-content:center;font-style:normal;
+          font-size:10.5px;font-weight:800;color:var(--ink)}
+  .hero{background:linear-gradient(160deg,#262932 0%,#1E2027 70%);border:1px solid var(--hair)}
+  .big{font-size:22px;font-weight:800;letter-spacing:-.4px;line-height:1.25}
+  .clock{font-size:38px;font-weight:800;letter-spacing:-1px;font-variant-numeric:tabular-nums}
+  .meter{height:5px;border-radius:3px;background:var(--raise);margin-top:10px;overflow:hidden}
+  .meter i{display:block;height:100%;border-radius:3px;background:var(--amber)}
+  .splash{padding-top:64px;text-align:center}
+  .logo{width:64px;height:64px;border-radius:19px;background:var(--amber);color:#14151C;
+        display:flex;align-items:center;justify-content:center;font-size:28px;font-weight:800;margin:0 auto 14px}
+  .minmin{min-height:470px}
+  .sheetfade{position:absolute;left:0;right:0;bottom:0;top:0;background:rgba(10,10,14,.55);
+             display:flex;align-items:flex-end}
+  .sheet{background:var(--surface);border-radius:22px 22px 0 0;border-top:1px solid var(--hair);
+         padding:16px;width:100%}
+</style>
+</head>
+<body>
+
+<h1>Study Plan — Lookahead v2 · redesign «Focus deck» (giữ nguyên Topic A + 3 RQ + toàn bộ logic)</h1>
+<p>Bản này là đối chiếu <b>trước / sau</b> với <i>lookahead-demo.html</i>: cùng 10 khung, cùng luồng bấm,
+cùng biến và guard — chỉ đổi <b>token thị giác</b> (Phần B) và <b>kiến trúc màn Home/Session</b>.
+Nền tối + 1 accent = giả thuyết thiết kế «giảm nhiễu thị giác», phải được test như mọi assumption khác.</p>
+<div class="legend">
+  <span><span class="sw" style="background:#14151C"></span>nền #14151C</span>
+  <span><span class="sw" style="background:#F5B301"></span>accent #F5B301 — duy nhất, chỉ gắn cho hành động</span>
+  <span><span class="sw" style="background:#3ECF8E"></span>success #3ECF8E</span>
+  <span><span class="sw" style="background:#F26D6D"></span>error #F26D6D</span>
+  <span><span class="sw" style="background:rgba(245,179,1,.14);border-color:rgba(245,179,1,.45)"></span>selected tint</span>
+</div>
+
+<h2>Giai đoạn 0 — Vào app <span class="jpill zero">00 → 01</span></h2>
+<div class="strip">
+
+  <div class="frame">
+    <div class="phone">
+      <div class="status"><span>9:41</span><span>▮▮▮</span></div>
+      <div class="splash">
+        <div class="logo">S</div>
+        <div style="font-size:22px;font-weight:800">Study Plan</div>
+        <div class="s" style="margin-top:4px">Break a big assignment into small steps.</div>
+      </div>
+      <div style="margin:22px 16px 0" class="minmin">
+        <div class="b" style="padding:12px">
+          <div class="rowic">
+            <div class="dot">A</div>
+            <div style="flex:1"><div class="t2">Alex</div><div class="s">Undergraduate · CS3001</div></div>
+            <div style="color:var(--amber);font-size:16px">›</div>
+          </div>
+        </div>
+        <div class="pbtn">Continue as Alex</div>
+        <div class="s" style="text-align:center;margin-top:6px">Sign-in is simulated — demo only.</div>
+        <div class="b" style="margin-top:14px;text-align:center;background:#171820">
+          <div class="s" style="color:var(--sub)">AI suggestions in this demo are <b>simulated examples</b>.</div>
+        </div>
+      </div>
+    </div>
+    <div class="cap"><span class="arrow">→</span> Bấm <b>Continue as Alex</b> → 01.
+      Logic <b>không đổi một bit</b>: OnPageLoad set 7 biến mặc định, login-lite như đã duyệt.
+      <div class="why">Why tính "đẹp hơn": logo accent riêng + nền tối làm splash trông như sản phẩm thật thay vì wireframe xám.</div></div>
+  </div>
+
+  <div class="frame">
+    <div class="phone">
+      <div class="status"><span>9:41</span><span>▮▮▮</span></div>
+      <div class="nav"><span style="color:var(--dim)" class="xs">MON 9 NOV</span><b>Today</b>
+        <div class="dot" style="width:26px;height:26px;font-size:11px">A</div></div>
+      <div class="body" style="padding-top:90px">
+        <div style="text-align:center">
+          <div class="ring" style="width:72px;height:72px;margin:0 auto;
+               background:conic-gradient(var(--raise) 0 14%, #191B22 14% 100%)">
+            <i style="width:62px;height:62px">·</i></div>
+          <div class="t1" style="margin-top:12px">No plan yet</div>
+          <div class="s" style="margin-top:4px">Add an assignment and the app will
+            suggest a starting plan.</div>
+        </div>
+        <div class="pbtn" style="margin-top:18px">Add your assignment</div>
+        <div class="xs" style="text-align:center;margin-top:4px">Takes about 2 minutes</div>
+      </div>
+      <div class="tabbar"><span class="on">Today</span><span>Plan</span>
+        <span style="color:#4A4E5E">Me</span></div>
+    </div>
+    <div class="cap"><span class="arrow">→</span> <b>State A</b> của Home (trước khi plan tồn tại):
+      bấm <b>Add your assignment</b> → 02 Requirements — đây là <b>cửa duy nhất vào luồng kế hoạch</b>,
+      hết màn mồ côi. <div class="why">Axure: Home là 1 Dynamic Panel 2 state; OnPageLoad điều kiện
+      <code>SessionTime == ""</code> → State A, else State B — không cần biến mới, lại test được
+      vòng sống đầy đủ (start rỗng → xong 04 → về Today thấy hero).</div></div>
+  </div>
+
+  <div class="frame">
+    <div class="phone">
+      <div class="status"><span>9:41</span><span>▮▮▮</span></div>
+      <div class="nav"><span style="color:var(--dim)" class="xs">MON 9 NOV</span><b>Today</b>
+        <div class="dot" style="width:26px;height:26px;font-size:11px">A</div></div>
+      <div class="body">
+        <div class="kicker">One thing now</div>
+        <div class="b hero" style="margin-top:6px">
+          <div class="rowic top">
+            <div style="flex:1">
+              <div class="big">Skim 10 papers</div>
+              <div class="s" style="margin-top:4px">About 45 min · from your plan</div>
+              <div class="meter"><i style="width:20%"></i></div>
+              <div class="xs" style="margin-top:5px">1 of 5 steps done</div>
+            </div>
+            <div class="ring"><i>1/5</i></div>
+          </div>
+          <div class="link" style="margin-top:8px;text-align:right">Start session ▸</div>
+        </div>
+        <div class="b" style="padding:12px">
+          <div class="kicker gy">Up next</div>
+          <div class="rowic" style="margin-top:7px"><div class="num">2</div>
+            <div style="flex:1"><div class="t2" style="font-size:13px">Write 6 summaries</div></div>
+            <div class="eff">2 h</div></div>
+          <div class="rowic" style="margin-top:6px"><div class="num">3</div>
+            <div style="flex:1"><div class="t2" style="font-size:13px">Compare methods in a table</div></div>
+            <div class="eff">90 min</div></div>
+        </div>
+        <div class="b dim" style="padding:11px 14px"><div class="rowic">
+          <div class="dot" style="width:24px;height:24px;font-size:10px">A</div>
+          <div style="flex:1"><div class="t2" style="font-size:12px;color:var(--dim)">Alex · profile</div></div>
+          <div class="xs">disabled</div></div></div>
+      </div>
+      <div class="tabbar"><span class="on">Today</span><span>Plan</span>
+        <span style="color:#4A4E5E">Me</span></div>
+    </div>
+    <div class="cap"><span class="arrow">→</span> Hero card = <b>bản design của banner</b>
+      (cùng logic DoneCount → Step1Text) — <b>tapping toàn card hoặc "Start session" → 05 Session</b>;
+      khối "Up next" (hiển thị, mở 03 khi bấm = tab Plan). Tab 1 đổi tên <b>Today</b> cho đúng
+      câu hỏi người dùng đang có.
+      <div class="why">Theory anchor: "Make the next action visible" (decision đã test trong RQ1) + Hick's law 1 hero ≫ 5 choice. Signifier "Start session ▸" = affordances rõ hơn v1 (banner cũ không đính kèm điểm chạm nào).</div></div>
+  </div>
+</div>
+
+<h2>Journey 1 — Xem nhiệm vụ &amp; chọn first action <span class="jpill rq1">RQ1</span></h2>
+<div class="strip">
+
+  <div class="frame">
+    <div class="phone">
+      <div class="status"><span>9:41</span><span>▮▮▮</span></div>
+      <div class="nav"><span class="back">‹ Today</span><b>Requirements</b><span></span></div>
+      <div class="body">
+        <div class="kicker">AI read your brief</div>
+        <div class="b" style="margin-top:6px">
+          <div class="chk"><div class="box on"></div><div>A 2000-word literature review</div></div>
+          <div class="chk"><div class="box on"></div><div>Use at least 6 academic sources</div></div>
+          <div class="chk"><div class="box on"></div><div>Compare at least 2 research methods</div></div>
+          <div style="border-top:1px solid var(--hair);margin:10px 0 2px"></div>
+          <div class="drop" style="margin-bottom:0;background:transparent;border:none;padding:6px 0">
+            <span>Current progress</span><span class="v">Not started ▾</span></div>
+          <div class="xs">Needs your input — used to adapt the first suggestion</div>
+        </div>
+        <div class="field ph" style="margin-top:2px">Add details (optional)</div>
+        <div class="pbtn" style="margin-top:10px">Looks correct → make plan</div>
+      </div>
+    </div>
+    <div class="cap"><span class="arrow">→</span> Checkbox tick sẵn + droplist progress = J.2 đầu vào —
+      giữ nguyên y như v1.<div class="why">Why "đẹp": kicker "AI READ YOUR BRIEF" biến list thành một "lời giải thích" có giọng — đúng hướng explainability của Zhu et al. mà không thêm trang mới.</div></div>
+  </div>
+
+  <div class="frame">
+    <div class="phone">
+      <div class="status"><span>9:41</span><span>▮▮▮</span></div>
+      <div class="nav"><span></span><b>Your plan</b><span class="link">+ Add</span></div>
+      <div class="body">
+        <div class="s" style="text-align:center;margin-bottom:8px">4 steps · about 4 hours · 1 of 5 done</div>
+        <div class="xs" style="text-align:center;font-style:italic;margin-bottom:10px">
+          Order follows your deadline and your free evenings.</div>
+        <div class="b sel" style="border-left:3px solid var(--amber)">
+          <div class="rowic">
+            <div class="num am">1</div>
+            <div style="flex:1"><div class="t2">Skim 10 papers</div></div>
+            <div class="eff">45 min</div>
+          </div>
+          <div class="tag" style="margin-top:8px">Start here</div>
+        </div>
+        <div class="b"><div class="rowic"><div class="num">2</div>
+          <div style="flex:1"><div class="t2">Write 6 summaries</div></div><div class="eff">2 h</div></div></div>
+        <div class="b"><div class="rowic"><div class="num">3</div>
+          <div style="flex:1"><div class="t2">Compare methods in a table</div></div><div class="eff">90 min</div></div></div>
+        <div class="b"><div class="rowic"><div class="num">4</div>
+          <div style="flex:1"><div class="t2">Format and check word count</div></div><div class="eff">30 min</div></div></div>
+        <div class="pbtn" style="margin-top:8px">Choose study times</div>
+      </div>
+      <div class="tabbar"><span>Today</span><span class="on">Plan</span>
+        <span style="color:#4A4E5E">Me</span></div>
+    </div>
+    <div class="cap"><span class="arrow">→</span> Vẫn <b>1 tag Start here duy nhất</b> (giả thuyết RQ1) —
+      giờ nổi bằng accent bar + badge. <b>Edit</b> của mỗi card → sheet (khung kế);
+      <b>Choose study times</b> → 04.<div class="why">Why "đẹp": mỗi step có duration-badge riêng — tương trợ phỏng đoán effort khác nhau (decision để test "effort dim" trong Week-05).</div></div>
+  </div>
+
+  <div class="frame">
+    <div class="phone">
+      <div class="status"><span>9:41</span><span>▮▮▮</span></div>
+      <div class="nav"><span></span><b>Your plan</b><span class="xs">editing…</span></div>
+      <div class="body" style="padding:0 0 200px">
+        <div class="sheetfade">
+          <div class="sheet">
+            <div class="rowic"><div style="flex:1"><div class="kicker gy">Edit step</div>
+              <div class="t2" style="margin-top:2px">Step 1</div></div>
+              <div class="xs">▲ drag down to close (deco)</div></div>
+            <div class="field" style="margin-top:10px">Skim 10 papers — mark key claims</div>
+            <div class="pbtn">Save</div>
+            <div class="sbtn">Cancel</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="cap"><span class="arrow">→</span> State 2 của Dynamic Panel — v1 là inline, v2 là
+      <b>bottom sheet</b> (kỹ thuật Axure: panel phủ + Set State, không thêm logic).
+      Save rỗng → đỏ "Write a short label first"; có chữ → <code>Step1Text</code>.<div class="why">Why: sheet che mục tiêu ngắt quãng thị giác — hợp nguyên lý "focus on one thing" của toàn app.</div></div>
+  </div>
+</div>
+
+<h2>Journey 2 — Chỉnh lịch không cần giúp đỡ <span class="jpill rq2">RQ2</span></h2>
+<div class="strip">
+  <div class="frame">
+    <div class="phone">
+      <div class="status"><span>9:41</span><span>▮▮▮</span></div>
+      <div class="nav"><span class="back">‹ Plan</span><b>Schedule</b><span></span></div>
+      <div class="body">
+        <div class="banner ok">✓ Saved: Wednesday 18:00 – 90 min</div>
+        <div class="kicker">Pick a session slot</div>
+        <div class="b dim" style="margin-top:8px"><div class="rowic">
+          <div style="flex:1"><div class="t2" style="font-size:13px">Tue 18:00</div>
+            <div class="xs" style="margin-top:2px">Busy — classes until 20:00</div></div>
+          <div class="xs">✕</div></div></div>
+        <div class="b sel"><div class="rowic">
+          <div style="flex:1"><div class="t2" style="font-size:13px">Wed 18:00</div>
+            <div class="xs" style="margin-top:2px">Suggested — free evening</div></div>
+          <div class="tag">Suggested</div></div></div>
+        <div class="drop"><span>Day</span><span class="v">Wednesday ▾</span></div>
+        <div class="drop"><span>Start time</span><span class="v">18:00 ▾</span></div>
+        <div class="pbtn">Save study time</div>
+        <div class="s" style="color:var(--red);text-align:center">Pick a day and a time first.</div>
+      </div>
+    </div>
+    <div class="cap"><span class="arrow">→</span> Logic validate thiếu → đỏ; đủ → xanh với giá trị từ biến —
+      <b>không đổi</b>. Đổi duy nhất: slot suggested có tag thay vì cả card tinted. Xong Save thấy
+      banner xanh → Back về 03, hoặc bấm tab <b>Today</b> để thấy Home vừa bật hero (kết thúc setup).
+      Đi vào 04 chỉ khi đã qua 03 — cửa vào luồng kế hoạch là nút <b>Add your assignment</b> ở Today state A.
+      <div class="why">Why "đẹp": 1 màu amber chỉ dành cho 1 slot — mắt tìm slot hành động nhanh hơn, test được bằng thời gian chọn.</div></div>
+  </div>
+</div>
+
+<h2>Journey 3 — Kẹt → giúp đỡ → hành động tiếp <span class="jpill rq3">RQ3</span></h2>
+<div class="strip">
+  <div class="frame">
+    <div class="phone">
+      <div class="status"><span>9:41</span><span>▮▮▮</span></div>
+      <div class="nav"><span class="back">‹ Today</span><b>Session</b><span></span></div>
+      <div class="body" style="padding-top:18px">
+        <div style="text-align:center;padding:16px 0 10px">
+          <div class="ring" style="width:110px;height:110px;margin:0 auto;
+               background:conic-gradient(var(--amber) 0 88%, var(--raise) 88% 100%)">
+            <i style="width:92px;height:92px;font-size:11px">28 min</i></div>
+          <div class="clock" style="margin-top:10px">23:47</div>
+          <div class="xs" style="margin-top:3px">1 s on screen = 1 min of study (simulated pacing)</div>
+        </div>
+        <div class="b" style="margin-top:14px">
+          <div class="kicker gy">Focus on</div>
+          <div class="t2" style="margin-top:4px">Compare methods in a table</div>
+          <div class="s" style="margin-top:5px;line-height:1.5">Compare the two studies: research method,
+            sample size, findings. Note 3 differences for your review.</div>
+        </div>
+        <div class="sbtn" style="margin-top:12px">This step feels difficult</div>
+      </div>
+    </div>
+    <div class="cap"><span class="arrow">→</span> Đây là màn <b>Session</b> thay cho "Step detail":
+      đồng hồ to = nhân vật chính, phần bài tập thu nhỏ thành 1 card. Nút support vẫn ở dưới cùng,
+      chữ rõ — RQ3 vẫn đo tự tìm.<div class="why">Why: timer này chạy đúng công thức H.2 (tick 1000ms + Fire Page loaded) — chỉ đổi vỏ; kiến trúc "một thứ trong màn" = giảm distractors khi học.</div></div>
+  </div>
+
+  <div class="frame">
+    <div class="phone">
+      <div class="status"><span>9:41</span><span>▮▮▮</span></div>
+      <div class="nav"><span class="back">‹ Session</span><b>Help</b><span></span></div>
+      <div class="body">
+        <div class="kicker" style="color:var(--sub)">What makes this step hard?</div>
+        <div class="sbtn" style="background:var(--amberSoft);border-color:var(--amberHair);margin-top:12px">Too big to start</div>
+        <div class="sbtn">Not sure what it means</div>
+        <div class="sbtn">I don't have what I need</div>
+        <div class="b sel" style="margin-top:16px">
+          <div class="kicker gy">Suggested smaller first action</div>
+          <div class="t2" style="margin-top:4px">List the 5 papers you'll compare</div>
+          <div class="s" style="margin-top:3px">⏱ 25 min · simulated suggestion</div>
+          <div class="pbtn" style="padding:10px;margin:10px 0 0">Use this action</div>
+          <div class="sbtn" style="border:none;color:var(--sub);margin:4px 0 0">Never mind</div>
+        </div>
+      </div>
+    </div>
+    <div class="cap"><span class="arrow">→</span> 3 lý do → 3 state Dynamic Panel, giữ nguyên v1.
+      <b>Use this action</b> → <code>Step3aText</code> → 07; <b>Never mind</b> → 03, không đổi gì.
+      <div class="why">Why: state chọn = tint amber (không nền đổi màu ngẫu nhiên) — mapping icon-màu-nghĩa nhất quán trong toàn app.</div></div>
+  </div>
+
+  <div class="frame">
+    <div class="phone">
+      <div class="status"><span>9:41</span><span>▮▮▮</span></div>
+      <div class="nav"><span class="back">‹ Plan</span><b>Plan updated</b><span></span></div>
+      <div class="body">
+        <div class="banner ok">✓ Smaller step added to your plan</div>
+        <div class="b"><div class="rowic"><div class="num">1</div>
+          <div style="flex:1"><div class="t2" style="font-size:13px">Skim 10 papers</div></div>
+          <div class="eff">45 min</div></div></div>
+        <div class="b sel"><div class="rowic"><div class="num am">3a</div>
+          <div style="flex:1"><div class="t2" style="font-size:13px">List the 5 papers you'll compare</div></div>
+          <div class="tag g">✓ done</div></div></div>
+        <div class="b"><div class="rowic"><div class="num">3</div>
+          <div style="flex:1"><div class="t2" style="font-size:13px">Compare methods in a table</div></div>
+          <div class="eff">90 min</div></div></div>
+        <div class="rowic" style="margin-top:12px">
+          <div class="sbtn" style="flex:1;margin:0">✕ Undo</div>
+          <div class="pbtn" style="flex:1;margin:0;opacity:.4">✓ Mark 3a done</div>
+        </div>
+        <div class="s" style="text-align:center;margin-top:8px">1 of 5 steps completed</div>
+      </div>
+      <div class="tabbar"><span>Today</span><span class="on">Plan</span>
+        <span style="color:#4A4E5E">Me</span></div>
+    </div>
+    <div class="cap"><span class="arrow">→</span> Guard <code>Done3a</code> + undo — logic v1 gốc,
+      chưa đổi. Nút đã done self-disable (mờ).<div class="why">Why: badge "3a" số học thật hơn "New" — report có thể nêu số hóanàynày là paper trail của design decision.</div></div>
+  </div>
+
+  <div class="frame">
+    <div class="phone">
+      <div class="status"><span>9:41</span><span>▮▮▮</span></div>
+      <div class="nav"><span style="color:var(--dim)" class="xs">MON 9 NOV</span><b>Today</b>
+        <div class="dot" style="width:26px;height:26px;font-size:11px">A</div></div>
+      <div class="body">
+        <div class="kicker">One thing now</div>
+        <div class="b hero" style="margin-top:6px">
+          <div class="rowic top">
+            <div style="flex:1">
+              <div class="big">Write 6 summaries</div>
+              <div class="s" style="margin-top:4px">About 2 h · from your plan</div>
+              <div class="meter"><i style="width:40%"></i></div>
+              <div class="xs" style="margin-top:5px">2 of 5 steps done</div>
+            </div>
+            <div class="ring"><i style="background:conic-gradient(var(--amber) 0 40%,var(--surface) 40% 100%);width:36px;height:36px;border-radius:50%">2/5</i></div>
+          </div>
+        </div>
+        <div class="banner ok" style="margin-top:10px">Nice — a step is done. Next up is here.</div>
+        <div class="s" style="margin-top:6px">3 of 5 in this deck left · schedule next: Wed 18:00</div>
+      </div>
+      <div class="tabbar"><span class="on">Today</span><span>Plan</span>
+        <span style="color:#4A4E5E">Me</span></div>
+    </div>
+    <div class="cap"><span class="arrow">→</span> Frame <b>mới</b> so với v1: Home sau khi done —
+      hero tiến sang Step 2 (=J.3 case DoneCount ≥ 1), ring 2/5, dòng celebration nhỏ.
+      <div class="why">Đây là bằng chứng đóng loop end-to-end: hành động user → phản hồi app — ghi 1 dòng report (J.3).</div></div>
+  </div>
+</div>
+
+<p style="margin-top:34px;padding-top:14px;border-top:2px solid #2b2b2b;font-size:13px;color:#777">
+Lookahead v2 — demo thiết kế lại, hỗ trợ planning theo quy chế AI. Bạn tự dựng trong Axure.
+KHÔNG nộp file này. Bản v1 giữ ở <i>lookahead-demo.html</i> để so sánh.</p>
+
+</body>
+</html>

@@ -1,0 +1,1 @@
+{"ok":true,"result":{"id":"3e518479-4bc1-46d3-893b-fb5a6a188c75","events":[{"type":"OnClick","cases":[{"name":"Continue to 01 Assignment","newIfGroup":false,"condition":null,"actions":[{"type":"navigate","linkType":"Current","targetType":"Page","page":"8e9f3fbd-9a3f-4580-b6aa-2090c54d8831"}]}]}]}}

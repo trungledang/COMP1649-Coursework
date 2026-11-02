@@ -1,0 +1,4 @@
+$a=[Reflection.Assembly]::LoadFrom('E:/AxureRP11.dll')
+foreach($n in @('Axure.Axvg.Converter','Axure.Axvg.AxvgToRP.IntermediateFormatConverter','Axure.Axvg.AxvgToRP.IntermediateFormatConverterOptions')){
+$t=$a.GetType($n);$n;$t.GetConstructors([Reflection.BindingFlags]'Public,NonPublic,Instance')|%{$_.ToString()};$t.GetMethods([Reflection.BindingFlags]'Public,NonPublic,Static,Instance,DeclaredOnly')|%{$_.ToString()};$t.GetProperties()|%{$_.ToString()}
+}

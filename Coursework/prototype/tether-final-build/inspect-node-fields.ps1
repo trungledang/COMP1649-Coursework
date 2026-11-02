@@ -1,0 +1,1 @@
+$a=[Reflection.Assembly]::LoadFrom('E:/AxureRP11.dll');$t=$a.GetType('FJlc.QJlk');while($t){$t.FullName;$t.GetFields([Reflection.BindingFlags]'Public,NonPublic,Instance,DeclaredOnly')|%{$_.ToString()};$t.GetProperties([Reflection.BindingFlags]'Public,NonPublic,Instance,DeclaredOnly')|%{$_.ToString()};$t=$t.BaseType}

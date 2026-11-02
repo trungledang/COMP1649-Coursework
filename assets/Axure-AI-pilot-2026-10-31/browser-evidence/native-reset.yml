@@ -1,0 +1,10 @@
+- generic [ref=e1]:
+  - generic:
+    - paragraph [ref=e5]: AXURE / THỬ NGHIỆM TẠO FILE
+    - paragraph [ref=e9]: Chào bạn, bắt đầu nhé.
+    - paragraph [ref=e13]: Nhập tên để kiểm tra ô nhập, báo lỗi và chuyển trang.
+    - paragraph [ref=e17]: Tên của bạn
+    - textbox [ref=e20]: "Ví dụ: Trung"
+    - button "Tiếp tục" [ref=e25]
+    - button "Nhập lại" [active] [ref=e28]
+    - paragraph [ref=e32]: Bản thử kỹ thuật • Dữ liệu chỉ dùng trong prototype

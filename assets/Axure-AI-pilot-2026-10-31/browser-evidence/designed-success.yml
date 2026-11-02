@@ -1,0 +1,5 @@
+- generic [active] [ref=f4e1]:
+  - generic:
+    - paragraph [ref=f4e5]: Chào mừng bạn! Prototype đã hoạt động.
+    - paragraph [ref=f4e9]: Bố cục Axvg + ô nhập và tương tác gốc của Axure.
+    - button "Quay lại" [ref=f4e12]

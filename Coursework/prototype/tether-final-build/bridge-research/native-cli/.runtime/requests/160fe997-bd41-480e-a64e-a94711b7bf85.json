@@ -1,0 +1,1 @@
+{"ok":true,"result":{"id":"f75733c3-a37d-4ede-8c9a-be05aa6cd1ff","events":[{"type":"OnClick","cases":[{"name":"plan","newIfGroup":true,"condition":null,"actions":[{"type":"navigate","linkType":"Current","targetType":"Page","page":"0799ac74-30a7-4a0e-8dc4-1c9f27b6b7c6"}]}]}]}}

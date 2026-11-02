@@ -1,0 +1,318 @@
+{
+  "ok": true,
+  "launch": {
+    "ok": true,
+    "result": {
+      "pid": 5904,
+      "version": "11.0.0.4150",
+      "sha256": "dae5748f6be3e69c063ef117bab0b400586d94adf119f5a9ba260df59dc4e4a7",
+      "app": "E:\\AxureRP11.dll",
+      "temp": "E:\\ai-cache\\axure-pilot\\cache\\axure\\temp\\",
+      "configuredCache": null,
+      "project": {
+        "file": "E:\\Downloads\\Axure-pilot-2026-10-31\\Axure-designed-pilot.rp",
+        "dirty": false,
+        "writable": true,
+        "widgets": [
+          {
+            "id": "955ff5fc-2cab-4971-8a6a-4d57bf817502",
+            "type": "Axure.DocumentModel.Objects.Layer",
+            "name": "Không gian học tập",
+            "text": null,
+            "bounds": {
+              "x": 0,
+              "y": 0,
+              "width": 1100,
+              "height": 720
+            },
+            "inputType": null,
+            "placeholder": null
+          },
+          {
+            "id": "ec60369a-86f6-43d0-b55e-772112bd55fd",
+            "type": "Axure.DocumentModel.Objects.VectorShape",
+            "name": "Không gian học tập BG",
+            "text": "",
+            "bounds": {
+              "x": 0,
+              "y": 0,
+              "width": 1100,
+              "height": 720
+            },
+            "inputType": null,
+            "placeholder": null
+          },
+          {
+            "id": "a647f9d8-8a69-43c6-bd6d-9bf04f7a2d88",
+            "type": "Axure.DocumentModel.Objects.VectorShape",
+            "name": "Rectangle",
+            "text": "",
+            "bounds": {
+              "x": 0,
+              "y": 0,
+              "width": 390,
+              "height": 720
+            },
+            "inputType": null,
+            "placeholder": null
+          },
+          {
+            "id": "ba2ab79c-5159-4b62-8a6f-fe7277c41048",
+            "type": "Axure.DocumentModel.Objects.VectorShape",
+            "name": "",
+            "text": "MỞ / KHÔNG GIAN HỌC",
+            "bounds": {
+              "x": 48,
+              "y": 48,
+              "width": 290,
+              "height": 32
+            },
+            "inputType": null,
+            "placeholder": null
+          },
+          {
+            "id": "7fc97898-1f6d-43e1-9635-7269b8e05f93",
+            "type": "Axure.DocumentModel.Objects.VectorShape",
+            "name": "",
+            "text": "Một ý tưởng.\nNhiều khả năng.",
+            "bounds": {
+              "x": 48,
+              "y": 182,
+              "width": 300,
+              "height": 116
+            },
+            "inputType": null,
+            "placeholder": null
+          },
+          {
+            "id": "3f951f24-2028-45fa-988f-7a138e9a21a3",
+            "type": "Axure.DocumentModel.Objects.VectorShape",
+            "name": "",
+            "text": "Từ phác thảo đến prototype.\nTừng phần tử đều có thể sửa\nngay trong Axure.",
+            "bounds": {
+              "x": 48,
+              "y": 332,
+              "width": 290,
+              "height": 90
+            },
+            "inputType": null,
+            "placeholder": null
+          },
+          {
+            "id": "aff2e826-67da-4331-903a-1d4a5dd41b8d",
+            "type": "Axure.DocumentModel.Objects.VectorShape",
+            "name": "Rectangle",
+            "text": "",
+            "bounds": {
+              "x": 48,
+              "y": 565,
+              "width": 294,
+              "height": 1
+            },
+            "inputType": null,
+            "placeholder": null
+          },
+          {
+            "id": "6c3827e5-9d70-4404-85d7-1994aa4b46ea",
+            "type": "Axure.DocumentModel.Objects.VectorShape",
+            "name": "",
+            "text": "01 / BẢN THỬ TẠO THIẾT KẾ\nAxvg + Axure RP 11",
+            "bounds": {
+              "x": 48,
+              "y": 594,
+              "width": 290,
+              "height": 52
+            },
+            "inputType": null,
+            "placeholder": null
+          },
+          {
+            "id": "a7623fb2-29ff-4f39-8845-b95bafd054c5",
+            "type": "Axure.DocumentModel.Objects.VectorShape",
+            "name": "Rectangle",
+            "text": "",
+            "bounds": {
+              "x": 454,
+              "y": 92,
+              "width": 582,
+              "height": 524
+            },
+            "inputType": null,
+            "placeholder": null
+          },
+          {
+            "id": "8636d9c5-5c25-4ff2-a912-c31247d01f44",
+            "type": "Axure.DocumentModel.Objects.VectorShape",
+            "name": "",
+            "text": "BẮT ĐẦU HÀNH TRÌNH",
+            "bounds": {
+              "x": 502,
+              "y": 136,
+              "width": 470,
+              "height": 26
+            },
+            "inputType": null,
+            "placeholder": null
+          },
+          {
+            "id": "00cf40b6-beb4-40c7-97a5-02cbbf929203",
+            "type": "Axure.DocumentModel.Objects.VectorShape",
+            "name": "",
+            "text": "Chào bạn, bắt đầu nhé.",
+            "bounds": {
+              "x": 502,
+              "y": 183,
+              "width": 470,
+              "height": 54
+            },
+            "inputType": null,
+            "placeholder": null
+          },
+          {
+            "id": "dafc28e0-0237-4b5b-9fca-1421b9c5e3c9",
+            "type": "Axure.DocumentModel.Objects.VectorShape",
+            "name": "",
+            "text": "Giao diện được tạo bằng dữ liệu có cấu trúc,\nsau đó chuyển thành phần tử Axure.",
+            "bounds": {
+              "x": 502,
+              "y": 251,
+              "width": 470,
+              "height": 48
+            },
+            "inputType": null,
+            "placeholder": null
+          },
+          {
+            "id": "12ee3653-ae8b-4ebf-ae80-b13804c4241e",
+            "type": "Axure.DocumentModel.Objects.VectorShape",
+            "name": "",
+            "text": "Tên của bạn",
+            "bounds": {
+              "x": 502,
+              "y": 332,
+              "width": 460,
+              "height": 24
+            },
+            "inputType": null,
+            "placeholder": null
+          },
+          {
+            "id": "f55af1f9-9f26-4c41-9e7e-1a4289d95349",
+            "type": "Axure.DocumentModel.Objects.VectorShape",
+            "name": "Rectangle",
+            "text": "",
+            "bounds": {
+              "x": 502,
+              "y": 374,
+              "width": 470,
+              "height": 52
+            },
+            "inputType": null,
+            "placeholder": null
+          },
+          {
+            "id": "3e2c17b8-e34a-4fb6-85ab-91a9e95a2657",
+            "type": "Axure.DocumentModel.Objects.VectorShape",
+            "name": "",
+            "text": "",
+            "bounds": {
+              "x": 518,
+              "y": 390,
+              "width": 430,
+              "height": 26
+            },
+            "inputType": null,
+            "placeholder": null
+          },
+          {
+            "id": "4e96c89e-505b-46c1-9746-7d83b5f6a47c",
+            "type": "Axure.DocumentModel.Objects.VectorShape",
+            "name": "Rectangle",
+            "text": "",
+            "bounds": {
+              "x": 502,
+              "y": 456,
+              "width": 470,
+              "height": 52
+            },
+            "inputType": null,
+            "placeholder": null
+          },
+          {
+            "id": "058e9e33-d847-4323-a2af-999478443424",
+            "type": "Axure.DocumentModel.Objects.VectorShape",
+            "name": "",
+            "text": "Tiếp tục  →",
+            "bounds": {
+              "x": 502,
+              "y": 473,
+              "width": 470,
+              "height": 24
+            },
+            "inputType": null,
+            "placeholder": null
+          },
+          {
+            "id": "f98e20af-0460-4966-967e-4537fba47e42",
+            "type": "Axure.DocumentModel.Objects.VectorShape",
+            "name": "",
+            "text": "Bản thử giao diện • Các chữ và hình đều sửa được",
+            "bounds": {
+              "x": 502,
+              "y": 552,
+              "width": 470,
+              "height": 26
+            },
+            "inputType": null,
+            "placeholder": null
+          },
+          {
+            "id": "4765aea8-3f6b-492b-bd90-5800c7e7ba39",
+            "type": "Axure.DocumentModel.Objects.VectorShape",
+            "name": "",
+            "text": "TẠO BẰNG AXVG  /  LƯU BẰNG AXURE  /  CHỈNH SỬA TỪNG PHẦN",
+            "bounds": {
+              "x": 454,
+              "y": 658,
+              "width": 582,
+              "height": 24
+            },
+            "inputType": null,
+            "placeholder": null
+          },
+          {
+            "id": "80b25cf9-a796-4f0d-bc5f-7e2b8ff932ca",
+            "type": "Axure.DocumentModel.Objects.TextBox",
+            "name": "name_input",
+            "text": "",
+            "bounds": {
+              "x": 518,
+              "y": 384,
+              "width": 438,
+              "height": 32
+            },
+            "inputType": "Text",
+            "placeholder": "Ví dụ: Trung"
+          },
+          {
+            "id": "6406683f-c09e-476a-8b1e-4e1ee6fa28cc",
+            "type": "Axure.DocumentModel.Objects.VectorShape",
+            "name": "feedback",
+            "text": "",
+            "bounds": {
+              "x": 502,
+              "y": 515,
+              "width": 470,
+              "height": 28
+            },
+            "inputType": null,
+            "placeholder": null
+          }
+        ]
+      }
+    },
+    "requestId": "e6888988-6dac-4f20-bd15-6f540956264f",
+    "launchedPid": 5904
+  },
+  "widgetCount": 21
+}

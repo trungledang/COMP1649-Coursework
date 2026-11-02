@@ -1,0 +1,1 @@
+{"ok":true,"result":{"id":"1a783e76-1c40-415b-b457-af4126db92cc","events":[{"type":"OnClick","cases":[{"name":"Continue to 06 Get support","newIfGroup":false,"condition":null,"actions":[{"type":"navigate","linkType":"Current","targetType":"Page","page":"c72f3b34-7ca5-46bd-8542-5928adcd4c50"}]}]}]}}

@@ -1,0 +1,20 @@
+- generic [active] [ref=e1]:
+  - generic:
+    - generic:
+      - paragraph [ref=e11]: 9:41
+      - paragraph [ref=e15]: tether
+      - paragraph [ref=e19]: Your study desk
+      - paragraph [ref=e31]:
+        - generic [ref=e32]: You can pickthis up again.
+      - paragraph [ref=e36]: A little context, right where you need it.
+      - paragraph [ref=e44]: HCI coursework / Discussion
+      - paragraph [ref=e48]: Where I left off
+      - paragraph [ref=e52]:
+        - generic [ref=e53]: Connecting my evidenceto the argument.
+      - paragraph [ref=e59]: Your next move
+      - paragraph [ref=e63]:
+        - generic [ref=e64]: Add one example tothe second paragraph.
+      - paragraph [ref=e70]: Continue this step
+      - paragraph [ref=e76]: Leave a new thread
+    - generic [ref=e77] [cursor=pointer]
+    - generic [ref=e79] [cursor=pointer]

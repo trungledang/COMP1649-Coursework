@@ -1,0 +1,1 @@
+{"ok":true,"result":{"id":"2c3e9108-b6f9-45c3-8744-12d10dfc953e","events":[{"type":"OnClick","cases":[{"name":"Continue to 03 Your plan","newIfGroup":false,"condition":null,"actions":[{"type":"navigate","linkType":"Current","targetType":"Page","page":"49e7f60f-b1a8-48fd-9f94-13688901daef"}]}]}]}}

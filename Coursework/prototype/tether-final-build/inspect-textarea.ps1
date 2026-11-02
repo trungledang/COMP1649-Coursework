@@ -1,0 +1,1 @@
+$a=[Reflection.Assembly]::LoadFrom('E:/AxureRP11.dll');$t=$a.GetType('Axure.DocumentModel.Objects.TextArea');$t.GetConstructors([Reflection.BindingFlags]'Public,NonPublic,Instance')|%{$_.ToString()};$t.GetProperties([Reflection.BindingFlags]'Public,NonPublic,Instance')|?{$_.Name -match 'Placeholder|Length|Text'}|%{$_.ToString()}

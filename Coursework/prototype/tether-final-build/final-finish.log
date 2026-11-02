@@ -1,0 +1,4 @@
+﻿Work load {'created': True, 'count': 1}
+Copy {'before': 'You can step away without losing the thread.', 'after': {'id': '11f97a4b-3b5c-458d-bfaf-579da4577e16', 'type': 'Axure.DocumentModel.Objects.VectorShape', 'name': '', 'text': 'Your note is ready on your desk.', 'bounds': {'x': 76, 'y': 236, 'width': 305, 'height': 52}, 'inputType': None, 'placeholder': None}, 'dirty': True}
+Copy {'before': 'This prototype uses an example thread on the desk.', 'after': {'id': '4c20de1a-9596-487f-b31c-888fbd2814c5', 'type': 'Axure.DocumentModel.Objects.VectorShape', 'name': '', 'text': 'Your notes stay available during this preview.', 'bounds': {'x': 76, 'y': 560, 'width': 300, 'height': 70}, 'inputType': None, 'placeholder': None}, 'dirty': True}
+Saved {'path': 'E:\\Hoc tap\\Mon hoc\\Năm 3 kì 1\\COMP1649_HCI\\Coursework\\prototype\\final-coursework.rp', 'bytes': 123866, 'dirty': False}

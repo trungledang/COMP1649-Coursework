@@ -1,0 +1,1213 @@
+Participant/student id:
+Marking criterion
+
+Maximum
+marks
+
+Actual
+marks
+
+Report
+Professional writing style, English language proficiency, writing with
+appropriate level of detail, professional report formatting, sufficient and
+appropriate referencing in Harvard style of academic sources (e.g. journal
+papers, conference papers, academic books) throughout the report.
+
+5
+
+An annotated bibliography with reflective commentary of 6-8 relevant academic
+HCI papers for the chosen coursework topic. The reflection needs to include a
+personal reflection on why each source was chosen, how it connects to the
+chosen coursework topic, and what implications can be drawn for the design of
+the prototype. It should be made clear which academic sources have been
+used and how they were retrieved.
+
+20
+
+The product design consisting of,
+A) A discussion of the product idea (conceptual design) explaining the
+components of the product and how the user will interact with the product, and
+how requirements will be met.
+B) The design principles (by Don Norman) and their application to the
+coursework product are discussed. A brief discussion for each
+principle/concept and suitable visual representations should be included.
+
+20
+
+A detailed proposal for an empirical HCI research study that uses your
+interactive prototype. In this proposal, you need to describe and justify the
+details for a research study including the research question(s) or hypothesis
+that your research study attempts to investigate, who the participants of your
+study will be, how the study will be run, the data collection, and how you will
+analyse the data. You do not need to run the study, but you need to create all
+necessary material and documentation that are required for a usability expert
+to run the study.
+
+20
+
+A reflection on one (or more) key insight(s) and how it might influence your
+future thinking or practice. E.g. Reflect on how your understanding of HCI
+evolved, what surprised you, or how the topic connects to your own
+experiences.
+
+5
+
+Mid-fidelity prototype
+Clear links between the coursework report and the prototype with design
+decisions explicitly documented and justified in the report. There is evidence of
+the effective and successful application of HCI theory and design principles to
+create a prototype that can be used to test core assumptions of your design
+and that is suitable for researchers and designers to test and evaluate the
+product. The implementation of design research, theory, and principles is
+evident in both the report and the prototype.
+
+30
+
+Total 100
+
+2
+
+Rubric COMP1649
+Rubric
+COMP1649
+
+0-29% Fail 30-39% Fail 40-49% Satisfactory 50-59% Good 60-69% Very Good 70-79% Excellent 80-100%
+Exceptional
+20 points 0-5 6-7 8-9 10-11 12-13 14-15 16-20
+D1
+Knowledge
+Demonstrati
+ng the
+design
+process and
+implementat
+ion of
+design
+principles
+
+Little to no
+discussion of the
+product idea
+(conceptual
+design)
+explaining the
+components of
+the product and
+how the user will
+interact with the
+product, and how
+requirements will
+be met. Little to
+no discussion of
+the design
+development
+towards a
+prototype. Also
+little to no design
+principles (by
+Don Norman)
+and their
+application to the
+coursework
+product are
+discussed. The
+report lacks a
+discussion for
+each
+principle/concept
+and little to no
+suitable visual
+representations.
+
+A poor discussion
+of the product idea
+(conceptual
+design) explaining
+the components of
+the product and
+how the user will
+interact with the
+product, and how
+requirements will
+be met. A poor
+discussion of the
+design
+development
+towards a
+prototype. Also a
+poor discussion of
+the design
+principles (by Don
+Norman) and their
+application to the
+coursework
+product. The
+report has a poor
+discussion for
+each
+principle/concept
+and poor suitable
+visual
+representations.
+
+A satisfactory
+discussion of the
+product idea
+(conceptual design)
+explaining the
+components of the
+product and how the
+user will interact with
+the product, and how
+requirements will be
+met. A satisfactory
+discussion of the
+design development
+towards a prototype.
+Also a satisfactory
+discussion of the
+design principles (by
+Don Norman) and
+their application to
+the coursework
+product. The report
+has a satisfactory
+discussion for each
+principle/concept and
+satisfactory suitable
+visual
+representations.
+
+A good discussion of
+the product idea
+(conceptual design)
+explaining the
+components of the
+product and how the
+user will interact with
+the product, and how
+requirements will be
+met. A good
+discussion of the
+design development
+towards a prototype.
+Also a good
+discussion of the
+design principles (by
+Don Norman) and
+their application to
+the coursework
+product. The report
+has a good
+discussion for each
+principle/concept and
+good suitable visual
+representations.
+
+A very good
+discussion of the
+product idea
+(conceptual design)
+explaining the
+components of the
+product and how the
+user will interact with
+the product, and how
+requirements will be
+met. A very good
+discussion of the
+design development
+towards a prototype.
+Also a very good
+discussion of the
+design principles (by
+Don Norman) and
+their application to
+the coursework
+product. The report
+has a very good
+discussion for each
+principle/concept and
+very good suitable
+visual
+representations.
+
+An excellent
+discussion of the
+product idea
+(conceptual design)
+explaining the
+components of the
+product and how
+the user will
+interact with the
+product, and how
+requirements will
+be met. An
+excellent
+discussion of the
+design
+development
+towards a
+prototype. Also an
+excellent
+discussion of the
+design principles
+(by Don Norman)
+and their
+application to the
+coursework
+product. The report
+has an excellent
+discussion for each
+principle/concept
+and excellent
+suitable visual
+representations.
+
+An exceptional
+discussion of the
+product idea
+(conceptual design)
+explaining the
+components of the
+product and how the
+user will interact with
+the product, and how
+requirements will be
+met. An exceptional
+discussion of the
+design development
+towards a prototype.
+Also an exceptional
+discussion of the
+design principles (by
+Don Norman) and
+their application to
+the coursework
+product. The report
+has an exceptional
+discussion for each
+principle/concept and
+exceptional suitable
+visual
+representations.
+
+30 points 0-8 9-11 12-14 15-17 18-20 21-23 24-30
+D1
+Knowledge
+
+Little to no links
+between the
+coursework
+
+Poor links
+between the
+coursework report
+
+Satisfactory links
+between the
+coursework report
+
+Good links between
+the coursework
+report and the
+
+Very good links
+between the
+coursework report
+
+Excellent links
+between the
+coursework report
+
+Exceptional links
+between the
+coursework report
+
+3
+
+Mid-fidelity
+Prototype
+
+report and the
+prototype with
+design decisions
+explicitly
+documented and
+justified in the
+report. Little to no
+evidence of the
+effective and
+successful
+application of
+HCI theory and
+design principles
+to create a
+prototype that
+can be used to
+test core
+assumptions of
+your design and
+that is suitable
+for researchers
+and designers to
+test and evaluate
+the product. Little
+to no
+demonstration of
+implementation
+of design
+research and
+theory in both the
+report and the
+prototype.
+
+and the prototype
+with design
+decisions explicitly
+documented and
+justified in the
+report. Poor
+evidence of the
+effective and
+successful
+application of HCI
+theory and design
+principles to
+create a prototype
+that can be used
+to test core
+assumptions of
+your design and
+that is suitable for
+researchers and
+designers to test
+and evaluate the
+product. Poor
+demonstration of
+the
+implementation of
+design research
+and theory in both
+the report and the
+prototype.
+
+and the prototype
+with design decisions
+explicitly
+documented and
+justified in the report.
+Satisfactory
+evidence of the
+effective and
+successful
+application of HCI
+theory and design
+principles to create a
+prototype that can be
+used to test core
+assumptions of your
+design and that is
+suitable for
+researchers and
+designers to test and
+evaluate the product.
+Satisfactory
+demonstration of the
+implementation of
+design research and
+theory in both the
+report and the
+prototype.
+
+prototype with design
+decisions explicitly
+documented and
+justified in the report.
+Good evidence of
+the effective and
+successful
+application of HCI
+theory and design
+principles to create a
+prototype that can be
+used to test core
+assumptions of your
+design and that is
+suitable for
+researchers and
+designers to test and
+evaluate the product.
+Good demonstration
+of the
+implementation of
+design research and
+theory in both the
+report and the
+prototype.
+
+and the prototype
+with design decisions
+explicitly
+documented and
+justified in the report.
+Very good evidence
+of the effective and
+successful
+application of HCI
+theory and design
+principles to create a
+prototype that can be
+used to test core
+assumptions of your
+design and that is
+suitable for
+researchers and
+designers to test and
+evaluate the product.
+Very good
+demonstration of the
+implementation of
+design research and
+theory in both the
+report and the
+prototype.
+
+and the prototype
+with design
+decisions explicitly
+documented and
+justified in the
+report. Excellent
+evidence of the
+effective and
+successful
+application of HCI
+theory and design
+principles to create
+a prototype that
+can be used to test
+core assumptions
+of your design and
+that is suitable for
+researchers and
+designers to test
+and evaluate the
+product. Excellent
+demonstration of
+the implementation
+of design research
+and theory in both
+the report and the
+prototype.
+
+and the prototype
+with design decisions
+explicitly
+documented and
+justified in the report.
+Exceptional evidence
+of the effective and
+successful
+application of HCI
+theory and design
+principles to create a
+prototype that can be
+used to test core
+assumptions of your
+design and that is
+suitable for
+researchers and
+designers to test and
+evaluate the product.
+Exceptional
+demonstration of the
+implementation of
+design research and
+theory in both the
+report and the
+prototype.
+
+20 points 0-5 6-7 8-9 10-11 12-13 14-15 16-20
+D1
+Research
+Annotated
+bibliograph
+y
+
+Little to no
+reflection of
+relevant and
+appropriate HCI
+background
+literature to
+inform the design
+of the product
+and to generate
+
+Poor reflection
+and little relevant
+or appropriate HCI
+background
+literature to inform
+the design of the
+product and to
+generate
+requirements. The
+
+A satisfactory
+reflection on relevant
+and appropriate HCI
+background literature
+to inform the design
+of the product and to
+generate
+requirements. The
+selected references
+
+A good reflection on
+relevant and
+appropriate HCI
+background literature
+to inform the design
+of the product and to
+generate
+requirements. The
+selected references
+
+A very good
+reflection on relevant
+and appropriate HCI
+background literature
+to inform the design
+of the product and to
+generate
+requirements. The
+selected references
+
+An excellent
+reflection on
+relevant and
+appropriate HCI
+background
+literature to inform
+the design of the
+product and to
+generate
+
+An exceptional
+reflection of relevant
+and appropriate HCI
+background literature
+to inform the design
+of the product and to
+generate
+requirements. The
+relevance of the
+
+4
+
+requirements.
+The selected
+references lack
+relevance and do
+not or very little
+support the
+requirements of a
+proposed
+solution (e.g.
+related work, HCI
+literature in
+relation to the
+product’s
+context,
+interaction
+design theory,
+cognitive
+psychology etc.).
+Details of how
+the literature was
+found were not
+provided or
+remain unclear.
+
+selected
+references have
+poor relevance
+and support the
+requirements of a
+proposed solution
+to a poor standard
+(e.g. little related
+work, HCI
+literature in
+relation to the
+product’s context,
+interaction design
+theory, cognitive
+psychology etc.).
+The annotated
+bibliography was
+superficially
+conducted or
+poorly
+documented.
+
+have relevance and
+support the
+requirements of a
+proposed solution to
+a satisfactory
+standard (e.g.
+related work, HCI
+literature in relation
+to the product’s
+context, interaction
+design theory,
+cognitive psychology
+etc.).
+The literature
+research was
+satisfactory
+conducted and
+documented.
+
+have relevance and
+support the
+requirements of a
+proposed solution to
+a good standard
+(e.g. related work,
+HCI literature in
+relation to the
+product’s context,
+interaction design
+theory, cognitive
+psychology etc.).
+The literature
+research was
+conducted and
+documented to a
+good standard.
+
+are very relevant and
+support the
+requirements of a
+proposed solution to
+a very good standard
+(e.g. related work,
+HCI literature in
+relation to the
+product’s context,
+interaction design
+theory, cognitive
+psychology etc.).
+The literature
+research was
+conducted and
+documented to a
+very good standard.
+
+requirements. The
+relevance of the
+selected references
+is to an excellent
+level and support
+the requirements of
+a proposed solution
+to an excellent
+standard (e.g.
+related work, HCI
+literature in relation
+to the product’s
+context, interaction
+design theory,
+cognitive
+psychology etc.).
+The literature
+research was
+conducted and
+documented to an
+excellent standard.
+
+selected references
+is to an exceptional
+level and support the
+requirements of a
+proposed solution to
+an exceptional
+standard (e.g.
+related work, HCI
+literature in relation
+to the product’s
+context, interaction
+design theory,
+cognitive psychology
+etc.).
+The literature
+research was
+conducted and
+documented to an
+exceptional
+standard.
+
+20 points 0-5 6-7 8-9 10-11 12-13 14-15 16-20
+D2
+Research
+Proposal for
+an empirical
+HCI
+research
+study
+
+A detailed
+proposal for an
+empirical HCI
+research study
+that uses your
+interactive
+prototype is
+absent or nearly
+absent. Nearly
+no details for a
+research study
+were described,
+including the
+question(s) or
+hypothesis that
+your research
+study attempts to
+investigate, who
+
+A poor proposal
+for an empirical
+HCI research
+study that uses
+your interactive
+prototype. A poor
+standard and few
+details for a
+research study
+were described,
+including the
+question(s) or
+hypothesis that
+your research
+study attempts to
+investigate, who
+the participants of
+your study will be,
+
+A satisfactory
+proposal for an
+empirical HCI
+research study that
+uses your interactive
+prototype. A
+satisfactory standard
+and some details for
+a research study
+were described,
+including the
+question(s) or
+hypothesis that your
+research study
+attempts to
+investigate, who the
+participants of your
+study will be, how
+
+A good proposal for
+an empirical HCI
+research study that
+uses your interactive
+prototype. A good
+standard and some
+good details for a
+research study were
+described, including
+the question(s) or
+hypothesis that your
+research study
+attempts to
+investigate, who the
+participants of your
+study will be, how
+the study will be run,
+the data collection,
+
+A very good proposal
+for an empirical HCI
+research study that
+uses your interactive
+prototype. A very
+good standard and
+some very good
+details for a research
+study were
+described, including
+the question(s) or
+hypothesis that your
+research study
+attempts to
+investigate, who the
+participants of your
+study will be, how
+the study will be run,
+
+An excellent
+proposal for an
+empirical HCI
+research study that
+uses your
+interactive
+prototype. An
+excellent standard
+and excellent
+details for a
+research study
+were described,
+including the
+question(s) or
+hypothesis that
+your research
+study attempts to
+investigate, who
+
+An exceptional
+proposal for an
+empirical HCI
+research study that
+uses your interactive
+prototype. An
+exceptional standard
+and exceptional
+details for a research
+study were
+described, including
+the question(s) or
+hypothesis that your
+research study
+attempts to
+investigate, who the
+participants of your
+study will be, how
+
+5
+
+the participants
+of your study will
+be, how the
+study will be run,
+the data
+collection, and
+how you will
+analyse the data.
+Little to no
+necessary
+material and
+documentation
+that are required
+for a usability
+expert to run the
+study were
+created.
+
+how the study will
+be run, the data
+collection, and
+how you will
+analyse the data.
+The material and
+documentation
+that are required
+for a usability
+expert to run the
+study were
+created to a poor
+standard.
+
+the study will be run,
+the data collection,
+and how you will
+analyse the data.
+The material and
+documentation that
+are required for a
+usability expert to
+run the study were
+created to a
+satisfactory
+standard.
+
+and how you will
+analyse the data.
+The material and
+documentation that
+are required for a
+usability expert to
+run the study were
+created to a good
+standard.
+
+the data collection,
+and how you will
+analyse the data.
+The material and
+documentation that
+are required for a
+usability expert to
+run the study were
+created to a very
+good standard.
+
+the participants of
+your study will be,
+how the study will
+be run, the data
+collection, and how
+you will analyse the
+data. The material
+and documentation
+that are required
+for a usability
+expert to run the
+study were created
+to an excellent
+standard.
+
+the study will be run,
+the data collection,
+and how you will
+analyse the data.
+The material and
+documentation that
+are required for a
+usability expert to
+run the study were
+created to an
+exceptional
+standard.
+
+5 points 0 1 2 2-3 3 3-4 4-5
+D3
+Evaluation /
+D6
+Employabili
+ty
+Conclusion
+
+Little to no critical
+reflections on a
+key insight, little
+to no discussion
+on how it might
+influence your
+future thinking or
+practice.
+
+A poor reflection
+on a key insight, a
+poor discussion
+on how it might
+influence your
+future thinking or
+practice.
+
+A satisfactory
+reflection on a key
+insight, a satisfactory
+discussion on how it
+might influence your
+future thinking or
+practice.
+
+A good reflection on
+a key insight, a good
+discussion on how it
+might influence your
+future thinking or
+practice.
+
+A very good
+reflection on a key
+insight, a very good
+discussion on how it
+might influence your
+future thinking or
+practice.
+
+An excellent
+reflection on a key
+insight, an
+excellent
+discussion on how
+it might influence
+your future thinking
+or practice.
+
+An exceptional
+reflection on a key
+insight, an
+exceptional
+discussion on how it
+might influence your
+future thinking or
+practice.
+
+5 points 0 1 2 2-3 3 3-4 4-5
+D4
+Communica
+tion / D5
+Referencing
+Professiona
+l writing and
+referencing
+
+A lack of
+demonstrating a
+professional
+writing style, little
+to no English
+language
+proficiency,
+Unnecessarily
+detailed writing
+or too superficial,
+Poor
+demonstration of a
+professional
+writing style, poor
+English language
+proficiency, poor
+level of detail or
+too superficial
+writing, poor
+report formatting,
+
+a satisfactory
+professional writing
+style, satisfactory
+English language
+proficiency,
+satisfactory level of
+detail and
+conciseness,
+satisfactory report
+formatting,
+
+a good professional
+writing style, good
+English language
+proficiency, good
+level of detail and
+conciseness, good
+report formatting,
+good referencing in
+Harvard style of
+academic sources
+
+a very good
+professional writing
+style, very good
+English language
+proficiency, a very
+good level of detail
+and conciseness,
+very good report
+formatting, very good
+referencing in
+
+excellent
+professional writing
+style, excellent
+English language
+proficiency,
+excellent level of
+detail and
+conciseness,
+excellent report
+formatting,
+
+exceptional
+professional writing
+style, exceptional
+English language
+proficiency,
+exceptional level of
+detail and
+conciseness,
+exceptional report
+formatting,
+
+6
+
+the report lacks
+professional
+formatting,
+largely incorrect
+or no referencing
+in Harvard style
+of academic
+sources (e.g.
+journal papers,
+conference
+papers,
+academic books)
+throughout the
+report.
+
+poor referencing
+in Harvard style of
+academic sources
+(e.g. journal
+papers,
+conference
+papers, academic
+books) throughout
+the report.
+
+satisfactory
+referencing in
+Harvard style of
+academic sources
+(e.g. journal papers,
+conference papers,
+academic books)
+throughout the
+report.
+
+(e.g. journal papers,
+conference papers,
+academic books)
+throughout the
+report.
+
+Harvard style of
+academic sources
+(e.g. journal papers,
+conference papers,
+academic books)
+throughout the
+report.
+
+excellent
+referencing in
+Harvard style of
+academic sources
+(e.g. journal
+papers, conference
+papers, academic
+books) throughout
+the report.
+
+exceptional
+referencing in
+Harvard style of
+academic sources
+(e.g. journal papers,
+conference papers,
+academic books)
+throughout the
+report.

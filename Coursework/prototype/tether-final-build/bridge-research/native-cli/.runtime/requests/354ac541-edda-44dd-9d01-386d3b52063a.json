@@ -1,0 +1,1 @@
+{"ok":true,"result":{"id":"6fe10b39-9b90-486d-b20c-e8228b3aa55c","events":[{"type":"OnClick","cases":[{"name":"pace","newIfGroup":true,"condition":null,"actions":[{"type":"navigate","linkType":"Current","targetType":"Page","page":"99743f17-ab94-4419-953d-74b4e960b825"}]}]}]}}

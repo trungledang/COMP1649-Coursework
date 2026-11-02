@@ -1,0 +1,1 @@
+{"ok":true,"result":{"interaction":{"id":"04b00e76-cd7f-494a-bff2-fca8f0515e25","events":[{"type":"OnClick","cases":[{"name":"Continue","newIfGroup":true,"condition":null,"actions":[{"type":"navigate","linkType":"Current","targetType":"Page","page":"bf917071-97a4-4718-bb95-7d5b81de8cc6"}]}]}]},"dirty":true}}

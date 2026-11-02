@@ -1,0 +1,26 @@
+{
+  "project": "E:\\Hoc tap\\Mon hoc\\Năm 3 kì 1\\COMP1649_HCI\\Coursework\\prototype\\anchor-adhd-companion\\anchor-prototype.rp",
+  "html": "E:\\Hoc tap\\Mon hoc\\Năm 3 kì 1\\COMP1649_HCI\\Coursework\\prototype\\anchor-adhd-companion\\html",
+  "pages": {
+    "01_Khoi_Dong": "55eb5b2b-515d-43ac-ad77-7b4e9f8f83ab",
+    "02_The_Don_Nhiem": "f891aee3-f2da-476b-98d6-5dc33c4fd5ba",
+    "03_Cuu_Ket_Nano": "d3fd337c-330e-4557-95d7-038e26eb38b7",
+    "04_Chot_Da_Tien_Do": "dcb28fe7-0a4b-4ec7-9ead-3a969d1dc86f"
+  },
+  "widgets": {
+    "p1_input": "3d6227c4-bc9d-41d4-af43-0925a311fda2",
+    "p1_feedback": "53af8826-d4be-48f2-9ed5-05a61c84adc4",
+    "p1_btn_preset": "8ae86c69-367d-4031-97f7-a8d8fa8d05da",
+    "p1_btn_start": "b9ef4be8-e47c-4185-98c4-b8f9c8be0a46",
+    "p1_btn_reset": "aaea2649-c6c8-4817-8cb9-dba3c69f7de0",
+    "p2_btn_done": "8d43e080-a1d4-4ab1-8a5f-3bb420288b44",
+    "p2_btn_stuck": "55c4ac82-f4ba-4880-b45a-3eadde35af48",
+    "p2_btn_back": "e2f28346-ded0-449a-93ba-749e41984248",
+    "p3_btn_accept": "8373fe85-c582-4985-9d57-0e980d09026d",
+    "p3_btn_back": "f3802879-5da0-434f-9327-79a98b3d46bb",
+    "p4_feedback": "b83832b7-ad4d-415e-a8a9-2c67e30c5831",
+    "p4_btn_break": "63cdafa6-e07c-47da-b2e2-08202bbf48fb",
+    "p4_btn_next": "9d807484-4184-4ee9-9e2b-1bff9b74ef77",
+    "p4_btn_restart": "f645df9a-aaf0-41ef-bcef-3c6c2a0f2ee8"
+  }
+}

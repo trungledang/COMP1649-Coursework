@@ -1,0 +1,1 @@
+{"ok":true,"result":{"interaction":{"id":"8d43e080-a1d4-4ab1-8a5f-3bb420288b44","events":[{"type":"OnClick","cases":[{"name":"Ho\u00E0n th\u00E0nh b\u01B0\u1EDBc 1","newIfGroup":true,"condition":null,"actions":[{"type":"navigate","linkType":"Current","targetType":"Page","page":"dcb28fe7-0a4b-4ec7-9ead-3a969d1dc86f"}]}]}]},"dirty":true}}

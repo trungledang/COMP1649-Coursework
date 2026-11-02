@@ -1,0 +1,126 @@
+{
+  "pages": [
+    {
+      "name": "00 Welcome",
+      "id": "a2d19f56-fc2c-4851-8ea3-62e26c8435ae",
+      "widgets": 29,
+      "nativeNavigationActions": 3,
+      "frame": "430x932"
+    },
+    {
+      "name": "Page 1",
+      "id": "bf917071-97a4-4718-bb95-7d5b81de8cc6",
+      "widgets": 28,
+      "nativeNavigationActions": 3,
+      "frame": "430x932"
+    },
+    {
+      "name": "02 Continue your work",
+      "id": "12f4c141-9ec5-4646-bd56-ecb8768c6584",
+      "widgets": 30,
+      "nativeNavigationActions": 5,
+      "frame": "430x932"
+    },
+    {
+      "name": "03 When you are stuck",
+      "id": "7d084d62-08fc-4588-b4de-09cee1f65333",
+      "widgets": 35,
+      "nativeNavigationActions": 4,
+      "frame": "430x932"
+    },
+    {
+      "name": "04 Leave a thread",
+      "id": "7f7e2f66-3f4d-452f-ad3f-8b20a61fc075",
+      "widgets": 28,
+      "nativeNavigationActions": 4,
+      "frame": "430x932"
+    },
+    {
+      "name": "05 Ready to return",
+      "id": "e4aac2f0-51f5-4a3f-a983-8ff8e1ea2180",
+      "widgets": 22,
+      "nativeNavigationActions": 2,
+      "frame": "430x932"
+    },
+    {
+      "name": "06 Step complete",
+      "id": "66e929d4-8eec-4ae7-a485-e1b8438f8e85",
+      "widgets": 25,
+      "nativeNavigationActions": 3,
+      "frame": "430x932"
+    },
+    {
+      "name": "01 Log in",
+      "id": "20a54304-24ee-4f05-a42a-965248e28371",
+      "widgets": 28,
+      "nativeNavigationActions": 4,
+      "frame": "430x932"
+    },
+    {
+      "name": "02 Create account",
+      "id": "3bab9d97-8a22-4340-9240-ed5713788abc",
+      "widgets": 26,
+      "nativeNavigationActions": 2,
+      "frame": "430x932"
+    },
+    {
+      "name": "03 Set your pace",
+      "id": "99743f17-ab94-4419-953d-74b4e960b825",
+      "widgets": 29,
+      "nativeNavigationActions": 2,
+      "frame": "430x932"
+    },
+    {
+      "name": "04 Today",
+      "id": "5f19db87-3d67-4040-aae3-25f9e559466b",
+      "widgets": 33,
+      "nativeNavigationActions": 6,
+      "frame": "430x932"
+    },
+    {
+      "name": "05 Add assignment",
+      "id": "489c9fbb-efd5-48a8-a4fe-773fb46cbd7c",
+      "widgets": 26,
+      "nativeNavigationActions": 3,
+      "frame": "430x932"
+    },
+    {
+      "name": "06 Check requirements",
+      "id": "3d59b67e-b673-4835-9c19-d968f8b4a536",
+      "widgets": 26,
+      "nativeNavigationActions": 2,
+      "frame": "430x932"
+    },
+    {
+      "name": "07 Your plan",
+      "id": "0799ac74-30a7-4a0e-8dc4-1c9f27b6b7c6",
+      "widgets": 43,
+      "nativeNavigationActions": 12,
+      "frame": "430x932"
+    },
+    {
+      "name": "08 Study time",
+      "id": "f33cd451-e9b4-4cc9-b725-4e32bbc670fc",
+      "widgets": 29,
+      "nativeNavigationActions": 2,
+      "frame": "430x932"
+    },
+    {
+      "name": "09 Study time saved",
+      "id": "ccab93eb-decd-4667-a890-041a0f11b3da",
+      "widgets": 27,
+      "nativeNavigationActions": 5,
+      "frame": "430x932"
+    },
+    {
+      "name": "10 Your space",
+      "id": "4a3b32a2-a3cb-4bcc-8de2-a6edbdba0d1c",
+      "widgets": 30,
+      "nativeNavigationActions": 6,
+      "frame": "430x932"
+    }
+  ],
+  "invalidNavigation": [],
+  "sha256": "153f1b502638963a8983d9c67fd1aa030156f498f78aa97322b72ff36c68c34c",
+  "bytes": 368325
+}

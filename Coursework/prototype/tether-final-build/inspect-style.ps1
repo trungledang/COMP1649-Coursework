@@ -1,0 +1,2 @@
+$a=[Reflection.Assembly]::LoadFrom('E:/AxureRP11.dll');$t=$a.GetType('Axure.DocumentModel.Objects.TextBox');while($t){$t.FullName;$t.GetMethods([Reflection.BindingFlags]'Public,NonPublic,Instance,Static,DeclaredOnly')|?{($_.GetParameters()|?{$_.ParameterType.FullName -match 'PName|Color|Font|Style'}).Count -gt 0}|%{$_.ToString()};$t=$t.BaseType}
+[Enum]::GetNames($a.GetType('Axure.Constants.PName'))|?{$_ -match 'Font|Fill|Border|Line|Padding|Radius|Text'}

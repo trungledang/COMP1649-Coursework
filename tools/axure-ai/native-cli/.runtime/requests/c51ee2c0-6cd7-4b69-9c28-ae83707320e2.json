@@ -1,0 +1,1 @@
+{"ok":true,"result":{"interaction":{"id":"55c4ac82-f4ba-4880-b45a-3eadde35af48","events":[{"type":"OnClick","cases":[{"name":"C\u1EE9u k\u1EB9t chia nh\u1ECF","newIfGroup":true,"condition":null,"actions":[{"type":"navigate","linkType":"Current","targetType":"Page","page":"d3fd337c-330e-4557-95d7-038e26eb38b7"}]}]}]},"dirty":true}}

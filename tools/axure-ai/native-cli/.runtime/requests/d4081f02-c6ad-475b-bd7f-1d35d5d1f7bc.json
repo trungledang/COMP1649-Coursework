@@ -1,0 +1,1 @@
+{"ok":true,"result":{"interaction":{"id":"f3802879-5da0-434f-9327-79a98b3d46bb","events":[{"type":"OnClick","cases":[{"name":"V\u1EC1 b\u01B0\u1EDBc 15 ph\u00FAt","newIfGroup":true,"condition":null,"actions":[{"type":"navigate","linkType":"Current","targetType":"Page","page":"f891aee3-f2da-476b-98d6-5dc33c4fd5ba"}]}]}]},"dirty":true}}

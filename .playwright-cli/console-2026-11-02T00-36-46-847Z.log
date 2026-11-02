@@ -1,0 +1,4 @@
+[     475ms] [LOG] loadTime: 0 @ http://127.0.0.1:18762/variable-preview/resources/scripts/axure/init.temp.js:252
+[     516ms] [ERROR] Failed to load resource: the server responded with a status of 404 (File not found) @ http://127.0.0.1:18762/favicon.ico:0
+[    9625ms] [LOG] loadTime: 0 @ http://127.0.0.1:18762/variable-preview/resources/scripts/axure/init.temp.js:252
+[   16802ms] [LOG] loadTime: 0.001 @ http://127.0.0.1:18762/variable-preview/resources/scripts/axure/init.temp.js:252

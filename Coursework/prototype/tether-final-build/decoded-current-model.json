@@ -1,0 +1,4640 @@
+{
+  "version": "11.0.0.4150",
+  "pages": [
+    {
+      "page": {
+        "Id": "bf917071-97a4-4718-bb95-7d5b81de8cc6",
+        "Name": "Page 1",
+        "Type": "page",
+        "Children": null
+      },
+      "widgets": [
+        {
+          "id": "16149fba-4117-4d1d-a51d-e8e71979f51b",
+          "type": "Axure.DocumentModel.Objects.Layer",
+          "name": "Tether desk",
+          "text": null,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 430,
+            "height": 932
+          },
+          "inputType": null,
+          "placeholder": null
+        },
+        {
+          "id": "448338e8-3128-406e-b0c7-492ba4c46d4a",
+          "type": "Axure.DocumentModel.Objects.VectorShape",
+          "name": "Tether desk BG",
+          "text": "",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 430,
+            "height": 932
+          },
+          "inputType": null,
+          "placeholder": null
+        },
+        {
+          "id": "8118a615-ffa1-4a51-9ed7-c19cf3325bf8",
+          "type": "Axure.DocumentModel.Objects.VectorShape",
+          "name": "canvas",
+          "text": "",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 430,
+            "height": 932
+          },
+          "inputType": null,
+          "placeholder": null
+        },
+        {
+          "id": "2b0cf159-f4db-4f5c-b8b1-056e5637a648",
+          "type": "Axure.DocumentModel.Objects.VectorShape",
+          "name": "island",
+          "text": "",
+          "bounds": {
+            "x": 162,
+            "y": 11,
+            "width": 106,
+            "height": 24
+          },
+          "inputType": null,
+          "placeholder": null
+        },
+        {
+          "id": "0f38ccc6-14f4-434a-9c90-09f3f607e588",
+          "type": "Axure.DocumentModel.Objects.VectorShape",
+          "name": "",
+          "text": "9:41",
+          "bounds": {
+            "x": 28,
+            "y": 19,
+            "width": 70,
+            "height": 20
+          },
+          "inputType": null,
+          "placeholder": null
+        },
+        {
+          "id": "84d1551d-ef7f-49fa-89b9-7b306a3d2be1",
+          "type": "Axure.DocumentModel.Objects.VectorShape",
+          "name": "",
+          "text": "tether",
+          "bounds": {
+            "x": 28,
+            "y": 66,
+            "width": 180,
+            "height": 28
+          },
+          "inputType": null,
+          "placeholder": null
+        },
+        {
+          "id": "f6e1fbcf-3ce5-40d6-abb1-1ecccb383c99",
+          "type": "Axure.DocumentModel.Objects.VectorShape",
+          "name": "",
+          "text": "Your study desk",
+          "bounds": {
+            "x": 273,
+            "y": 74,
+            "width": 129,
+            "height": 20
+          },
+          "inputType": null,
+          "placeholder": null
+        },
+        {
+          "id": "b66ab586-6fd6-46cf-a4f3-37c5af87a8cc",
+          "type": "Axure.DocumentModel.Objects.VectorShape",
+          "name": "thread",
+          "text": "",
+          "bounds": {
+            "x": 46,
+            "y": 160,
+            "width": 3,
+            "height": 505
+          },
+          "inputType": null,
+          "placeholder": null
+        },
+        {
+          "id": "878f293c-5e8b-4da8-a566-5f953300d73c",
+          "type": "Axure.DocumentModel.Objects.VectorShape",
+          "name": "thread_start",
+          "text": "",
+          "bounds": {
+            "x": 40,
+            "y": 154,
+            "width": 15,
+            "height": 15
+          },
+          "inputType": null,
+          "placeholder": null
+        },
+        {
+          "id": "6f6271a9-3842-4c2b-9eea-2b25e6d2aae8",
+          "type": "Axure.DocumentModel.Objects.VectorShape",
+          "name": "thread_end",
+          "text": "",
+          "bounds": {
+            "x": 40,
+            "y": 657,
+            "width": 15,
+            "height": 15
+          },
+          "inputType": null,
+          "placeholder": null
+        },
+        {
+          "id": "38994607-e178-4767-b5e5-84273684d20b",
+          "type": "Axure.DocumentModel.Objects.VectorShape",
+          "name": "home_indicator",
+          "text": "",
+          "bounds": {
+            "x": 164,
+            "y": 909,
+            "width": 102,
+            "height": 5
+          },
+          "inputType": null,
+          "placeholder": null
+        },
+        {
+          "id": "f4558a6f-3d93-48e3-8e0e-1714495c113a",
+          "type": "Axure.DocumentModel.Objects.VectorShape",
+          "name": "",
+          "text": "You can pick\nthis up again.",
+          "bounds": {
+            "x": 76,
+            "y": 148,
+            "width": 310,
+            "height": 72
+          },
+          "inputType": null,
+          "placeholder": null
+        },
+        {
+          "id": "1d1b6cf4-3256-436a-8227-747e01262c22",
+          "type": "Axure.DocumentModel.Objects.VectorShape",
+          "name": "",
+          "text": "A little context, right where you need it.",
+          "bounds": {
+            "x": 76,
+            "y": 231,
+            "width": 300,
+            "height": 48
+          },
+          "inputType": null,
+          "placeholder": null
+        },
+        {
+          "id": "8bb6f998-c22e-46e1-abf9-6ca8630e82b6",
+          "type": "Axure.DocumentModel.Objects.VectorShape",
+          "name": "paper_shadow",
+          "text": "",
+          "bounds": {
+            "x": 73,
+            "y": 304,
+            "width": 303,
+            "height": 179
+          },
+          "inputType": null,
+          "placeholder": null
+        },
+        {
+          "id": "576a0620-bf38-4e17-b8a5-9ab29fd31de6",
+          "type": "Axure.DocumentModel.Objects.VectorShape",
+          "name": "note_card",
+          "text": "",
+          "bounds": {
+            "x": 64,
+            "y": 294,
+            "width": 310,
+            "height": 179
+          },
+          "inputType": null,
+          "placeholder": null
+        },
+        {
+          "id": "6909218f-b58e-4fc9-983d-f896fa285754",
+          "type": "Axure.DocumentModel.Objects.VectorShape",
+          "name": "",
+          "text": "HCI coursework  /  Discussion",
+          "bounds": {
+            "x": 87,
+            "y": 315,
+            "width": 255,
+            "height": 22
+          },
+          "inputType": null,
+          "placeholder": null
+        },
+        {
+          "id": "1975cf3f-eea3-4407-8ed9-d80589c9aab0",
+          "type": "Axure.DocumentModel.Objects.VectorShape",
+          "name": "",
+          "text": "Where I left off",
+          "bounds": {
+            "x": 87,
+            "y": 346,
+            "width": 260,
+            "height": 48
+          },
+          "inputType": null,
+          "placeholder": null
+        },
+        {
+          "id": "4e3db7c5-6fe2-4fe2-82c5-5527121cbde8",
+          "type": "Axure.DocumentModel.Objects.VectorShape",
+          "name": "",
+          "text": "Connecting my evidence\nto the argument.",
+          "bounds": {
+            "x": 87,
+            "y": 383,
+            "width": 255,
+            "height": 64
+          },
+          "inputType": null,
+          "placeholder": null
+        },
+        {
+          "id": "06cc477f-6562-43f5-94b6-956cc0ee37b0",
+          "type": "Axure.DocumentModel.Objects.VectorShape",
+          "name": "next_card",
+          "text": "",
+          "bounds": {
+            "x": 88,
+            "y": 496,
+            "width": 300,
+            "height": 91
+          },
+          "inputType": null,
+          "placeholder": null
+        },
+        {
+          "id": "9f19ae71-8884-4db1-9c95-42a90bbfb7fe",
+          "type": "Axure.DocumentModel.Objects.VectorShape",
+          "name": "",
+          "text": "Your next move",
+          "bounds": {
+            "x": 108,
+            "y": 511,
+            "width": 255,
+            "height": 18
+          },
+          "inputType": null,
+          "placeholder": null
+        },
+        {
+          "id": "562b8ec4-8cac-42bf-a627-842d057c2e9e",
+          "type": "Axure.DocumentModel.Objects.VectorShape",
+          "name": "",
+          "text": "Add one example to\nthe second paragraph.",
+          "bounds": {
+            "x": 108,
+            "y": 537,
+            "width": 255,
+            "height": 42
+          },
+          "inputType": null,
+          "placeholder": null
+        },
+        {
+          "id": "9db53d28-35f5-442d-966e-b90d9d369011",
+          "type": "Axure.DocumentModel.Objects.VectorShape",
+          "name": "continue_bg",
+          "text": "",
+          "bounds": {
+            "x": 28,
+            "y": 705,
+            "width": 374,
+            "height": 54
+          },
+          "inputType": null,
+          "placeholder": null
+        },
+        {
+          "id": "c657c9e5-3de2-49f6-8634-1291f66f5364",
+          "type": "Axure.DocumentModel.Objects.VectorShape",
+          "name": "",
+          "text": "Continue this step",
+          "bounds": {
+            "x": 28,
+            "y": 721,
+            "width": 374,
+            "height": 24
+          },
+          "inputType": null,
+          "placeholder": null
+        },
+        {
+          "id": "7bb59ab9-e863-4093-8a42-76e7da3409e4",
+          "type": "Axure.DocumentModel.Objects.VectorShape",
+          "name": "pause_bg",
+          "text": "",
+          "bounds": {
+            "x": 28,
+            "y": 774,
+            "width": 374,
+            "height": 54
+          },
+          "inputType": null,
+          "placeholder": null
+        },
+        {
+          "id": "9b4addbc-495c-4e1a-a427-c61ae85ba794",
+          "type": "Axure.DocumentModel.Objects.VectorShape",
+          "name": "",
+          "text": "Leave a new thread",
+          "bounds": {
+            "x": 28,
+            "y": 790,
+            "width": 374,
+            "height": 24
+          },
+          "inputType": null,
+          "placeholder": null
+        },
+        {
+          "id": "f597071a-fcd8-4d9e-8ed2-e7b2b807b7ee",
+          "type": "Axure.DocumentModel.Objects.VectorShape",
+          "name": "hit_continue",
+          "text": "",
+          "bounds": {
+            "x": 28,
+            "y": 705,
+            "width": 374,
+            "height": 54
+          },
+          "inputType": null,
+          "placeholder": null
+        },
+        {
+          "id": "085457f4-9fd0-469d-a595-dababb451840",
+          "type": "Axure.DocumentModel.Objects.VectorShape",
+          "name": "hit_pause",
+          "text": "",
+          "bounds": {
+            "x": 28,
+            "y": 774,
+            "width": 374,
+            "height": 54
+          },
+          "inputType": null,
+          "placeholder": null
+        }
+      ],
+      "interactions": [
+        {
+          "id": "16149fba-4117-4d1d-a51d-e8e71979f51b",
+          "interaction": {
+            "id": "16149fba-4117-4d1d-a51d-e8e71979f51b",
+            "events": []
+          }
+        },
+        {
+          "id": "448338e8-3128-406e-b0c7-492ba4c46d4a",
+          "interaction": {
+            "id": "448338e8-3128-406e-b0c7-492ba4c46d4a",
+            "events": []
+          }
+        },
+        {
+          "id": "8118a615-ffa1-4a51-9ed7-c19cf3325bf8",
+          "interaction": {
+            "id": "8118a615-ffa1-4a51-9ed7-c19cf3325bf8",
+            "events": []
+          }
+        },
+        {
+          "id": "2b0cf159-f4db-4f5c-b8b1-056e5637a648",
+          "interaction": {
+            "id": "2b0cf159-f4db-4f5c-b8b1-056e5637a648",
+            "events": []
+          }
+        },
+        {
+          "id": "0f38ccc6-14f4-434a-9c90-09f3f607e588",
+          "interaction": {
+            "id": "0f38ccc6-14f4-434a-9c90-09f3f607e588",
+            "events": []
+          }
+        },
+        {
+          "id": "84d1551d-ef7f-49fa-89b9-7b306a3d2be1",
+          "interaction": {
+            "id": "84d1551d-ef7f-49fa-89b9-7b306a3d2be1",
+            "events": []
+          }
+        },
+        {
+          "id": "f6e1fbcf-3ce5-40d6-abb1-1ecccb383c99",
+          "interaction": {
+            "id": "f6e1fbcf-3ce5-40d6-abb1-1ecccb383c99",
+            "events": []
+          }
+        },
+        {
+          "id": "b66ab586-6fd6-46cf-a4f3-37c5af87a8cc",
+          "interaction": {
+            "id": "b66ab586-6fd6-46cf-a4f3-37c5af87a8cc",
+            "events": []
+          }
+        },
+        {
+          "id": "878f293c-5e8b-4da8-a566-5f953300d73c",
+          "interaction": {
+            "id": "878f293c-5e8b-4da8-a566-5f953300d73c",
+            "events": []
+          }
+        },
+        {
+          "id": "6f6271a9-3842-4c2b-9eea-2b25e6d2aae8",
+          "interaction": {
+            "id": "6f6271a9-3842-4c2b-9eea-2b25e6d2aae8",
+            "events": []
+          }
+        },
+        {
+          "id": "38994607-e178-4767-b5e5-84273684d20b",
+          "interaction": {
+            "id": "38994607-e178-4767-b5e5-84273684d20b",
+            "events": []
+          }
+        },
+        {
+          "id": "f4558a6f-3d93-48e3-8e0e-1714495c113a",
+          "interaction": {
+            "id": "f4558a6f-3d93-48e3-8e0e-1714495c113a",
+            "events": []
+          }
+        },
+        {
+          "id": "1d1b6cf4-3256-436a-8227-747e01262c22",
+          "interaction": {
+            "id": "1d1b6cf4-3256-436a-8227-747e01262c22",
+            "events": []
+          }
+        },
+        {
+          "id": "8bb6f998-c22e-46e1-abf9-6ca8630e82b6",
+          "interaction": {
+            "id": "8bb6f998-c22e-46e1-abf9-6ca8630e82b6",
+            "events": []
+          }
+        },
+        {
+          "id": "576a0620-bf38-4e17-b8a5-9ab29fd31de6",
+          "interaction": {
+            "id": "576a0620-bf38-4e17-b8a5-9ab29fd31de6",
+            "events": []
+          }
+        },
+        {
+          "id": "6909218f-b58e-4fc9-983d-f896fa285754",
+          "interaction": {
+            "id": "6909218f-b58e-4fc9-983d-f896fa285754",
+            "events": []
+          }
+        },
+        {
+          "id": "1975cf3f-eea3-4407-8ed9-d80589c9aab0",
+          "interaction": {
+            "id": "1975cf3f-eea3-4407-8ed9-d80589c9aab0",
+            "events": []
+          }
+        },
+        {
+          "id": "4e3db7c5-6fe2-4fe2-82c5-5527121cbde8",
+          "interaction": {
+            "id": "4e3db7c5-6fe2-4fe2-82c5-5527121cbde8",
+            "events": []
+          }
+        },
+        {
+          "id": "06cc477f-6562-43f5-94b6-956cc0ee37b0",
+          "interaction": {
+            "id": "06cc477f-6562-43f5-94b6-956cc0ee37b0",
+            "events": []
+          }
+        },
+        {
+          "id": "9f19ae71-8884-4db1-9c95-42a90bbfb7fe",
+          "interaction": {
+            "id": "9f19ae71-8884-4db1-9c95-42a90bbfb7fe",
+            "events": []
+          }
+        },
+        {
+          "id": "562b8ec4-8cac-42bf-a627-842d057c2e9e",
+          "interaction": {
+            "id": "562b8ec4-8cac-42bf-a627-842d057c2e9e",
+            "events": []
+          }
+        },
+        {
+          "id": "9db53d28-35f5-442d-966e-b90d9d369011",
+          "interaction": {
+            "id": "9db53d28-35f5-442d-966e-b90d9d369011",
+            "events": []
+          }
+        },
+        {
+          "id": "c657c9e5-3de2-49f6-8634-1291f66f5364",
+          "interaction": {
+            "id": "c657c9e5-3de2-49f6-8634-1291f66f5364",
+            "events": []
+          }
+        },
+        {
+          "id": "7bb59ab9-e863-4093-8a42-76e7da3409e4",
+          "interaction": {
+            "id": "7bb59ab9-e863-4093-8a42-76e7da3409e4",
+            "events": []
+          }
+        },
+        {
+          "id": "9b4addbc-495c-4e1a-a427-c61ae85ba794",
+          "interaction": {
+            "id": "9b4addbc-495c-4e1a-a427-c61ae85ba794",
+            "events": []
+          }
+        },
+        {
+          "id": "f597071a-fcd8-4d9e-8ed2-e7b2b807b7ee",
+          "interaction": {
+            "id": "f597071a-fcd8-4d9e-8ed2-e7b2b807b7ee",
+            "events": [
+              {
+                "type": "OnClick",
+                "cases": [
+                  {
+                    "name": "Open",
+                    "newIfGroup": true,
+                    "condition": null,
+                    "actions": [
+                      {
+                        "type": "navigate",
+                        "linkType": "Current",
+                        "targetType": "Page",
+                        "page": "12f4c141-9ec5-4646-bd56-ecb8768c6584"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "085457f4-9fd0-469d-a595-dababb451840",
+          "interaction": {
+            "id": "085457f4-9fd0-469d-a595-dababb451840",
+            "events": [
+              {
+                "type": "OnClick",
+                "cases": [
+                  {
+                    "name": "Open",
+                    "newIfGroup": true,
+                    "condition": null,
+                    "actions": [
+                      {
+                        "type": "navigate",
+                        "linkType": "Current",
+                        "targetType": "Page",
+                        "page": "7f7e2f66-3f4d-452f-ad3f-8b20a61fc075"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "onload": {
+        "type": "hJat.OJa9",
+        "fragmentType": "vJvL.NJvD",
+        "events": [
+          {
+            "type": "OnLoad",
+            "cases": [
+              {
+                "name": "Restore the saved thread",
+                "actions": [
+                  {
+                    "type": "expression",
+                    "description": "Set <a>text on Connecting my eviden equal to value of TetherWhere</a>",
+                    "expressions": [
+                      {
+                        "node": "call",
+                        "function": "SetWidgetRichText",
+                        "args": [
+                          {
+                            "node": "widget",
+                            "id": "4e3db7c5-6fe2-4fe2-82c5-5527121cbde8",
+                            "referencePath": [],
+                            "adaptivePath": []
+                          },
+                          {
+                            "node": "call",
+                            "function": "GetGlobalVariableValue",
+                            "args": [
+                              {
+                                "node": "global",
+                                "variableId": "7b4b9b3b-04e6-44a8-94bd-6382f60a0f08",
+                                "text": "TetherWhere"
+                              }
+                            ]
+                          },
+                          {
+                            "node": "boolean",
+                            "value": false
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "expression",
+                    "description": "Set <a>text on Add one example to t equal to value of TetherNext</a>",
+                    "expressions": [
+                      {
+                        "node": "call",
+                        "function": "SetWidgetRichText",
+                        "args": [
+                          {
+                            "node": "widget",
+                            "id": "562b8ec4-8cac-42bf-a627-842d057c2e9e",
+                            "referencePath": [],
+                            "adaptivePath": []
+                          },
+                          {
+                            "node": "call",
+                            "function": "GetGlobalVariableValue",
+                            "args": [
+                              {
+                                "node": "global",
+                                "variableId": "659c3ed9-aa78-4507-bccb-41792b246050",
+                                "text": "TetherNext"
+                              }
+                            ]
+                          },
+                          {
+                            "node": "boolean",
+                            "value": false
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "page": {
+        "Id": "12f4c141-9ec5-4646-bd56-ecb8768c6584",
+        "Name": "02 Continue your work",
+        "Type": "page",
+        "Children": null
+      },
+      "widgets": [
+        {
+          "id": "d1fbe71d-ffeb-4e1b-8a2c-97471ee09038",
+          "type": "Axure.DocumentModel.Objects.Layer",
+          "name": "Tether work",
+          "text": null,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 430,
+            "height": 932
+          },
+          "inputType": null,
+          "placeholder": null
+        },
+        {
+          "id": "c1434686-776c-4f6c-a1ad-cd465779d50b",
+          "type": "Axure.DocumentModel.Objects.VectorShape",
+          "name": "Tether work BG",
+          "text": "",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 430,
+            "height": 932
+          },
+          "inputType": null,
+          "placeholder": null
+        },
+        {
+          "id": "fb909856-44ba-4252-bfc0-8994dd3c44af",
+          "type": "Axure.DocumentModel.Objects.VectorShape",
+          "name": "canvas",
+          "text": "",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 430,
+            "height": 932
+          },
+          "inputType": null,
+          "placeholder": null
+        },
+        {
+          "id": "c6dfe622-d45e-4d1e-b0f6-4fd0280f9dae",
+          "type": "Axure.DocumentModel.Objects.VectorShape",
+          "name": "island",
+          "text": "",
+          "bounds": {
+            "x": 162,
+            "y": 11,
+            "width": 106,
+            "height": 24
+          },
+          "inputType": null,
+          "placeholder": null
+        },
+        {
+          "id": "bfff81df-7886-4154-8763-ef4f9f328004",
+          "type": "Axure.DocumentModel.Objects.VectorShape",
+          "name": "",
+          "text": "9:41",
+          "bounds": {
+            "x": 28,
+            "y": 19,
+            "width": 70,
+            "height": 20
+          },
+          "inputType": null,
+          "placeholder": null
+        },
+        {
+          "id": "cbda8566-824c-4b3b-9c08-b95c84c7ccaa",
+          "type": "Axure.DocumentModel.Objects.VectorShape",
+          "name": "",
+          "text": "tether",
+          "bounds": {
+            "x": 28,
+            "y": 66,
+            "width": 180,
+            "height": 28
+          },
+          "inputType": null,
+          "placeholder": null
+        },
+        {
+          "id": "f9d57b64-61be-49e3-a009-4e581073958c",
+          "type": "Axure.DocumentModel.Objects.VectorShape",
+          "name": "",
+          "text": "Continue",
+          "bounds": {
+            "x": 273,
+            "y": 74,
+            "width": 129,
+            "height": 20
+          },
+          "inputType": null,
+          "placeholder": null
+        },
+        {
+          "id": "11249589-77f0-4db5-aa3e-a9c0217e33db",
+          "type": "Axure.DocumentModel.Objects.VectorShape",
+          "name": "thread",
+          "text": "",
+          "bounds": {
+            "x": 46,
+            "y": 160,
+            "width": 3,
+            "height": 505
+          },
+          "inputType": null,
+          "placeholder": null
+        },
+        {
+          "id": "70d84741-284a-4ac1-af90-2186353ff405",
+          "type": "Axure.DocumentModel.Objects.VectorShape",
+          "name": "thread_start",
+          "text": "",
+          "bounds": {
+            "x": 40,
+            "y": 154,
+            "width": 15,
+            "height": 15
+          },
+          "inputType": null,
+          "placeholder": null
+        },
+        {
+          "id": "cefe7d51-42d1-47d4-a5bd-fdbb8ee3246e",
+          "type": "Axure.DocumentModel.Objects.VectorShape",
+          "name": "thread_end",
+          "text": "",
+          "bounds": {
+            "x": 40,
+            "y": 657,
+            "width": 15,
+            "height": 15
+          },
+          "inputType": null,
+          "placeholder": null
+        },
+        {
+          "id": "0fb81e3a-c09b-46df-89d5-cdee102d8728",
+          "type": "Axure.DocumentModel.Objects.VectorShape",
+          "name": "home_indicator",
+          "text": "",
+          "bounds": {
+            "x": 164,
+            "y": 909,
+            "width": 102,
+            "height": 5
+          },
+          "inputType": null,
+          "placeholder": null
+        },
+        {
+          "id": "76569696-3ff8-4720-87cb-a6bdfd229b80",
+          "type": "Axure.DocumentModel.Objects.VectorShape",
+          "name": "",
+          "text": "One step.\nAt your pace.",
+          "bounds": {
+            "x": 76,
+            "y": 148,
+            "width": 300,
+            "height": 72
+          },
+          "inputType": null,
+          "placeholder": null
+        },
+        {
+          "id": "8fa90a9b-e7b2-41b4-a0ab-6ab13150aa3f",
+          "type": "Axure.DocumentModel.Objects.VectorShape",
+          "name": "",
+          "text": "You do not have to finish everything today.",
+          "bounds": {
+            "x": 76,
+            "y": 231,
+            "width": 300,
+            "height": 50
+          },
+          "inputType": null,
+          "placeholder": null
+        },
+        {
+          "id": "83de0b7c-ebe6-4fe5-9e0e-2144b4aa5f56",
+          "type": "Axure.DocumentModel.Objects.VectorShape",
+          "name": "task_card",
+          "text": "",
+          "bounds": {
+            "x": 64,
+            "y": 311,
+            "width": 310,
+            "height": 202
+          },
+          "inputType": null,
+          "placeholder": null
+        },
+        {
+          "id": "73064561-776f-4a32-9daa-6307e13f6dee",
+          "type": "Axure.DocumentModel.Objects.VectorShape",
+          "name": "",
+          "text": "Discussion section",
+          "bounds": {
+            "x": 88,
+            "y": 333,
+            "width": 255,
+            "height": 20
+          },
+          "inputType": null,
+          "placeholder": null
+        },
+        {
+          "id": "70d9659e-aa61-4a2f-8809-558f7eb434c7",
+          "type": "Axure.DocumentModel.Objects.VectorShape",
+          "name": "",
+          "text": "Add one example\nto the second\nparagraph.",
+          "bounds": {
+            "x": 88,
+            "y": 373,
+            "width": 255,
+            "height": 92
+          },
+          "inputType": null,
+          "placeholder": null
+        },
+        {
+          "id": "48bd41b0-5f76-4264-a29c-6558cb683d93",
+          "type": "Axure.DocumentModel.Objects.VectorShape",
+          "name": "",
+          "text": "A small move is enough.",
+          "bounds": {
+            "x": 88,
+            "y": 469,
+            "width": 255,
+            "height": 25
+          },
+          "inputType": null,
+          "placeholder": null
+        },
+        {
+          "id": "e4130fd2-4372-4edb-8dc1-5b2cba47f1c2",
+          "type": "Axure.DocumentModel.Objects.VectorShape",
+          "name": "time_card",
+          "text": "",
+          "bounds": {
+            "x": 94,
+            "y": 543,
+            "width": 280,
+            "height": 63
+          },
+          "inputType": null,
+          "placeholder": null
+        },
+        {
+          "id": "f19be41e-c183-4a70-9067-c1d127610901",
+          "type": "Axure.DocumentModel.Objects.VectorShape",
+          "name": "",
+          "text": "Try it for a few minutes.",
+          "bounds": {
+            "x": 113,
+            "y": 564,
+            "width": 240,
+            "height": 23
+          },
+          "inputType": null,
+          "placeholder": null
+        },
+        {
+          "id": "ea51bb1f-ca21-44c7-aea3-737d0ebe5083",
+          "type": "Axure.DocumentModel.Objects.VectorShape",
+          "name": "stuck_bg",
+          "text": "",
+          "bounds": {
+            "x": 28,
+            "y": 670,
+            "width": 374,
+            "height": 54
+          },
+          "inputType": null,
+          "placeholder": null
+        },
+        {
+          "id": "2eac12e6-32da-486d-9085-161ea13e134d",
+          "type": "Axure.DocumentModel.Objects.VectorShape",
+          "name": "",
+          "text": "I feel stuck",
+          "bounds": {
+            "x": 28,
+            "y": 686,
+            "width": 374,
+            "height": 24
+          },
+          "inputType": null,
+          "placeholder": null
+        },
+        {
+          "id": "d89ca149-f9fd-419c-8aef-db466fbb9fc3",
+          "type": "Axure.DocumentModel.Objects.VectorShape",
+          "name": "pause_bg",
+          "text": "",
+          "bounds": {
+            "x": 28,
+            "y": 739,
+            "width": 374,
+            "height": 54
+          },
+          "inputType": null,
+          "placeholder": null
+        },
+        {
+          "id": "b46fa595-129d-4aaa-9882-32e0ed9a88f7",
+          "type": "Axure.DocumentModel.Objects.VectorShape",
+          "name": "",
+          "text": "Pause and leave a thread",
+          "bounds": {
+            "x": 28,
+            "y": 755,
+            "width": 374,
+            "height": 24
+          },
+          "inputType": null,
+          "placeholder": null
+        },
+        {
+          "id": "0dc0a5f9-6110-4514-82f4-2984a8375b17",
+          "type": "Axure.DocumentModel.Objects.VectorShape",
+          "name": "done_bg",
+          "text": "",
+          "bounds": {
+            "x": 28,
+            "y": 808,
+            "width": 374,
+            "height": 54
+          },
+          "inputType": null,
+          "placeholder": null
+        },
+        {
+          "id": "099043a8-6131-4aad-822b-286a5daa40a8",
+          "type": "Axure.DocumentModel.Objects.VectorShape",
+          "name": "",
+          "text": "Finish this step",
+          "bounds": {
+            "x": 28,
+            "y": 824,
+            "width": 374,
+            "height": 24
+          },
+          "inputType": null,
+          "placeholder": null
+        },
+        {
+          "id": "cb16cd57-8d45-4fed-b4c7-f50911c2bc33",
+          "type": "Axure.DocumentModel.Objects.VectorShape",
+          "name": "hit_stuck",
+          "text": "",
+          "bounds": {
+            "x": 28,
+            "y": 670,
+            "width": 374,
+            "height": 54
+          },
+          "inputType": null,
+          "placeholder": null
+        },
+        {
+          "id": "431d0117-1e7f-484f-955b-691d6b28fa93",
+          "type": "Axure.DocumentModel.Objects.VectorShape",
+          "name": "hit_pause",
+          "text": "",
+          "bounds": {
+            "x": 28,
+            "y": 739,
+            "width": 374,
+            "height": 54
+          },
+          "inputType": null,
+          "placeholder": null
+        },
+        {
+          "id": "bbb3d75e-ba69-4319-8ffc-2652c7d07202",
+          "type": "Axure.DocumentModel.Objects.VectorShape",
+          "name": "hit_done",
+          "text": "",
+          "bounds": {
+            "x": 28,
+            "y": 808,
+            "width": 374,
+            "height": 54
+          },
+          "inputType": null,
+          "placeholder": null
+        },
+        {
+          "id": "003760de-b4ee-49f4-8426-25f279a368aa",
+          "type": "Axure.DocumentModel.Objects.VectorShape",
+          "name": "v3_finish_step",
+          "text": "",
+          "bounds": {
+            "x": 28,
+            "y": 808,
+            "width": 374,
+            "height": 54
+          },
+          "inputType": null,
+          "placeholder": null
+        }
+      ],
+      "interactions": [
+        {
+          "id": "d1fbe71d-ffeb-4e1b-8a2c-97471ee09038",
+          "interaction": {
+            "id": "d1fbe71d-ffeb-4e1b-8a2c-97471ee09038",
+            "events": []
+          }
+        },
+        {
+          "id": "c1434686-776c-4f6c-a1ad-cd465779d50b",
+          "interaction": {
+            "id": "c1434686-776c-4f6c-a1ad-cd465779d50b",
+            "events": []
+          }
+        },
+        {
+          "id": "fb909856-44ba-4252-bfc0-8994dd3c44af",
+          "interaction": {
+            "id": "fb909856-44ba-4252-bfc0-8994dd3c44af",
+            "events": []
+          }
+        },
+        {
+          "id": "c6dfe622-d45e-4d1e-b0f6-4fd0280f9dae",
+          "interaction": {
+            "id": "c6dfe622-d45e-4d1e-b0f6-4fd0280f9dae",
+            "events": []
+          }
+        },
+        {
+          "id": "bfff81df-7886-4154-8763-ef4f9f328004",
+          "interaction": {
+            "id": "bfff81df-7886-4154-8763-ef4f9f328004",
+            "events": []
+          }
+        },
+        {
+          "id": "cbda8566-824c-4b3b-9c08-b95c84c7ccaa",
+          "interaction": {
+            "id": "cbda8566-824c-4b3b-9c08-b95c84c7ccaa",
+            "events": []
+          }
+        },
+        {
+          "id": "f9d57b64-61be-49e3-a009-4e581073958c",
+          "interaction": {
+            "id": "f9d57b64-61be-49e3-a009-4e581073958c",
+            "events": []
+          }
+        },
+        {
+          "id": "11249589-77f0-4db5-aa3e-a9c0217e33db",
+          "interaction": {
+            "id": "11249589-77f0-4db5-aa3e-a9c0217e33db",
+            "events": []
+          }
+        },
+        {
+          "id": "70d84741-284a-4ac1-af90-2186353ff405",
+          "interaction": {
+            "id": "70d84741-284a-4ac1-af90-2186353ff405",
+            "events": []
+          }
+        },
+        {
+          "id": "cefe7d51-42d1-47d4-a5bd-fdbb8ee3246e",
+          "interaction": {
+            "id": "cefe7d51-42d1-47d4-a5bd-fdbb8ee3246e",
+            "events": []
+          }
+        },
+        {
+          "id": "0fb81e3a-c09b-46df-89d5-cdee102d8728",
+          "interaction": {
+            "id": "0fb81e3a-c09b-46df-89d5-cdee102d8728",
+            "events": []
+          }
+        },
+        {
+          "id": "76569696-3ff8-4720-87cb-a6bdfd229b80",
+          "interaction": {
+            "id": "76569696-3ff8-4720-87cb-a6bdfd229b80",
+            "events": []
+          }
+        },
+        {
+          "id": "8fa90a9b-e7b2-41b4-a0ab-6ab13150aa3f",
+          "interaction": {
+            "id": "8fa90a9b-e7b2-41b4-a0ab-6ab13150aa3f",
+            "events": []
+          }
+        },
+        {
+          "id": "83de0b7c-ebe6-4fe5-9e0e-2144b4aa5f56",
+          "interaction": {
+            "id": "83de0b7c-ebe6-4fe5-9e0e-2144b4aa5f56",
+            "events": []
+          }
+        },
+        {
+          "id": "73064561-776f-4a32-9daa-6307e13f6dee",
+          "interaction": {
+            "id": "73064561-776f-4a32-9daa-6307e13f6dee",
+            "events": []
+          }
+        },
+        {
+          "id": "70d9659e-aa61-4a2f-8809-558f7eb434c7",
+          "interaction": {
+            "id": "70d9659e-aa61-4a2f-8809-558f7eb434c7",
+            "events": []
+          }
+        },
+        {
+          "id": "48bd41b0-5f76-4264-a29c-6558cb683d93",
+          "interaction": {
+            "id": "48bd41b0-5f76-4264-a29c-6558cb683d93",
+            "events": []
+          }
+        },
+        {
+          "id": "e4130fd2-4372-4edb-8dc1-5b2cba47f1c2",
+          "interaction": {
+            "id": "e4130fd2-4372-4edb-8dc1-5b2cba47f1c2",
+            "events": []
+          }
+        },
+        {
+          "id": "f19be41e-c183-4a70-9067-c1d127610901",
+          "interaction": {
+            "id": "f19be41e-c183-4a70-9067-c1d127610901",
+            "events": []
+          }
+        },
+        {
+          "id": "ea51bb1f-ca21-44c7-aea3-737d0ebe5083",
+          "interaction": {
+            "id": "ea51bb1f-ca21-44c7-aea3-737d0ebe5083",
+            "events": []
+          }
+        },
+        {
+          "id": "2eac12e6-32da-486d-9085-161ea13e134d",
+          "interaction": {
+            "id": "2eac12e6-32da-486d-9085-161ea13e134d",
+            "events": []
+          }
+        },
+        {
+          "id": "d89ca149-f9fd-419c-8aef-db466fbb9fc3",
+          "interaction": {
+            "id": "d89ca149-f9fd-419c-8aef-db466fbb9fc3",
+            "events": []
+          }
+        },
+        {
+          "id": "b46fa595-129d-4aaa-9882-32e0ed9a88f7",
+          "interaction": {
+            "id": "b46fa595-129d-4aaa-9882-32e0ed9a88f7",
+            "events": []
+          }
+        },
+        {
+          "id": "0dc0a5f9-6110-4514-82f4-2984a8375b17",
+          "interaction": {
+            "id": "0dc0a5f9-6110-4514-82f4-2984a8375b17",
+            "events": []
+          }
+        },
+        {
+          "id": "099043a8-6131-4aad-822b-286a5daa40a8",
+          "interaction": {
+            "id": "099043a8-6131-4aad-822b-286a5daa40a8",
+            "events": []
+          }
+        },
+        {
+          "id": "cb16cd57-8d45-4fed-b4c7-f50911c2bc33",
+          "interaction": {
+            "id": "cb16cd57-8d45-4fed-b4c7-f50911c2bc33",
+            "events": [
+              {
+                "type": "OnClick",
+                "cases": [
+                  {
+                    "name": "Open",
+                    "newIfGroup": true,
+                    "condition": null,
+                    "actions": [
+                      {
+                        "type": "navigate",
+                        "linkType": "Current",
+                        "targetType": "Page",
+                        "page": "7d084d62-08fc-4588-b4de-09cee1f65333"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "431d0117-1e7f-484f-955b-691d6b28fa93",
+          "interaction": {
+            "id": "431d0117-1e7f-484f-955b-691d6b28fa93",
+            "events": [
+              {
+                "type": "OnClick",
+                "cases": [
+                  {
+                    "name": "Open",
+                    "newIfGroup": true,
+                    "condition": null,
+                    "actions": [
+                      {
+                        "type": "navigate",
+                        "linkType": "Current",
+                        "targetType": "Page",
+                        "page": "7f7e2f66-3f4d-452f-ad3f-8b20a61fc075"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "bbb3d75e-ba69-4319-8ffc-2652c7d07202",
+          "interaction": {
+            "id": "bbb3d75e-ba69-4319-8ffc-2652c7d07202",
+            "events": [
+              {
+                "type": "OnClick",
+                "cases": [
+                  {
+                    "name": "Open",
+                    "newIfGroup": true,
+                    "condition": null,
+                    "actions": [
+                      {
+                        "type": "navigate",
+                        "linkType": "Current",
+                        "targetType": "Page",
+                        "page": "e4aac2f0-51f5-4a3f-a983-8ff8e1ea2180"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "003760de-b4ee-49f4-8426-25f279a368aa",
+          "interaction": {
+            "id": "003760de-b4ee-49f4-8426-25f279a368aa",
+            "events": [
+              {
+                "type": "OnClick",
+                "cases": [
+                  {
+                    "name": "Continue",
+                    "newIfGroup": true,
+                    "condition": null,
+                    "actions": [
+                      {
+                        "type": "expression",
+                        "description": "Set <a>value of TetherWhere equal to \"Finished the last step.\"</a>",
+                        "expressions": [
+                          {
+                            "node": "call",
+                            "function": "SetGlobalVariableValue",
+                            "args": [
+                              {
+                                "node": "global",
+                                "variableId": "7b4b9b3b-04e6-44a8-94bd-6382f60a0f08",
+                                "text": "TetherWhere"
+                              },
+                              {
+                                "node": "string",
+                                "value": "Finished the last step.",
+                                "raw": "Finished the last step."
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "expression",
+                        "description": "Set <a>value of TetherNext equal to \"Decide what to do next.\"</a>",
+                        "expressions": [
+                          {
+                            "node": "call",
+                            "function": "SetGlobalVariableValue",
+                            "args": [
+                              {
+                                "node": "global",
+                                "variableId": "659c3ed9-aa78-4507-bccb-41792b246050",
+                                "text": "TetherNext"
+                              },
+                              {
+                                "node": "string",
+                                "value": "Decide what to do next.",
+                                "raw": "Decide what to do next."
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "navigate",
+                        "linkType": "Current",
+                        "targetType": "Page",
+                        "page": "66e929d4-8eec-4ae7-a485-e1b8438f8e85"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "onload": {
+        "type": "hJat.OJa9",
+        "fragmentType": "vJvL.NJvD",
+        "events": [
+          {
+            "type": "OnLoad",
+            "cases": [
+              {
+                "name": "Restore the saved thread",
+                "actions": [
+                  {
+                    "type": "expression",
+                    "description": "Set <a>text on Add one example to t equal to value of TetherNext</a>",
+                    "expressions": [
+                      {
+                        "node": "call",
+                        "function": "SetWidgetRichText",
+                        "args": [
+                          {
+                            "node": "widget",
+                            "id": "70d9659e-aa61-4a2f-8809-558f7eb434c7",
+                            "referencePath": [],
+                            "adaptivePath": []
+                          },
+                          {
+                            "node": "call",
+                            "function": "GetGlobalVariableValue",
+                            "args": [
+                              {
+                                "node": "global",
+                                "variableId": "659c3ed9-aa78-4507-bccb-41792b246050",
+                                "text": "TetherNext"
+                              }
+                            ]
+                          },
+                          {
+                            "node": "boolean",
+                            "value": false
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "page": {
+        "Id": "7d084d62-08fc-4588-b4de-09cee1f65333",
+        "Name": "03 When you are stuck",
+        "Type": "page",
+        "Children": null
+      },
+      "widgets": [
+        {
+          "id": "3a784126-1c92-46fe-a05c-bc1eb3718e77",
+          "type": "Axure.DocumentModel.Objects.Layer",
+          "name": "Tether stuck",
+          "text": null,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 430,
+            "height": 932
+          },
+          "inputType": null,
+          "placeholder": null
+        },
+        {
+          "id": "091f8b25-f678-421d-acd8-75f1ddf7d45d",
+          "type": "Axure.DocumentModel.Objects.VectorShape",
+          "name": "Tether stuck BG",
+          "text": "",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 430,
+            "height": 932
+          },
+          "inputType": null,
+          "placeholder": null
+        },
+        {
+          "id": "bee7fbcc-9e6b-4007-9019-3f1308800685",
+          "type": "Axure.DocumentModel.Objects.VectorShape",
+          "name": "canvas",
+          "text": "",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 430,
+            "height": 932
+          },
+          "inputType": null,
+          "placeholder": null
+        },
+        {
+          "id": "12c6e467-2403-4378-baf9-b50276fb4f94",
+          "type": "Axure.DocumentModel.Objects.VectorShape",
+          "name": "island",
+          "text": "",
+          "bounds": {
+            "x": 162,
+            "y": 11,
+            "width": 106,
+            "height": 24
+          },
+          "inputType": null,
+          "placeholder": null
+        },
+        {
+          "id": "93c00ab1-b3ee-4e6b-b1ee-ca78ba35b198",
+          "type": "Axure.DocumentModel.Objects.VectorShape",
+          "name": "",
+          "text": "9:41",
+          "bounds": {
+            "x": 28,
+            "y": 19,
+            "width": 70,
+            "height": 20
+          },
+          "inputType": null,
+          "placeholder": null
+        },
+        {
+          "id": "86f09e29-72c0-4971-af86-4b217d5f7346",
+          "type": "Axure.DocumentModel.Objects.VectorShape",
+          "name": "",
+          "text": "tether",
+          "bounds": {
+            "x": 28,
+            "y": 66,
+            "width": 180,
+            "height": 28
+          },
+          "inputType": null,
+          "placeholder": null
+        },
+        {
+          "id": "03b65713-8104-4216-abee-adb1aeda03b6",
+          "type": "Axure.DocumentModel.Objects.VectorShape",
+          "name": "",
+          "text": "Get unstuck",
+          "bounds": {
+            "x": 273,
+            "y": 74,
+            "width": 129,
+            "height": 20
+          },
+          "inputType": null,
+          "placeholder": null
+        },
+        {
+          "id": "091244c4-c507-46b2-bd17-6ba890424102",
+          "type": "Axure.DocumentModel.Objects.VectorShape",
+          "name": "thread",
+          "text": "",
+          "bounds": {
+            "x": 46,
+            "y": 160,
+            "width": 3,
+            "height": 505
+          },
+          "inputType": null,
+          "placeholder": null
+        },
+        {
+          "id": "bdb72760-32a1-4dd0-acf1-a5a17a3c1173",
+          "type": "Axure.DocumentModel.Objects.VectorShape",
+          "name": "thread_start",
+          "text": "",
+          "bounds": {
+            "x": 40,
+            "y": 154,
+            "width": 15,
+            "height": 15
+          },
+          "inputType": null,
+          "placeholder": null
+        },
+        {
+          "id": "39a1770b-daac-4bf9-afa7-5766884a7f15",
+          "type": "Axure.DocumentModel.Objects.VectorShape",
+          "name": "thread_end",
+          "text": "",
+          "bounds": {
+            "x": 40,
+            "y": 657,
+            "width": 15,
+            "height": 15
+          },
+          "inputType": null,
+          "placeholder": null
+        },
+        {
+          "id": "a322c251-004f-472c-bb03-d88c5dd57993",
+          "type": "Axure.DocumentModel.Objects.VectorShape",
+          "name": "home_indicator",
+          "text": "",
+          "bounds": {
+            "x": 164,
+            "y": 909,
+            "width": 102,
+            "height": 5
+          },
+          "inputType": null,
+          "placeholder": null
+        },
+        {
+          "id": "02430c4b-3e0e-4fc3-89fb-00f0a345df15",
+          "type": "Axure.DocumentModel.Objects.VectorShape",
+          "name": "",
+          "text": "Let’s make\nthis lighter.",
+          "bounds": {
+            "x": 76,
+            "y": 148,
+            "width": 305,
+            "height": 72
+          },
+          "inputType": null,
+          "placeholder": null
+        },
+        {
+          "id": "e20317c6-e20a-422a-b757-5aa6b9f8a593",
+          "type": "Axure.DocumentModel.Objects.VectorShape",
+          "name": "",
+          "text": "Choose what feels hard right now.",
+          "bounds": {
+            "x": 76,
+            "y": 237,
+            "width": 305,
+            "height": 48
+          },
+          "inputType": null,
+          "placeholder": null
+        },
+        {
+          "id": "a94b34bb-3472-40c8-aaa9-bbbdde059238",
+          "type": "Axure.DocumentModel.Objects.VectorShape",
+          "name": "option1",
+          "text": "",
+          "bounds": {
+            "x": 66,
+            "y": 305,
+            "width": 310,
+            "height": 72
+          },
+          "inputType": null,
+          "placeholder": null
+        },
+        {
+          "id": "3e7ed738-a2bd-43ae-9120-79fbc37577ae",
+          "type": "Axure.DocumentModel.Objects.VectorShape",
+          "name": "",
+          "text": "I do not know where to start",
+          "bounds": {
+            "x": 86,
+            "y": 327,
+            "width": 270,
+            "height": 25
+          },
+          "inputType": null,
+          "placeholder": null
+        },
+        {
+          "id": "63118942-8e46-455f-adff-5c4d6cdf1ef0",
+          "type": "Axure.DocumentModel.Objects.VectorShape",
+          "name": "option2",
+          "text": "",
+          "bounds": {
+            "x": 80,
+            "y": 390,
+            "width": 310,
+            "height": 72
+          },
+          "inputType": null,
+          "placeholder": null
+        },
+        {
+          "id": "3aa80569-3db9-43c8-9edc-35ab1fd1cfea",
+          "type": "Axure.DocumentModel.Objects.VectorShape",
+          "name": "",
+          "text": "This step feels too big",
+          "bounds": {
+            "x": 100,
+            "y": 412,
+            "width": 270,
+            "height": 25
+          },
+          "inputType": null,
+          "placeholder": null
+        },
+        {
+          "id": "8e6e1afd-bc4d-4986-bdb7-86dec6a6cf90",
+          "type": "Axure.DocumentModel.Objects.VectorShape",
+          "name": "option3",
+          "text": "",
+          "bounds": {
+            "x": 66,
+            "y": 475,
+            "width": 310,
+            "height": 72
+          },
+          "inputType": null,
+          "placeholder": null
+        },
+        {
+          "id": "a72457a9-86cc-4cb8-a850-7baa448710d7",
+          "type": "Axure.DocumentModel.Objects.VectorShape",
+          "name": "",
+          "text": "I need a source or example",
+          "bounds": {
+            "x": 86,
+            "y": 497,
+            "width": 270,
+            "height": 25
+          },
+          "inputType": null,
+          "placeholder": null
+        },
+        {
+          "id": "1e532724-089a-4218-818f-6f2a7bb6719e",
+          "type": "Axure.DocumentModel.Objects.VectorShape",
+          "name": "help_card",
+          "text": "",
+          "bounds": {
+            "x": 79,
+            "y": 575,
+            "width": 309,
+            "height": 87
+          },
+          "inputType": null,
+          "placeholder": null
+        },
+        {
+          "id": "865c609b-ca2a-4812-ace1-14483d374450",
+          "type": "Axure.DocumentModel.Objects.VectorShape",
+          "name": "",
+          "text": "Try finding one sentence\nin your notes to use.",
+          "bounds": {
+            "x": 98,
+            "y": 591,
+            "width": 270,
+            "height": 54
+          },
+          "inputType": null,
+          "placeholder": null
+        },
+        {
+          "id": "4726243f-b72a-43ea-b494-93d8e9c5785c",
+          "type": "Axure.DocumentModel.Objects.VectorShape",
+          "name": "try_bg",
+          "text": "",
+          "bounds": {
+            "x": 28,
+            "y": 722,
+            "width": 374,
+            "height": 54
+          },
+          "inputType": null,
+          "placeholder": null
+        },
+        {
+          "id": "f171c2df-1417-43e2-b839-bd89c313ba60",
+          "type": "Axure.DocumentModel.Objects.VectorShape",
+          "name": "",
+          "text": "Try this smaller step",
+          "bounds": {
+            "x": 28,
+            "y": 738,
+            "width": 374,
+            "height": 24
+          },
+          "inputType": null,
+          "placeholder": null
+        },
+        {
+          "id": "645491ce-380a-4c60-9249-b1e469f5538e",
+          "type": "Axure.DocumentModel.Objects.VectorShape",
+          "name": "back_bg",
+          "text": "",
+          "bounds": {
+            "x": 28,
+            "y": 791,
+            "width": 374,
+            "height": 54
+          },
+          "inputType": null,
+          "placeholder": null
+        },
+        {
+          "id": "c06deebd-0f63-4d88-93e0-ad4f8d8f8715",
+          "type": "Axure.DocumentModel.Objects.VectorShape",
+          "name": "",
+          "text": "Back to my work",
+          "bounds": {
+            "x": 28,
+            "y": 807,
+            "width": 374,
+            "height": 24
+          },
+          "inputType": null,
+          "placeholder": null
+        },
+        {
+          "id": "560511f0-3ffa-49a7-88f7-5f336d392115",
+          "type": "Axure.DocumentModel.Objects.VectorShape",
+          "name": "hit_start",
+          "text": "",
+          "bounds": {
+            "x": 66,
+            "y": 305,
+            "width": 324,
+            "height": 72
+          },
+          "inputType": null,
+          "placeholder": null
+        },
+        {
+          "id": "d030b209-578b-48ea-95f1-b93ac260c28c",
+          "type": "Axure.DocumentModel.Objects.VectorShape",
+          "name": "hit_small",
+          "text": "",
+          "bounds": {
+            "x": 66,
+            "y": 390,
+            "width": 324,
+            "height": 72
+          },
+          "inputType": null,
+          "placeholder": null
+        },
+        {
+          "id": "85792526-cdf6-40d3-ad69-5f3020a3957e",
+          "type": "Axure.DocumentModel.Objects.VectorShape",
+          "name": "hit_source",
+          "text": "",
+          "bounds": {
+            "x": 66,
+            "y": 475,
+            "width": 324,
+            "height": 72
+          },
+          "inputType": null,
+          "placeholder": null
+        },
+        {
+          "id": "afa57a39-897b-4079-949a-6fe61ab30bec",
+          "type": "Axure.DocumentModel.Objects.VectorShape",
+          "name": "hit_try",
+          "text": "",
+          "bounds": {
+            "x": 28,
+            "y": 722,
+            "width": 374,
+            "height": 54
+          },
+          "inputType": null,
+          "placeholder": null
+        },
+        {
+          "id": "093441fb-cf2c-4a49-91a5-85b67c9bb680",
+          "type": "Axure.DocumentModel.Objects.VectorShape",
+          "name": "hit_back",
+          "text": "",
+          "bounds": {
+            "x": 28,
+            "y": 791,
+            "width": 374,
+            "height": 54
+          },
+          "inputType": null,
+          "placeholder": null
+        },
+        {
+          "id": "cf1ed1dd-bc72-491b-90a9-2d225fc65641",
+          "type": "Axure.DocumentModel.Objects.VectorShape",
+          "name": "v2_choice_start",
+          "text": "",
+          "bounds": {
+            "x": 66,
+            "y": 305,
+            "width": 324,
+            "height": 72
+          },
+          "inputType": null,
+          "placeholder": null
+        },
+        {
+          "id": "b84034a0-eaa3-4571-9429-11ab56601c33",
+          "type": "Axure.DocumentModel.Objects.VectorShape",
+          "name": "v2_choice_small",
+          "text": "",
+          "bounds": {
+            "x": 66,
+            "y": 390,
+            "width": 324,
+            "height": 72
+          },
+          "inputType": null,
+          "placeholder": null
+        },
+        {
+          "id": "fbcbe354-69e0-48c0-89ee-edad301b8559",
+          "type": "Axure.DocumentModel.Objects.VectorShape",
+          "name": "v2_choice_source",
+          "text": "",
+          "bounds": {
+            "x": 66,
+            "y": 475,
+            "width": 324,
+            "height": 72
+          },
+          "inputType": null,
+          "placeholder": null
+        },
+        {
+          "id": "fb0e6fe4-0d23-4169-b6b9-7f2406269bca",
+          "type": "Axure.DocumentModel.Objects.VectorShape",
+          "name": "v2_try_suggestion",
+          "text": "",
+          "bounds": {
+            "x": 28,
+            "y": 722,
+            "width": 374,
+            "height": 54
+          },
+          "inputType": null,
+          "placeholder": null
+        }
+      ],
+      "interactions": [
+        {
+          "id": "3a784126-1c92-46fe-a05c-bc1eb3718e77",
+          "interaction": {
+            "id": "3a784126-1c92-46fe-a05c-bc1eb3718e77",
+            "events": []
+          }
+        },
+        {
+          "id": "091f8b25-f678-421d-acd8-75f1ddf7d45d",
+          "interaction": {
+            "id": "091f8b25-f678-421d-acd8-75f1ddf7d45d",
+            "events": []
+          }
+        },
+        {
+          "id": "bee7fbcc-9e6b-4007-9019-3f1308800685",
+          "interaction": {
+            "id": "bee7fbcc-9e6b-4007-9019-3f1308800685",
+            "events": []
+          }
+        },
+        {
+          "id": "12c6e467-2403-4378-baf9-b50276fb4f94",
+          "interaction": {
+            "id": "12c6e467-2403-4378-baf9-b50276fb4f94",
+            "events": []
+          }
+        },
+        {
+          "id": "93c00ab1-b3ee-4e6b-b1ee-ca78ba35b198",
+          "interaction": {
+            "id": "93c00ab1-b3ee-4e6b-b1ee-ca78ba35b198",
+            "events": []
+          }
+        },
+        {
+          "id": "86f09e29-72c0-4971-af86-4b217d5f7346",
+          "interaction": {
+            "id": "86f09e29-72c0-4971-af86-4b217d5f7346",
+            "events": []
+          }
+        },
+        {
+          "id": "03b65713-8104-4216-abee-adb1aeda03b6",
+          "interaction": {
+            "id": "03b65713-8104-4216-abee-adb1aeda03b6",
+            "events": []
+          }
+        },
+        {
+          "id": "091244c4-c507-46b2-bd17-6ba890424102",
+          "interaction": {
+            "id": "091244c4-c507-46b2-bd17-6ba890424102",
+            "events": []
+          }
+        },
+        {
+          "id": "bdb72760-32a1-4dd0-acf1-a5a17a3c1173",
+          "interaction": {
+            "id": "bdb72760-32a1-4dd0-acf1-a5a17a3c1173",
+            "events": []
+          }
+        },
+        {
+          "id": "39a1770b-daac-4bf9-afa7-5766884a7f15",
+          "interaction": {
+            "id": "39a1770b-daac-4bf9-afa7-5766884a7f15",
+            "events": []
+          }
+        },
+        {
+          "id": "a322c251-004f-472c-bb03-d88c5dd57993",
+          "interaction": {
+            "id": "a322c251-004f-472c-bb03-d88c5dd57993",
+            "events": []
+          }
+        },
+        {
+          "id": "02430c4b-3e0e-4fc3-89fb-00f0a345df15",
+          "interaction": {
+            "id": "02430c4b-3e0e-4fc3-89fb-00f0a345df15",
+            "events": []
+          }
+        },
+        {
+          "id": "e20317c6-e20a-422a-b757-5aa6b9f8a593",
+          "interaction": {
+            "id": "e20317c6-e20a-422a-b757-5aa6b9f8a593",
+            "events": []
+          }
+        },
+        {
+          "id": "a94b34bb-3472-40c8-aaa9-bbbdde059238",
+          "interaction": {
+            "id": "a94b34bb-3472-40c8-aaa9-bbbdde059238",
+            "events": []
+          }
+        },
+        {
+          "id": "3e7ed738-a2bd-43ae-9120-79fbc37577ae",
+          "interaction": {
+            "id": "3e7ed738-a2bd-43ae-9120-79fbc37577ae",
+            "events": []
+          }
+        },
+        {
+          "id": "63118942-8e46-455f-adff-5c4d6cdf1ef0",
+          "interaction": {
+            "id": "63118942-8e46-455f-adff-5c4d6cdf1ef0",
+            "events": []
+          }
+        },
+        {
+          "id": "3aa80569-3db9-43c8-9edc-35ab1fd1cfea",
+          "interaction": {
+            "id": "3aa80569-3db9-43c8-9edc-35ab1fd1cfea",
+            "events": []
+          }
+        },
+        {
+          "id": "8e6e1afd-bc4d-4986-bdb7-86dec6a6cf90",
+          "interaction": {
+            "id": "8e6e1afd-bc4d-4986-bdb7-86dec6a6cf90",
+            "events": []
+          }
+        },
+        {
+          "id": "a72457a9-86cc-4cb8-a850-7baa448710d7",
+          "interaction": {
+            "id": "a72457a9-86cc-4cb8-a850-7baa448710d7",
+            "events": []
+          }
+        },
+        {
+          "id": "1e532724-089a-4218-818f-6f2a7bb6719e",
+          "interaction": {
+            "id": "1e532724-089a-4218-818f-6f2a7bb6719e",
+            "events": []
+          }
+        },
+        {
+          "id": "865c609b-ca2a-4812-ace1-14483d374450",
+          "interaction": {
+            "id": "865c609b-ca2a-4812-ace1-14483d374450",
+            "events": []
+          }
+        },
+        {
+          "id": "4726243f-b72a-43ea-b494-93d8e9c5785c",
+          "interaction": {
+            "id": "4726243f-b72a-43ea-b494-93d8e9c5785c",
+            "events": []
+          }
+        },
+        {
+          "id": "f171c2df-1417-43e2-b839-bd89c313ba60",
+          "interaction": {
+            "id": "f171c2df-1417-43e2-b839-bd89c313ba60",
+            "events": []
+          }
+        },
+        {
+          "id": "645491ce-380a-4c60-9249-b1e469f5538e",
+          "interaction": {
+            "id": "645491ce-380a-4c60-9249-b1e469f5538e",
+            "events": []
+          }
+        },
+        {
+          "id": "c06deebd-0f63-4d88-93e0-ad4f8d8f8715",
+          "interaction": {
+            "id": "c06deebd-0f63-4d88-93e0-ad4f8d8f8715",
+            "events": []
+          }
+        },
+        {
+          "id": "560511f0-3ffa-49a7-88f7-5f336d392115",
+          "interaction": {
+            "id": "560511f0-3ffa-49a7-88f7-5f336d392115",
+            "events": [
+              {
+                "type": "OnClick",
+                "cases": [
+                  {
+                    "name": "start",
+                    "newIfGroup": true,
+                    "condition": null,
+                    "actions": [
+                      {
+                        "type": "setText",
+                        "function": "SetWidgetRichText",
+                        "expressions": [
+                          {
+                            "node": "call",
+                            "function": "SetWidgetRichText",
+                            "args": [
+                              {
+                                "node": "widget",
+                                "id": "865c609b-ca2a-4812-ace1-14483d374450",
+                                "referencePath": [],
+                                "adaptivePath": []
+                              },
+                              {
+                                "node": "string",
+                                "value": "Try opening your notes and choosing one sentence.",
+                                "raw": "Try opening your notes and choosing one sentence."
+                              },
+                              {
+                                "node": "boolean",
+                                "value": true
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "d030b209-578b-48ea-95f1-b93ac260c28c",
+          "interaction": {
+            "id": "d030b209-578b-48ea-95f1-b93ac260c28c",
+            "events": [
+              {
+                "type": "OnClick",
+                "cases": [
+                  {
+                    "name": "small",
+                    "newIfGroup": true,
+                    "condition": null,
+                    "actions": [
+                      {
+                        "type": "setText",
+                        "function": "SetWidgetRichText",
+                        "expressions": [
+                          {
+                            "node": "call",
+                            "function": "SetWidgetRichText",
+                            "args": [
+                              {
+                                "node": "widget",
+                                "id": "865c609b-ca2a-4812-ace1-14483d374450",
+                                "referencePath": [],
+                                "adaptivePath": []
+                              },
+                              {
+                                "node": "string",
+                                "value": "Try writing just the first line of this step.",
+                                "raw": "Try writing just the first line of this step."
+                              },
+                              {
+                                "node": "boolean",
+                                "value": true
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "85792526-cdf6-40d3-ad69-5f3020a3957e",
+          "interaction": {
+            "id": "85792526-cdf6-40d3-ad69-5f3020a3957e",
+            "events": [
+              {
+                "type": "OnClick",
+                "cases": [
+                  {
+                    "name": "source",
+                    "newIfGroup": true,
+                    "condition": null,
+                    "actions": [
+                      {
+                        "type": "setText",
+                        "function": "SetWidgetRichText",
+                        "expressions": [
+                          {
+                            "node": "call",
+                            "function": "SetWidgetRichText",
+                            "args": [
+                              {
+                                "node": "widget",
+                                "id": "865c609b-ca2a-4812-ace1-14483d374450",
+                                "referencePath": [],
+                                "adaptivePath": []
+                              },
+                              {
+                                "node": "string",
+                                "value": "Try opening the reading list and finding one source.",
+                                "raw": "Try opening the reading list and finding one source."
+                              },
+                              {
+                                "node": "boolean",
+                                "value": true
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "afa57a39-897b-4079-949a-6fe61ab30bec",
+          "interaction": {
+            "id": "afa57a39-897b-4079-949a-6fe61ab30bec",
+            "events": [
+              {
+                "type": "OnClick",
+                "cases": [
+                  {
+                    "name": "Open",
+                    "newIfGroup": true,
+                    "condition": null,
+                    "actions": [
+                      {
+                        "type": "navigate",
+                        "linkType": "Current",
+                        "targetType": "Page",
+                        "page": "12f4c141-9ec5-4646-bd56-ecb8768c6584"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "093441fb-cf2c-4a49-91a5-85b67c9bb680",
+          "interaction": {
+            "id": "093441fb-cf2c-4a49-91a5-85b67c9bb680",
+            "events": [
+              {
+                "type": "OnClick",
+                "cases": [
+                  {
+                    "name": "Open",
+                    "newIfGroup": true,
+                    "condition": null,
+                    "actions": [
+                      {
+                        "type": "navigate",
+                        "linkType": "Current",
+                        "targetType": "Page",
+                        "page": "12f4c141-9ec5-4646-bd56-ecb8768c6584"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "cf1ed1dd-bc72-491b-90a9-2d225fc65641",
+          "interaction": {
+            "id": "cf1ed1dd-bc72-491b-90a9-2d225fc65641",
+            "events": [
+              {
+                "type": "OnClick",
+                "cases": [
+                  {
+                    "name": "start",
+                    "newIfGroup": true,
+                    "condition": null,
+                    "actions": [
+                      {
+                        "type": "setText",
+                        "function": "SetWidgetRichText",
+                        "expressions": [
+                          {
+                            "node": "call",
+                            "function": "SetWidgetRichText",
+                            "args": [
+                              {
+                                "node": "widget",
+                                "id": "865c609b-ca2a-4812-ace1-14483d374450",
+                                "referencePath": [],
+                                "adaptivePath": []
+                              },
+                              {
+                                "node": "string",
+                                "value": "Open your notes and choose one sentence.",
+                                "raw": "Open your notes and choose one sentence."
+                              },
+                              {
+                                "node": "boolean",
+                                "value": true
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "expression",
+                        "description": "Set <a>value of TetherSuggestion equal to \"Open your notes and choose one sentence.\"</a>",
+                        "expressions": [
+                          {
+                            "node": "call",
+                            "function": "SetGlobalVariableValue",
+                            "args": [
+                              {
+                                "node": "global",
+                                "variableId": "a26f182b-77fb-4c2b-bfd6-df650a76219c",
+                                "text": "TetherSuggestion"
+                              },
+                              {
+                                "node": "string",
+                                "value": "Open your notes and choose one sentence.",
+                                "raw": "Open your notes and choose one sentence."
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "b84034a0-eaa3-4571-9429-11ab56601c33",
+          "interaction": {
+            "id": "b84034a0-eaa3-4571-9429-11ab56601c33",
+            "events": [
+              {
+                "type": "OnClick",
+                "cases": [
+                  {
+                    "name": "small",
+                    "newIfGroup": true,
+                    "condition": null,
+                    "actions": [
+                      {
+                        "type": "setText",
+                        "function": "SetWidgetRichText",
+                        "expressions": [
+                          {
+                            "node": "call",
+                            "function": "SetWidgetRichText",
+                            "args": [
+                              {
+                                "node": "widget",
+                                "id": "865c609b-ca2a-4812-ace1-14483d374450",
+                                "referencePath": [],
+                                "adaptivePath": []
+                              },
+                              {
+                                "node": "string",
+                                "value": "Write just the first line of this step.",
+                                "raw": "Write just the first line of this step."
+                              },
+                              {
+                                "node": "boolean",
+                                "value": true
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "expression",
+                        "description": "Set <a>value of TetherSuggestion equal to \"Write just the first line of this step.\"</a>",
+                        "expressions": [
+                          {
+                            "node": "call",
+                            "function": "SetGlobalVariableValue",
+                            "args": [
+                              {
+                                "node": "global",
+                                "variableId": "a26f182b-77fb-4c2b-bfd6-df650a76219c",
+                                "text": "TetherSuggestion"
+                              },
+                              {
+                                "node": "string",
+                                "value": "Write just the first line of this step.",
+                                "raw": "Write just the first line of this step."
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "fbcbe354-69e0-48c0-89ee-edad301b8559",
+          "interaction": {
+            "id": "fbcbe354-69e0-48c0-89ee-edad301b8559",
+            "events": [
+              {
+                "type": "OnClick",
+                "cases": [
+                  {
+                    "name": "source",
+                    "newIfGroup": true,
+                    "condition": null,
+                    "actions": [
+                      {
+                        "type": "setText",
+                        "function": "SetWidgetRichText",
+                        "expressions": [
+                          {
+                            "node": "call",
+                            "function": "SetWidgetRichText",
+                            "args": [
+                              {
+                                "node": "widget",
+                                "id": "865c609b-ca2a-4812-ace1-14483d374450",
+                                "referencePath": [],
+                                "adaptivePath": []
+                              },
+                              {
+                                "node": "string",
+                                "value": "Open the reading list and find one source.",
+                                "raw": "Open the reading list and find one source."
+                              },
+                              {
+                                "node": "boolean",
+                                "value": true
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "expression",
+                        "description": "Set <a>value of TetherSuggestion equal to \"Open the reading list and find one source.\"</a>",
+                        "expressions": [
+                          {
+                            "node": "call",
+                            "function": "SetGlobalVariableValue",
+                            "args": [
+                              {
+                                "node": "global",
+                                "variableId": "a26f182b-77fb-4c2b-bfd6-df650a76219c",
+                                "text": "TetherSuggestion"
+                              },
+                              {
+                                "node": "string",
+                                "value": "Open the reading list and find one source.",
+                                "raw": "Open the reading list and find one source."
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "fb0e6fe4-0d23-4169-b6b9-7f2406269bca",
+          "interaction": {
+            "id": "fb0e6fe4-0d23-4169-b6b9-7f2406269bca",
+            "events": [
+              {
+                "type": "OnClick",
+                "cases": [
+                  {
+                    "name": "Use smaller step",
+                    "newIfGroup": true,
+                    "condition": null,
+                    "actions": [
+                      {
+                        "type": "expression",
+                        "description": "Set <a>value of TetherNext equal to value of TetherSuggestion</a>",
+                        "expressions": [
+                          {
+                            "node": "call",
+                            "function": "SetGlobalVariableValue",
+                            "args": [
+                              {
+                                "node": "global",
+                                "variableId": "659c3ed9-aa78-4507-bccb-41792b246050",
+                                "text": "TetherNext"
+                              },
+                              {
+                                "node": "call",
+                                "function": "GetGlobalVariableValue",
+                                "args": [
+                                  {
+                                    "node": "global",
+                                    "variableId": "a26f182b-77fb-4c2b-bfd6-df650a76219c",
+                                    "text": "TetherSuggestion"
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "navigate",
+                        "linkType": "Current",
+                        "targetType": "Page",
+                        "page": "12f4c141-9ec5-4646-bd56-ecb8768c6584"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "onload": {
+        "type": "hJat.OJa9",
+        "fragmentType": "vJvL.NJvD",
+        "events": []
+      }
+    },
+    {
+      "page": {
+        "Id": "7f7e2f66-3f4d-452f-ad3f-8b20a61fc075",
+        "Name": "04 Leave a thread",
+        "Type": "page",
+        "Children": null
+      },
+      "widgets": [
+        {
+          "id": "527d8ef5-96b0-4b47-b975-e9103314edcc",
+          "type": "Axure.DocumentModel.Objects.Layer",
+          "name": "Tether pause",
+          "text": null,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 430,
+            "height": 932
+          },
+          "inputType": null,
+          "placeholder": null
+        },
+        {
+          "id": "63235c2f-6d4d-499d-b40a-34ac396e938a",
+          "type": "Axure.DocumentModel.Objects.VectorShape",
+          "name": "Tether pause BG",
+          "text": "",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 430,
+            "height": 932
+          },
+          "inputType": null,
+          "placeholder": null
+        },
+        {
+          "id": "06fae9d2-d130-479e-93c9-133eb4394215",
+          "type": "Axure.DocumentModel.Objects.VectorShape",
+          "name": "canvas",
+          "text": "",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 430,
+            "height": 932
+          },
+          "inputType": null,
+          "placeholder": null
+        },
+        {
+          "id": "e42f867d-8445-4b19-afc3-7b2a1591b12b",
+          "type": "Axure.DocumentModel.Objects.VectorShape",
+          "name": "island",
+          "text": "",
+          "bounds": {
+            "x": 162,
+            "y": 11,
+            "width": 106,
+            "height": 24
+          },
+          "inputType": null,
+          "placeholder": null
+        },
+        {
+          "id": "18c19266-51ce-4fd6-a3e3-62dc4b1635a1",
+          "type": "Axure.DocumentModel.Objects.VectorShape",
+          "name": "",
+          "text": "9:41",
+          "bounds": {
+            "x": 28,
+            "y": 19,
+            "width": 70,
+            "height": 20
+          },
+          "inputType": null,
+          "placeholder": null
+        },
+        {
+          "id": "8b8481ae-45b6-4770-8a53-1f4c9844f94c",
+          "type": "Axure.DocumentModel.Objects.VectorShape",
+          "name": "",
+          "text": "tether",
+          "bounds": {
+            "x": 28,
+            "y": 66,
+            "width": 180,
+            "height": 28
+          },
+          "inputType": null,
+          "placeholder": null
+        },
+        {
+          "id": "b1e150f0-6e41-42ba-8cd6-229e35130076",
+          "type": "Axure.DocumentModel.Objects.VectorShape",
+          "name": "",
+          "text": "Save your place",
+          "bounds": {
+            "x": 273,
+            "y": 74,
+            "width": 129,
+            "height": 20
+          },
+          "inputType": null,
+          "placeholder": null
+        },
+        {
+          "id": "adb93a9f-2854-40c2-a10e-cdfbb2700bd5",
+          "type": "Axure.DocumentModel.Objects.VectorShape",
+          "name": "thread",
+          "text": "",
+          "bounds": {
+            "x": 46,
+            "y": 160,
+            "width": 3,
+            "height": 505
+          },
+          "inputType": null,
+          "placeholder": null
+        },
+        {
+          "id": "19ff7602-c0ac-45e8-b675-83a7c0f9beb4",
+          "type": "Axure.DocumentModel.Objects.VectorShape",
+          "name": "thread_start",
+          "text": "",
+          "bounds": {
+            "x": 40,
+            "y": 154,
+            "width": 15,
+            "height": 15
+          },
+          "inputType": null,
+          "placeholder": null
+        },
+        {
+          "id": "11925e9a-5b8a-4b67-9fbd-4e0cd657b160",
+          "type": "Axure.DocumentModel.Objects.VectorShape",
+          "name": "thread_end",
+          "text": "",
+          "bounds": {
+            "x": 40,
+            "y": 657,
+            "width": 15,
+            "height": 15
+          },
+          "inputType": null,
+          "placeholder": null
+        },
+        {
+          "id": "8d829216-da95-4696-ac20-4dd034f21239",
+          "type": "Axure.DocumentModel.Objects.VectorShape",
+          "name": "home_indicator",
+          "text": "",
+          "bounds": {
+            "x": 164,
+            "y": 909,
+            "width": 102,
+            "height": 5
+          },
+          "inputType": null,
+          "placeholder": null
+        },
+        {
+          "id": "7aa1ba38-e67b-4dec-947c-0397a7b09af6",
+          "type": "Axure.DocumentModel.Objects.VectorShape",
+          "name": "",
+          "text": "Leave a note\nfor future you.",
+          "bounds": {
+            "x": 76,
+            "y": 145,
+            "width": 305,
+            "height": 75
+          },
+          "inputType": null,
+          "placeholder": null
+        },
+        {
+          "id": "80ffdd96-ca21-4572-a3f8-1652b7a78efb",
+          "type": "Axure.DocumentModel.Objects.VectorShape",
+          "name": "",
+          "text": "A sentence is enough. You can change it later.",
+          "bounds": {
+            "x": 76,
+            "y": 232,
+            "width": 305,
+            "height": 50
+          },
+          "inputType": null,
+          "placeholder": null
+        },
+        {
+          "id": "9d873a59-128d-4ad2-afdd-d15462c40bf6",
+          "type": "Axure.DocumentModel.Objects.VectorShape",
+          "name": "",
+          "text": "Where did you stop?",
+          "bounds": {
+            "x": 67,
+            "y": 315,
+            "width": 310,
+            "height": 25
+          },
+          "inputType": null,
+          "placeholder": null
+        },
+        {
+          "id": "ed2f441f-453f-4372-8b9e-f5a25b3cf676",
+          "type": "Axure.DocumentModel.Objects.VectorShape",
+          "name": "where_box",
+          "text": "",
+          "bounds": {
+            "x": 66,
+            "y": 350,
+            "width": 310,
+            "height": 58
+          },
+          "inputType": null,
+          "placeholder": null
+        },
+        {
+          "id": "a5de03b8-d749-429d-9f58-8d57ae013231",
+          "type": "Axure.DocumentModel.Objects.VectorShape",
+          "name": "",
+          "text": "What is the next small move?",
+          "bounds": {
+            "x": 67,
+            "y": 445,
+            "width": 310,
+            "height": 25
+          },
+          "inputType": null,
+          "placeholder": null
+        },
+        {
+          "id": "bce3ac3d-00a7-457b-84d4-3a6049f5aa6e",
+          "type": "Axure.DocumentModel.Objects.VectorShape",
+          "name": "next_box",
+          "text": "",
+          "bounds": {
+            "x": 66,
+            "y": 480,
+            "width": 310,
+            "height": 58
+          },
+          "inputType": null,
+          "placeholder": null
+        },
+        {
+          "id": "5b194b6d-2b7c-4ddb-9d62-02932a7cdffe",
+          "type": "Axure.DocumentModel.Objects.VectorShape",
+          "name": "",
+          "text": "Keep each note under 48 characters.",
+          "bounds": {
+            "x": 67,
+            "y": 555,
+            "width": 310,
+            "height": 55
+          },
+          "inputType": null,
+          "placeholder": null
+        },
+        {
+          "id": "d74295fa-eac9-4182-88a5-68cfa57493da",
+          "type": "Axure.DocumentModel.Objects.VectorShape",
+          "name": "save_bg",
+          "text": "",
+          "bounds": {
+            "x": 28,
+            "y": 711,
+            "width": 374,
+            "height": 54
+          },
+          "inputType": null,
+          "placeholder": null
+        },
+        {
+          "id": "d8816dce-d487-4e46-8ebd-65b231c4bba5",
+          "type": "Axure.DocumentModel.Objects.VectorShape",
+          "name": "",
+          "text": "Save my place",
+          "bounds": {
+            "x": 28,
+            "y": 727,
+            "width": 374,
+            "height": 24
+          },
+          "inputType": null,
+          "placeholder": null
+        },
+        {
+          "id": "4e5ad02b-38c5-40cf-a550-2bc7767421c1",
+          "type": "Axure.DocumentModel.Objects.VectorShape",
+          "name": "back_bg",
+          "text": "",
+          "bounds": {
+            "x": 28,
+            "y": 780,
+            "width": 374,
+            "height": 54
+          },
+          "inputType": null,
+          "placeholder": null
+        },
+        {
+          "id": "8a817e8d-f66b-4119-8964-88a4242dc817",
+          "type": "Axure.DocumentModel.Objects.VectorShape",
+          "name": "",
+          "text": "Back to my work",
+          "bounds": {
+            "x": 28,
+            "y": 796,
+            "width": 374,
+            "height": 24
+          },
+          "inputType": null,
+          "placeholder": null
+        },
+        {
+          "id": "cf70fca7-71ac-4f22-8f2c-f31b2aec59af",
+          "type": "Axure.DocumentModel.Objects.TextBox",
+          "name": "where_stopped",
+          "text": "",
+          "bounds": {
+            "x": 78,
+            "y": 354,
+            "width": 286,
+            "height": 50
+          },
+          "inputType": "Text",
+          "placeholder": "e.g. halfway through a paragraph"
+        },
+        {
+          "id": "91b87d72-c1f9-447b-a78c-23e8d4e94667",
+          "type": "Axure.DocumentModel.Objects.TextBox",
+          "name": "next_move",
+          "text": "",
+          "bounds": {
+            "x": 78,
+            "y": 484,
+            "width": 286,
+            "height": 50
+          },
+          "inputType": "Text",
+          "placeholder": "e.g. find one supporting example"
+        },
+        {
+          "id": "fa6ba335-204f-4c8f-8aa3-f38ef7385a1a",
+          "type": "Axure.DocumentModel.Objects.VectorShape",
+          "name": "hit_save",
+          "text": "",
+          "bounds": {
+            "x": 28,
+            "y": 711,
+            "width": 374,
+            "height": 54
+          },
+          "inputType": null,
+          "placeholder": null
+        },
+        {
+          "id": "8aca1fc1-11ed-466e-b066-dd90e5468f68",
+          "type": "Axure.DocumentModel.Objects.VectorShape",
+          "name": "hit_back",
+          "text": "",
+          "bounds": {
+            "x": 28,
+            "y": 780,
+            "width": 374,
+            "height": 54
+          },
+          "inputType": null,
+          "placeholder": null
+        },
+        {
+          "id": "dd33fc0f-6bd2-42ae-bd3c-50846660664c",
+          "type": "Axure.DocumentModel.Objects.VectorShape",
+          "name": "hit_save_with_variables",
+          "text": "",
+          "bounds": {
+            "x": 28,
+            "y": 711,
+            "width": 374,
+            "height": 54
+          },
+          "inputType": null,
+          "placeholder": null
+        }
+      ],
+      "interactions": [
+        {
+          "id": "527d8ef5-96b0-4b47-b975-e9103314edcc",
+          "interaction": {
+            "id": "527d8ef5-96b0-4b47-b975-e9103314edcc",
+            "events": []
+          }
+        },
+        {
+          "id": "63235c2f-6d4d-499d-b40a-34ac396e938a",
+          "interaction": {
+            "id": "63235c2f-6d4d-499d-b40a-34ac396e938a",
+            "events": []
+          }
+        },
+        {
+          "id": "06fae9d2-d130-479e-93c9-133eb4394215",
+          "interaction": {
+            "id": "06fae9d2-d130-479e-93c9-133eb4394215",
+            "events": []
+          }
+        },
+        {
+          "id": "e42f867d-8445-4b19-afc3-7b2a1591b12b",
+          "interaction": {
+            "id": "e42f867d-8445-4b19-afc3-7b2a1591b12b",
+            "events": []
+          }
+        },
+        {
+          "id": "18c19266-51ce-4fd6-a3e3-62dc4b1635a1",
+          "interaction": {
+            "id": "18c19266-51ce-4fd6-a3e3-62dc4b1635a1",
+            "events": []
+          }
+        },
+        {
+          "id": "8b8481ae-45b6-4770-8a53-1f4c9844f94c",
+          "interaction": {
+            "id": "8b8481ae-45b6-4770-8a53-1f4c9844f94c",
+            "events": []
+          }
+        },
+        {
+          "id": "b1e150f0-6e41-42ba-8cd6-229e35130076",
+          "interaction": {
+            "id": "b1e150f0-6e41-42ba-8cd6-229e35130076",
+            "events": []
+          }
+        },
+        {
+          "id": "adb93a9f-2854-40c2-a10e-cdfbb2700bd5",
+          "interaction": {
+            "id": "adb93a9f-2854-40c2-a10e-cdfbb2700bd5",
+            "events": []
+          }
+        },
+        {
+          "id": "19ff7602-c0ac-45e8-b675-83a7c0f9beb4",
+          "interaction": {
+            "id": "19ff7602-c0ac-45e8-b675-83a7c0f9beb4",
+            "events": []
+          }
+        },
+        {
+          "id": "11925e9a-5b8a-4b67-9fbd-4e0cd657b160",
+          "interaction": {
+            "id": "11925e9a-5b8a-4b67-9fbd-4e0cd657b160",
+            "events": []
+          }
+        },
+        {
+          "id": "8d829216-da95-4696-ac20-4dd034f21239",
+          "interaction": {
+            "id": "8d829216-da95-4696-ac20-4dd034f21239",
+            "events": []
+          }
+        },
+        {
+          "id": "7aa1ba38-e67b-4dec-947c-0397a7b09af6",
+          "interaction": {
+            "id": "7aa1ba38-e67b-4dec-947c-0397a7b09af6",
+            "events": []
+          }
+        },
+        {
+          "id": "80ffdd96-ca21-4572-a3f8-1652b7a78efb",
+          "interaction": {
+            "id": "80ffdd96-ca21-4572-a3f8-1652b7a78efb",
+            "events": []
+          }
+        },
+        {
+          "id": "9d873a59-128d-4ad2-afdd-d15462c40bf6",
+          "interaction": {
+            "id": "9d873a59-128d-4ad2-afdd-d15462c40bf6",
+            "events": []
+          }
+        },
+        {
+          "id": "ed2f441f-453f-4372-8b9e-f5a25b3cf676",
+          "interaction": {
+            "id": "ed2f441f-453f-4372-8b9e-f5a25b3cf676",
+            "events": []
+          }
+        },
+        {
+          "id": "a5de03b8-d749-429d-9f58-8d57ae013231",
+          "interaction": {
+            "id": "a5de03b8-d749-429d-9f58-8d57ae013231",
+            "events": []
+          }
+        },
+        {
+          "id": "bce3ac3d-00a7-457b-84d4-3a6049f5aa6e",
+          "interaction": {
+            "id": "bce3ac3d-00a7-457b-84d4-3a6049f5aa6e",
+            "events": []
+          }
+        },
+        {
+          "id": "5b194b6d-2b7c-4ddb-9d62-02932a7cdffe",
+          "interaction": {
+            "id": "5b194b6d-2b7c-4ddb-9d62-02932a7cdffe",
+            "events": []
+          }
+        },
+        {
+          "id": "d74295fa-eac9-4182-88a5-68cfa57493da",
+          "interaction": {
+            "id": "d74295fa-eac9-4182-88a5-68cfa57493da",
+            "events": []
+          }
+        },
+        {
+          "id": "d8816dce-d487-4e46-8ebd-65b231c4bba5",
+          "interaction": {
+            "id": "d8816dce-d487-4e46-8ebd-65b231c4bba5",
+            "events": []
+          }
+        },
+        {
+          "id": "4e5ad02b-38c5-40cf-a550-2bc7767421c1",
+          "interaction": {
+            "id": "4e5ad02b-38c5-40cf-a550-2bc7767421c1",
+            "events": []
+          }
+        },
+        {
+          "id": "8a817e8d-f66b-4119-8964-88a4242dc817",
+          "interaction": {
+            "id": "8a817e8d-f66b-4119-8964-88a4242dc817",
+            "events": []
+          }
+        },
+        {
+          "id": "cf70fca7-71ac-4f22-8f2c-f31b2aec59af",
+          "interaction": {
+            "id": "cf70fca7-71ac-4f22-8f2c-f31b2aec59af",
+            "events": []
+          }
+        },
+        {
+          "id": "91b87d72-c1f9-447b-a78c-23e8d4e94667",
+          "interaction": {
+            "id": "91b87d72-c1f9-447b-a78c-23e8d4e94667",
+            "events": []
+          }
+        },
+        {
+          "id": "fa6ba335-204f-4c8f-8aa3-f38ef7385a1a",
+          "interaction": {
+            "id": "fa6ba335-204f-4c8f-8aa3-f38ef7385a1a",
+            "events": [
+              {
+                "type": "OnClick",
+                "cases": [
+                  {
+                    "name": "Missing position",
+                    "newIfGroup": true,
+                    "condition": {
+                      "node": "binary",
+                      "operation": "Equals",
+                      "left": {
+                        "node": "call",
+                        "function": "GetWidgetText",
+                        "args": [
+                          {
+                            "node": "widget",
+                            "id": "cf70fca7-71ac-4f22-8f2c-f31b2aec59af",
+                            "referencePath": [],
+                            "adaptivePath": []
+                          }
+                        ]
+                      },
+                      "right": {
+                        "node": "string",
+                        "value": "",
+                        "raw": ""
+                      }
+                    },
+                    "actions": [
+                      {
+                        "type": "setText",
+                        "function": "SetWidgetRichText",
+                        "expressions": [
+                          {
+                            "node": "call",
+                            "function": "SetWidgetRichText",
+                            "args": [
+                              {
+                                "node": "widget",
+                                "id": "5b194b6d-2b7c-4ddb-9d62-02932a7cdffe",
+                                "referencePath": [],
+                                "adaptivePath": []
+                              },
+                              {
+                                "node": "string",
+                                "value": "Add where you stopped first.",
+                                "raw": "Add where you stopped first."
+                              },
+                              {
+                                "node": "boolean",
+                                "value": true
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Missing next move",
+                    "newIfGroup": false,
+                    "condition": {
+                      "node": "binary",
+                      "operation": "Equals",
+                      "left": {
+                        "node": "call",
+                        "function": "GetWidgetText",
+                        "args": [
+                          {
+                            "node": "widget",
+                            "id": "91b87d72-c1f9-447b-a78c-23e8d4e94667",
+                            "referencePath": [],
+                            "adaptivePath": []
+                          }
+                        ]
+                      },
+                      "right": {
+                        "node": "string",
+                        "value": "",
+                        "raw": ""
+                      }
+                    },
+                    "actions": [
+                      {
+                        "type": "setText",
+                        "function": "SetWidgetRichText",
+                        "expressions": [
+                          {
+                            "node": "call",
+                            "function": "SetWidgetRichText",
+                            "args": [
+                              {
+                                "node": "widget",
+                                "id": "5b194b6d-2b7c-4ddb-9d62-02932a7cdffe",
+                                "referencePath": [],
+                                "adaptivePath": []
+                              },
+                              {
+                                "node": "string",
+                                "value": "Add the next small move first.",
+                                "raw": "Add the next small move first."
+                              },
+                              {
+                                "node": "boolean",
+                                "value": true
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Finish",
+                    "newIfGroup": false,
+                    "condition": null,
+                    "actions": [
+                      {
+                        "type": "navigate",
+                        "linkType": "Current",
+                        "targetType": "Page",
+                        "page": "e4aac2f0-51f5-4a3f-a983-8ff8e1ea2180"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "8aca1fc1-11ed-466e-b066-dd90e5468f68",
+          "interaction": {
+            "id": "8aca1fc1-11ed-466e-b066-dd90e5468f68",
+            "events": [
+              {
+                "type": "OnClick",
+                "cases": [
+                  {
+                    "name": "Open",
+                    "newIfGroup": true,
+                    "condition": null,
+                    "actions": [
+                      {
+                        "type": "navigate",
+                        "linkType": "Current",
+                        "targetType": "Page",
+                        "page": "12f4c141-9ec5-4646-bd56-ecb8768c6584"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "dd33fc0f-6bd2-42ae-bd3c-50846660664c",
+          "interaction": {
+            "id": "dd33fc0f-6bd2-42ae-bd3c-50846660664c",
+            "events": [
+              {
+                "type": "OnClick",
+                "cases": [
+                  {
+                    "name": "Missing position",
+                    "newIfGroup": true,
+                    "condition": {
+                      "node": "binary",
+                      "operation": "Equals",
+                      "left": {
+                        "node": "call",
+                        "function": "GetWidgetText",
+                        "args": [
+                          {
+                            "node": "widget",
+                            "id": "cf70fca7-71ac-4f22-8f2c-f31b2aec59af",
+                            "referencePath": [],
+                            "adaptivePath": []
+                          }
+                        ]
+                      },
+                      "right": {
+                        "node": "string",
+                        "value": "",
+                        "raw": ""
+                      }
+                    },
+                    "actions": [
+                      {
+                        "type": "setText",
+                        "function": "SetWidgetRichText",
+                        "expressions": [
+                          {
+                            "node": "call",
+                            "function": "SetWidgetRichText",
+                            "args": [
+                              {
+                                "node": "widget",
+                                "id": "5b194b6d-2b7c-4ddb-9d62-02932a7cdffe",
+                                "referencePath": [],
+                                "adaptivePath": []
+                              },
+                              {
+                                "node": "string",
+                                "value": "Add where you stopped first.",
+                                "raw": "Add where you stopped first."
+                              },
+                              {
+                                "node": "boolean",
+                                "value": true
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Missing next move",
+                    "newIfGroup": false,
+                    "condition": {
+                      "node": "binary",
+                      "operation": "Equals",
+                      "left": {
+                        "node": "call",
+                        "function": "GetWidgetText",
+                        "args": [
+                          {
+                            "node": "widget",
+                            "id": "91b87d72-c1f9-447b-a78c-23e8d4e94667",
+                            "referencePath": [],
+                            "adaptivePath": []
+                          }
+                        ]
+                      },
+                      "right": {
+                        "node": "string",
+                        "value": "",
+                        "raw": ""
+                      }
+                    },
+                    "actions": [
+                      {
+                        "type": "setText",
+                        "function": "SetWidgetRichText",
+                        "expressions": [
+                          {
+                            "node": "call",
+                            "function": "SetWidgetRichText",
+                            "args": [
+                              {
+                                "node": "widget",
+                                "id": "5b194b6d-2b7c-4ddb-9d62-02932a7cdffe",
+                                "referencePath": [],
+                                "adaptivePath": []
+                              },
+                              {
+                                "node": "string",
+                                "value": "Add the next small move first.",
+                                "raw": "Add the next small move first."
+                              },
+                              {
+                                "node": "boolean",
+                                "value": true
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Save and continue",
+                    "newIfGroup": false,
+                    "condition": null,
+                    "actions": [
+                      {
+                        "type": "expression",
+                        "description": "Set <a>value of TetherWhere equal to text on where_stopped</a>",
+                        "expressions": [
+                          {
+                            "node": "call",
+                            "function": "SetGlobalVariableValue",
+                            "args": [
+                              {
+                                "node": "global",
+                                "variableId": "7b4b9b3b-04e6-44a8-94bd-6382f60a0f08",
+                                "text": "TetherWhere"
+                              },
+                              {
+                                "node": "call",
+                                "function": "GetWidgetText",
+                                "args": [
+                                  {
+                                    "node": "widget",
+                                    "id": "cf70fca7-71ac-4f22-8f2c-f31b2aec59af",
+                                    "referencePath": [],
+                                    "adaptivePath": []
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "expression",
+                        "description": "Set <a>value of TetherNext equal to text on next_move</a>",
+                        "expressions": [
+                          {
+                            "node": "call",
+                            "function": "SetGlobalVariableValue",
+                            "args": [
+                              {
+                                "node": "global",
+                                "variableId": "659c3ed9-aa78-4507-bccb-41792b246050",
+                                "text": "TetherNext"
+                              },
+                              {
+                                "node": "call",
+                                "function": "GetWidgetText",
+                                "args": [
+                                  {
+                                    "node": "widget",
+                                    "id": "91b87d72-c1f9-447b-a78c-23e8d4e94667",
+                                    "referencePath": [],
+                                    "adaptivePath": []
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "navigate",
+                        "linkType": "Current",
+                        "targetType": "Page",
+                        "page": "e4aac2f0-51f5-4a3f-a983-8ff8e1ea2180"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "onload": {
+        "type": "hJat.OJa9",
+        "fragmentType": "vJvL.NJvD",
+        "events": [
+          {
+            "type": "OnLoad",
+            "cases": [
+              {
+                "name": "Restore the saved thread",
+                "actions": [
+                  {
+                    "type": "expression",
+                    "description": "Set <a>text on where_stopped equal to value of TetherWhere</a>",
+                    "expressions": [
+                      {
+                        "node": "call",
+                        "function": "SetWidgetFormText",
+                        "args": [
+                          {
+                            "node": "widget",
+                            "id": "cf70fca7-71ac-4f22-8f2c-f31b2aec59af",
+                            "referencePath": [],
+                            "adaptivePath": []
+                          },
+                          {
+                            "node": "call",
+                            "function": "GetGlobalVariableValue",
+                            "args": [
+                              {
+                                "node": "global",
+                                "variableId": "7b4b9b3b-04e6-44a8-94bd-6382f60a0f08",
+                                "text": "TetherWhere"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "expression",
+                    "description": "Set <a>text on next_move equal to value of TetherNext</a>",
+                    "expressions": [
+                      {
+                        "node": "call",
+                        "function": "SetWidgetFormText",
+                        "args": [
+                          {
+                            "node": "widget",
+                            "id": "91b87d72-c1f9-447b-a78c-23e8d4e94667",
+                            "referencePath": [],
+                            "adaptivePath": []
+                          },
+                          {
+                            "node": "call",
+                            "function": "GetGlobalVariableValue",
+                            "args": [
+                              {
+                                "node": "global",
+                                "variableId": "659c3ed9-aa78-4507-bccb-41792b246050",
+                                "text": "TetherNext"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "page": {
+        "Id": "e4aac2f0-51f5-4a3f-a983-8ff8e1ea2180",
+        "Name": "05 Ready to return",
+        "Type": "page",
+        "Children": null
+      },
+      "widgets": [
+        {
+          "id": "65ed04dc-7295-4a9c-b898-d4ec6ac7c0aa",
+          "type": "Axure.DocumentModel.Objects.Layer",
+          "name": "Tether saved",
+          "text": null,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 430,
+            "height": 932
+          },
+          "inputType": null,
+          "placeholder": null
+        },
+        {
+          "id": "32497716-10f1-44b2-adc8-f03c69738e9f",
+          "type": "Axure.DocumentModel.Objects.VectorShape",
+          "name": "Tether saved BG",
+          "text": "",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 430,
+            "height": 932
+          },
+          "inputType": null,
+          "placeholder": null
+        },
+        {
+          "id": "578f0bb6-331d-45e7-abef-d68be4b0cbf4",
+          "type": "Axure.DocumentModel.Objects.VectorShape",
+          "name": "canvas",
+          "text": "",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 430,
+            "height": 932
+          },
+          "inputType": null,
+          "placeholder": null
+        },
+        {
+          "id": "8ef23322-7ffd-40ff-b5cf-6d884bd70650",
+          "type": "Axure.DocumentModel.Objects.VectorShape",
+          "name": "island",
+          "text": "",
+          "bounds": {
+            "x": 162,
+            "y": 11,
+            "width": 106,
+            "height": 24
+          },
+          "inputType": null,
+          "placeholder": null
+        },
+        {
+          "id": "c63088d1-be3c-480b-bd5f-35c0fc4238a5",
+          "type": "Axure.DocumentModel.Objects.VectorShape",
+          "name": "",
+          "text": "9:41",
+          "bounds": {
+            "x": 28,
+            "y": 19,
+            "width": 70,
+            "height": 20
+          },
+          "inputType": null,
+          "placeholder": null
+        },
+        {
+          "id": "0114fdd9-5c50-4c5a-894c-a7e9bbe1af8f",
+          "type": "Axure.DocumentModel.Objects.VectorShape",
+          "name": "",
+          "text": "tether",
+          "bounds": {
+            "x": 28,
+            "y": 66,
+            "width": 180,
+            "height": 28
+          },
+          "inputType": null,
+          "placeholder": null
+        },
+        {
+          "id": "5368ce96-892d-4d8d-98f2-4063a81b785e",
+          "type": "Axure.DocumentModel.Objects.VectorShape",
+          "name": "",
+          "text": "Saved",
+          "bounds": {
+            "x": 273,
+            "y": 74,
+            "width": 129,
+            "height": 20
+          },
+          "inputType": null,
+          "placeholder": null
+        },
+        {
+          "id": "0877e41e-bfc8-4f58-931e-f17ac8c37e78",
+          "type": "Axure.DocumentModel.Objects.VectorShape",
+          "name": "thread",
+          "text": "",
+          "bounds": {
+            "x": 46,
+            "y": 160,
+            "width": 3,
+            "height": 505
+          },
+          "inputType": null,
+          "placeholder": null
+        },
+        {
+          "id": "54163bec-093b-4f9b-b5ea-887d7dcfb99c",
+          "type": "Axure.DocumentModel.Objects.VectorShape",
+          "name": "thread_start",
+          "text": "",
+          "bounds": {
+            "x": 40,
+            "y": 154,
+            "width": 15,
+            "height": 15
+          },
+          "inputType": null,
+          "placeholder": null
+        },
+        {
+          "id": "f0bf9df4-069a-4583-987c-7bb16454eb9f",
+          "type": "Axure.DocumentModel.Objects.VectorShape",
+          "name": "thread_end",
+          "text": "",
+          "bounds": {
+            "x": 40,
+            "y": 657,
+            "width": 15,
+            "height": 15
+          },
+          "inputType": null,
+          "placeholder": null
+        },
+        {
+          "id": "bdc31958-7428-4737-92ae-6b048f454505",
+          "type": "Axure.DocumentModel.Objects.VectorShape",
+          "name": "home_indicator",
+          "text": "",
+          "bounds": {
+            "x": 164,
+            "y": 909,
+            "width": 102,
+            "height": 5
+          },
+          "inputType": null,
+          "placeholder": null
+        },
+        {
+          "id": "e2b950b5-cbca-4df7-ae4b-2e134831094d",
+          "type": "Axure.DocumentModel.Objects.VectorShape",
+          "name": "",
+          "text": "Your place\nis here.",
+          "bounds": {
+            "x": 76,
+            "y": 148,
+            "width": 310,
+            "height": 74
+          },
+          "inputType": null,
+          "placeholder": null
+        },
+        {
+          "id": "11f97a4b-3b5c-458d-bfaf-579da4577e16",
+          "type": "Axure.DocumentModel.Objects.VectorShape",
+          "name": "",
+          "text": "Your note is ready on your desk.",
+          "bounds": {
+            "x": 76,
+            "y": 236,
+            "width": 305,
+            "height": 52
+          },
+          "inputType": null,
+          "placeholder": null
+        },
+        {
+          "id": "1ad692df-649c-4e92-852f-b3c4b8904ba8",
+          "type": "Axure.DocumentModel.Objects.VectorShape",
+          "name": "saved_card",
+          "text": "",
+          "bounds": {
+            "x": 68,
+            "y": 323,
+            "width": 310,
+            "height": 187
+          },
+          "inputType": null,
+          "placeholder": null
+        },
+        {
+          "id": "621b88ad-23d2-4311-87d8-71d1faedd24d",
+          "type": "Axure.DocumentModel.Objects.VectorShape",
+          "name": "",
+          "text": "A NOTE FOR LATER",
+          "bounds": {
+            "x": 90,
+            "y": 344,
+            "width": 260,
+            "height": 20
+          },
+          "inputType": null,
+          "placeholder": null
+        },
+        {
+          "id": "adfcf464-d96a-4243-89a0-07cdea8d82e1",
+          "type": "Axure.DocumentModel.Objects.VectorShape",
+          "name": "",
+          "text": "Ready when\nyou are.",
+          "bounds": {
+            "x": 90,
+            "y": 381,
+            "width": 260,
+            "height": 58
+          },
+          "inputType": null,
+          "placeholder": null
+        },
+        {
+          "id": "b9af44df-5437-444e-88fc-f3b3ccc7c850",
+          "type": "Axure.DocumentModel.Objects.VectorShape",
+          "name": "",
+          "text": "Return to your desk anytime.",
+          "bounds": {
+            "x": 90,
+            "y": 458,
+            "width": 260,
+            "height": 35
+          },
+          "inputType": null,
+          "placeholder": null
+        },
+        {
+          "id": "4c20de1a-9596-487f-b31c-888fbd2814c5",
+          "type": "Axure.DocumentModel.Objects.VectorShape",
+          "name": "",
+          "text": "Your notes stay available during this preview.",
+          "bounds": {
+            "x": 76,
+            "y": 560,
+            "width": 300,
+            "height": 70
+          },
+          "inputType": null,
+          "placeholder": null
+        },
+        {
+          "id": "6b80beba-791f-433d-9165-97a707b13948",
+          "type": "Axure.DocumentModel.Objects.VectorShape",
+          "name": "home_bg",
+          "text": "",
+          "bounds": {
+            "x": 28,
+            "y": 738,
+            "width": 374,
+            "height": 54
+          },
+          "inputType": null,
+          "placeholder": null
+        },
+        {
+          "id": "cf0c07cd-c766-4956-91d2-c56c930399d7",
+          "type": "Axure.DocumentModel.Objects.VectorShape",
+          "name": "",
+          "text": "Back to my desk",
+          "bounds": {
+            "x": 28,
+            "y": 754,
+            "width": 374,
+            "height": 24
+          },
+          "inputType": null,
+          "placeholder": null
+        },
+        {
+          "id": "e1f66af0-575a-40aa-89c2-90de284ed5b1",
+          "type": "Axure.DocumentModel.Objects.VectorShape",
+          "name": "hit_home",
+          "text": "",
+          "bounds": {
+            "x": 28,
+            "y": 738,
+            "width": 374,
+            "height": 54
+          },
+          "inputType": null,
+          "placeholder": null
+        }
+      ],
+      "interactions": [
+        {
+          "id": "65ed04dc-7295-4a9c-b898-d4ec6ac7c0aa",
+          "interaction": {
+            "id": "65ed04dc-7295-4a9c-b898-d4ec6ac7c0aa",
+            "events": []
+          }
+        },
+        {
+          "id": "32497716-10f1-44b2-adc8-f03c69738e9f",
+          "interaction": {
+            "id": "32497716-10f1-44b2-adc8-f03c69738e9f",
+            "events": []
+          }
+        },
+        {
+          "id": "578f0bb6-331d-45e7-abef-d68be4b0cbf4",
+          "interaction": {
+            "id": "578f0bb6-331d-45e7-abef-d68be4b0cbf4",
+            "events": []
+          }
+        },
+        {
+          "id": "8ef23322-7ffd-40ff-b5cf-6d884bd70650",
+          "interaction": {
+            "id": "8ef23322-7ffd-40ff-b5cf-6d884bd70650",
+            "events": []
+          }
+        },
+        {
+          "id": "c63088d1-be3c-480b-bd5f-35c0fc4238a5",
+          "interaction": {
+            "id": "c63088d1-be3c-480b-bd5f-35c0fc4238a5",
+            "events": []
+          }
+        },
+        {
+          "id": "0114fdd9-5c50-4c5a-894c-a7e9bbe1af8f",
+          "interaction": {
+            "id": "0114fdd9-5c50-4c5a-894c-a7e9bbe1af8f",
+            "events": []
+          }
+        },
+        {
+          "id": "5368ce96-892d-4d8d-98f2-4063a81b785e",
+          "interaction": {
+            "id": "5368ce96-892d-4d8d-98f2-4063a81b785e",
+            "events": []
+          }
+        },
+        {
+          "id": "0877e41e-bfc8-4f58-931e-f17ac8c37e78",
+          "interaction": {
+            "id": "0877e41e-bfc8-4f58-931e-f17ac8c37e78",
+            "events": []
+          }
+        },
+        {
+          "id": "54163bec-093b-4f9b-b5ea-887d7dcfb99c",
+          "interaction": {
+            "id": "54163bec-093b-4f9b-b5ea-887d7dcfb99c",
+            "events": []
+          }
+        },
+        {
+          "id": "f0bf9df4-069a-4583-987c-7bb16454eb9f",
+          "interaction": {
+            "id": "f0bf9df4-069a-4583-987c-7bb16454eb9f",
+            "events": []
+          }
+        },
+        {
+          "id": "bdc31958-7428-4737-92ae-6b048f454505",
+          "interaction": {
+            "id": "bdc31958-7428-4737-92ae-6b048f454505",
+            "events": []
+          }
+        },
+        {
+          "id": "e2b950b5-cbca-4df7-ae4b-2e134831094d",
+          "interaction": {
+            "id": "e2b950b5-cbca-4df7-ae4b-2e134831094d",
+            "events": []
+          }
+        },
+        {
+          "id": "11f97a4b-3b5c-458d-bfaf-579da4577e16",
+          "interaction": {
+            "id": "11f97a4b-3b5c-458d-bfaf-579da4577e16",
+            "events": []
+          }
+        },
+        {
+          "id": "1ad692df-649c-4e92-852f-b3c4b8904ba8",
+          "interaction": {
+            "id": "1ad692df-649c-4e92-852f-b3c4b8904ba8",
+            "events": []
+          }
+        },
+        {
+          "id": "621b88ad-23d2-4311-87d8-71d1faedd24d",
+          "interaction": {
+            "id": "621b88ad-23d2-4311-87d8-71d1faedd24d",
+            "events": []
+          }
+        },
+        {
+          "id": "adfcf464-d96a-4243-89a0-07cdea8d82e1",
+          "interaction": {
+            "id": "adfcf464-d96a-4243-89a0-07cdea8d82e1",
+            "events": []
+          }
+        },
+        {
+          "id": "b9af44df-5437-444e-88fc-f3b3ccc7c850",
+          "interaction": {
+            "id": "b9af44df-5437-444e-88fc-f3b3ccc7c850",
+            "events": []
+          }
+        },
+        {
+          "id": "4c20de1a-9596-487f-b31c-888fbd2814c5",
+          "interaction": {
+            "id": "4c20de1a-9596-487f-b31c-888fbd2814c5",
+            "events": []
+          }
+        },
+        {
+          "id": "6b80beba-791f-433d-9165-97a707b13948",
+          "interaction": {
+            "id": "6b80beba-791f-433d-9165-97a707b13948",
+            "events": []
+          }
+        },
+        {
+          "id": "cf0c07cd-c766-4956-91d2-c56c930399d7",
+          "interaction": {
+            "id": "cf0c07cd-c766-4956-91d2-c56c930399d7",
+            "events": []
+          }
+        },
+        {
+          "id": "e1f66af0-575a-40aa-89c2-90de284ed5b1",
+          "interaction": {
+            "id": "e1f66af0-575a-40aa-89c2-90de284ed5b1",
+            "events": [
+              {
+                "type": "OnClick",
+                "cases": [
+                  {
+                    "name": "Open",
+                    "newIfGroup": true,
+                    "condition": null,
+                    "actions": [
+                      {
+                        "type": "navigate",
+                        "linkType": "Current",
+                        "targetType": "Page",
+                        "page": "bf917071-97a4-4718-bb95-7d5b81de8cc6"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "onload": {
+        "type": "hJat.OJa9",
+        "fragmentType": "vJvL.NJvD",
+        "events": []
+      }
+    },
+    {
+      "page": {
+        "Id": "66e929d4-8eec-4ae7-a485-e1b8438f8e85",
+        "Name": "06 Step complete",
+        "Type": "page",
+        "Children": null
+      },
+      "widgets": [
+        {
+          "id": "4c1984cd-96ba-4968-aeb0-a5f492f16f58",
+          "type": "Axure.DocumentModel.Objects.Layer",
+          "name": "Tether completed",
+          "text": null,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 430,
+            "height": 932
+          },
+          "inputType": null,
+          "placeholder": null
+        },
+        {
+          "id": "2e1cb0ba-6696-42e4-8ce5-2a8b3e9f8286",
+          "type": "Axure.DocumentModel.Objects.VectorShape",
+          "name": "Tether completed BG",
+          "text": "",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 430,
+            "height": 932
+          },
+          "inputType": null,
+          "placeholder": null
+        },
+        {
+          "id": "d4c7bb72-5653-4cf0-81a0-2fd56a3317e4",
+          "type": "Axure.DocumentModel.Objects.VectorShape",
+          "name": "canvas",
+          "text": "",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 430,
+            "height": 932
+          },
+          "inputType": null,
+          "placeholder": null
+        },
+        {
+          "id": "44a1f35e-c9dc-4833-9f54-a20596e960a3",
+          "type": "Axure.DocumentModel.Objects.VectorShape",
+          "name": "island",
+          "text": "",
+          "bounds": {
+            "x": 162,
+            "y": 11,
+            "width": 106,
+            "height": 24
+          },
+          "inputType": null,
+          "placeholder": null
+        },
+        {
+          "id": "fcd728a1-eb5b-4cc8-824b-f879b386e932",
+          "type": "Axure.DocumentModel.Objects.VectorShape",
+          "name": "",
+          "text": "9:41",
+          "bounds": {
+            "x": 28,
+            "y": 19,
+            "width": 70,
+            "height": 20
+          },
+          "inputType": null,
+          "placeholder": null
+        },
+        {
+          "id": "ebe17f59-62a1-4313-a0cc-eca96551a889",
+          "type": "Axure.DocumentModel.Objects.VectorShape",
+          "name": "",
+          "text": "tether",
+          "bounds": {
+            "x": 28,
+            "y": 66,
+            "width": 180,
+            "height": 28
+          },
+          "inputType": null,
+          "placeholder": null
+        },
+        {
+          "id": "bebe7525-76c5-46ef-a353-139e0224f790",
+          "type": "Axure.DocumentModel.Objects.VectorShape",
+          "name": "",
+          "text": "Step complete",
+          "bounds": {
+            "x": 273,
+            "y": 74,
+            "width": 129,
+            "height": 20
+          },
+          "inputType": null,
+          "placeholder": null
+        },
+        {
+          "id": "034a4b63-64b6-4402-bd39-2db1dc1df7ac",
+          "type": "Axure.DocumentModel.Objects.VectorShape",
+          "name": "thread",
+          "text": "",
+          "bounds": {
+            "x": 46,
+            "y": 160,
+            "width": 3,
+            "height": 505
+          },
+          "inputType": null,
+          "placeholder": null
+        },
+        {
+          "id": "1d66be59-8db1-4f14-9989-26af180c89a9",
+          "type": "Axure.DocumentModel.Objects.VectorShape",
+          "name": "thread_start",
+          "text": "",
+          "bounds": {
+            "x": 40,
+            "y": 154,
+            "width": 15,
+            "height": 15
+          },
+          "inputType": null,
+          "placeholder": null
+        },
+        {
+          "id": "b7d2f296-09dc-4663-9269-292fd3c5dd62",
+          "type": "Axure.DocumentModel.Objects.VectorShape",
+          "name": "thread_end",
+          "text": "",
+          "bounds": {
+            "x": 40,
+            "y": 657,
+            "width": 15,
+            "height": 15
+          },
+          "inputType": null,
+          "placeholder": null
+        },
+        {
+          "id": "588314cd-47aa-4665-bca9-7fc7ad1e564d",
+          "type": "Axure.DocumentModel.Objects.VectorShape",
+          "name": "home_indicator",
+          "text": "",
+          "bounds": {
+            "x": 164,
+            "y": 909,
+            "width": 102,
+            "height": 5
+          },
+          "inputType": null,
+          "placeholder": null
+        },
+        {
+          "id": "eb5bc584-ca3d-41ac-bbd2-3f9ca828b0ad",
+          "type": "Axure.DocumentModel.Objects.VectorShape",
+          "name": "",
+          "text": "That step\nis done.",
+          "bounds": {
+            "x": 76,
+            "y": 148,
+            "width": 310,
+            "height": 74
+          },
+          "inputType": null,
+          "placeholder": null
+        },
+        {
+          "id": "a564c6be-f297-4479-bf82-8727ccaf1083",
+          "type": "Axure.DocumentModel.Objects.VectorShape",
+          "name": "",
+          "text": "You made room for the next move.",
+          "bounds": {
+            "x": 76,
+            "y": 236,
+            "width": 305,
+            "height": 52
+          },
+          "inputType": null,
+          "placeholder": null
+        },
+        {
+          "id": "e68c7f13-0e7b-4cfd-80b6-e5d99f6c9814",
+          "type": "Axure.DocumentModel.Objects.VectorShape",
+          "name": "complete_card",
+          "text": "",
+          "bounds": {
+            "x": 68,
+            "y": 323,
+            "width": 310,
+            "height": 187
+          },
+          "inputType": null,
+          "placeholder": null
+        },
+        {
+          "id": "f712ea4c-7434-4bc7-9c4b-160ca56e9802",
+          "type": "Axure.DocumentModel.Objects.VectorShape",
+          "name": "",
+          "text": "COMPLETED",
+          "bounds": {
+            "x": 90,
+            "y": 344,
+            "width": 260,
+            "height": 20
+          },
+          "inputType": null,
+          "placeholder": null
+        },
+        {
+          "id": "25a5d72e-df3c-48f2-bb8a-b35c8a8c0ec6",
+          "type": "Axure.DocumentModel.Objects.VectorShape",
+          "name": "",
+          "text": "One step\nis enough.",
+          "bounds": {
+            "x": 90,
+            "y": 381,
+            "width": 260,
+            "height": 58
+          },
+          "inputType": null,
+          "placeholder": null
+        },
+        {
+          "id": "7d89f631-f0ee-4553-a649-17ff2b9887ce",
+          "type": "Axure.DocumentModel.Objects.VectorShape",
+          "name": "",
+          "text": "Choose what happens next.",
+          "bounds": {
+            "x": 90,
+            "y": 458,
+            "width": 260,
+            "height": 35
+          },
+          "inputType": null,
+          "placeholder": null
+        },
+        {
+          "id": "02369aab-853a-433d-a73b-3680a5b3075e",
+          "type": "Axure.DocumentModel.Objects.VectorShape",
+          "name": "",
+          "text": "Leave the next move now or come back to the desk.",
+          "bounds": {
+            "x": 76,
+            "y": 560,
+            "width": 300,
+            "height": 70
+          },
+          "inputType": null,
+          "placeholder": null
+        },
+        {
+          "id": "f1f34a0f-bbc9-4725-8cec-6d4299d9992a",
+          "type": "Axure.DocumentModel.Objects.VectorShape",
+          "name": "next_bg",
+          "text": "",
+          "bounds": {
+            "x": 28,
+            "y": 700,
+            "width": 374,
+            "height": 54
+          },
+          "inputType": null,
+          "placeholder": null
+        },
+        {
+          "id": "55020200-1c1b-4e64-86c5-8792d84f52b5",
+          "type": "Axure.DocumentModel.Objects.VectorShape",
+          "name": "",
+          "text": "Leave my next step",
+          "bounds": {
+            "x": 28,
+            "y": 716,
+            "width": 374,
+            "height": 24
+          },
+          "inputType": null,
+          "placeholder": null
+        },
+        {
+          "id": "efa697e7-5d3b-43d9-80d9-c36be99de16f",
+          "type": "Axure.DocumentModel.Objects.VectorShape",
+          "name": "home_bg",
+          "text": "",
+          "bounds": {
+            "x": 28,
+            "y": 769,
+            "width": 374,
+            "height": 54
+          },
+          "inputType": null,
+          "placeholder": null
+        },
+        {
+          "id": "819c0c8a-5e46-468b-acc8-75ca8811531d",
+          "type": "Axure.DocumentModel.Objects.VectorShape",
+          "name": "",
+          "text": "Back to my desk",
+          "bounds": {
+            "x": 28,
+            "y": 785,
+            "width": 374,
+            "height": 24
+          },
+          "inputType": null,
+          "placeholder": null
+        },
+        {
+          "id": "8332bed9-7be8-49f6-b8e0-733a4ce74a23",
+          "type": "Axure.DocumentModel.Objects.VectorShape",
+          "name": "complete_next",
+          "text": "",
+          "bounds": {
+            "x": 28,
+            "y": 700,
+            "width": 374,
+            "height": 54
+          },
+          "inputType": null,
+          "placeholder": null
+        },
+        {
+          "id": "04b00e76-cd7f-494a-bff2-fca8f0515e25",
+          "type": "Axure.DocumentModel.Objects.VectorShape",
+          "name": "complete_home",
+          "text": "",
+          "bounds": {
+            "x": 28,
+            "y": 769,
+            "width": 374,
+            "height": 54
+          },
+          "inputType": null,
+          "placeholder": null
+        }
+      ],
+      "interactions": [
+        {
+          "id": "4c1984cd-96ba-4968-aeb0-a5f492f16f58",
+          "interaction": {
+            "id": "4c1984cd-96ba-4968-aeb0-a5f492f16f58",
+            "events": []
+          }
+        },
+        {
+          "id": "2e1cb0ba-6696-42e4-8ce5-2a8b3e9f8286",
+          "interaction": {
+            "id": "2e1cb0ba-6696-42e4-8ce5-2a8b3e9f8286",
+            "events": []
+          }
+        },
+        {
+          "id": "d4c7bb72-5653-4cf0-81a0-2fd56a3317e4",
+          "interaction": {
+            "id": "d4c7bb72-5653-4cf0-81a0-2fd56a3317e4",
+            "events": []
+          }
+        },
+        {
+          "id": "44a1f35e-c9dc-4833-9f54-a20596e960a3",
+          "interaction": {
+            "id": "44a1f35e-c9dc-4833-9f54-a20596e960a3",
+            "events": []
+          }
+        },
+        {
+          "id": "fcd728a1-eb5b-4cc8-824b-f879b386e932",
+          "interaction": {
+            "id": "fcd728a1-eb5b-4cc8-824b-f879b386e932",
+            "events": []
+          }
+        },
+        {
+          "id": "ebe17f59-62a1-4313-a0cc-eca96551a889",
+          "interaction": {
+            "id": "ebe17f59-62a1-4313-a0cc-eca96551a889",
+            "events": []
+          }
+        },
+        {
+          "id": "bebe7525-76c5-46ef-a353-139e0224f790",
+          "interaction": {
+            "id": "bebe7525-76c5-46ef-a353-139e0224f790",
+            "events": []
+          }
+        },
+        {
+          "id": "034a4b63-64b6-4402-bd39-2db1dc1df7ac",
+          "interaction": {
+            "id": "034a4b63-64b6-4402-bd39-2db1dc1df7ac",
+            "events": []
+          }
+        },
+        {
+          "id": "1d66be59-8db1-4f14-9989-26af180c89a9",
+          "interaction": {
+            "id": "1d66be59-8db1-4f14-9989-26af180c89a9",
+            "events": []
+          }
+        },
+        {
+          "id": "b7d2f296-09dc-4663-9269-292fd3c5dd62",
+          "interaction": {
+            "id": "b7d2f296-09dc-4663-9269-292fd3c5dd62",
+            "events": []
+          }
+        },
+        {
+          "id": "588314cd-47aa-4665-bca9-7fc7ad1e564d",
+          "interaction": {
+            "id": "588314cd-47aa-4665-bca9-7fc7ad1e564d",
+            "events": []
+          }
+        },
+        {
+          "id": "eb5bc584-ca3d-41ac-bbd2-3f9ca828b0ad",
+          "interaction": {
+            "id": "eb5bc584-ca3d-41ac-bbd2-3f9ca828b0ad",
+            "events": []
+          }
+        },
+        {
+          "id": "a564c6be-f297-4479-bf82-8727ccaf1083",
+          "interaction": {
+            "id": "a564c6be-f297-4479-bf82-8727ccaf1083",
+            "events": []
+          }
+        },
+        {
+          "id": "e68c7f13-0e7b-4cfd-80b6-e5d99f6c9814",
+          "interaction": {
+            "id": "e68c7f13-0e7b-4cfd-80b6-e5d99f6c9814",
+            "events": []
+          }
+        },
+        {
+          "id": "f712ea4c-7434-4bc7-9c4b-160ca56e9802",
+          "interaction": {
+            "id": "f712ea4c-7434-4bc7-9c4b-160ca56e9802",
+            "events": []
+          }
+        },
+        {
+          "id": "25a5d72e-df3c-48f2-bb8a-b35c8a8c0ec6",
+          "interaction": {
+            "id": "25a5d72e-df3c-48f2-bb8a-b35c8a8c0ec6",
+            "events": []
+          }
+        },
+        {
+          "id": "7d89f631-f0ee-4553-a649-17ff2b9887ce",
+          "interaction": {
+            "id": "7d89f631-f0ee-4553-a649-17ff2b9887ce",
+            "events": []
+          }
+        },
+        {
+          "id": "02369aab-853a-433d-a73b-3680a5b3075e",
+          "interaction": {
+            "id": "02369aab-853a-433d-a73b-3680a5b3075e",
+            "events": []
+          }
+        },
+        {
+          "id": "f1f34a0f-bbc9-4725-8cec-6d4299d9992a",
+          "interaction": {
+            "id": "f1f34a0f-bbc9-4725-8cec-6d4299d9992a",
+            "events": []
+          }
+        },
+        {
+          "id": "55020200-1c1b-4e64-86c5-8792d84f52b5",
+          "interaction": {
+            "id": "55020200-1c1b-4e64-86c5-8792d84f52b5",
+            "events": []
+          }
+        },
+        {
+          "id": "efa697e7-5d3b-43d9-80d9-c36be99de16f",
+          "interaction": {
+            "id": "efa697e7-5d3b-43d9-80d9-c36be99de16f",
+            "events": []
+          }
+        },
+        {
+          "id": "819c0c8a-5e46-468b-acc8-75ca8811531d",
+          "interaction": {
+            "id": "819c0c8a-5e46-468b-acc8-75ca8811531d",
+            "events": []
+          }
+        },
+        {
+          "id": "8332bed9-7be8-49f6-b8e0-733a4ce74a23",
+          "interaction": {
+            "id": "8332bed9-7be8-49f6-b8e0-733a4ce74a23",
+            "events": [
+              {
+                "type": "OnClick",
+                "cases": [
+                  {
+                    "name": "Continue",
+                    "newIfGroup": true,
+                    "condition": null,
+                    "actions": [
+                      {
+                        "type": "navigate",
+                        "linkType": "Current",
+                        "targetType": "Page",
+                        "page": "7f7e2f66-3f4d-452f-ad3f-8b20a61fc075"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "04b00e76-cd7f-494a-bff2-fca8f0515e25",
+          "interaction": {
+            "id": "04b00e76-cd7f-494a-bff2-fca8f0515e25",
+            "events": [
+              {
+                "type": "OnClick",
+                "cases": [
+                  {
+                    "name": "Continue",
+                    "newIfGroup": true,
+                    "condition": null,
+                    "actions": [
+                      {
+                        "type": "navigate",
+                        "linkType": "Current",
+                        "targetType": "Page",
+                        "page": "bf917071-97a4-4718-bb95-7d5b81de8cc6"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "onload": {
+        "type": "hJat.OJa9",
+        "fragmentType": "vJvL.NJvD",
+        "events": []
+      }
+    }
+  ],
+  "container": {
+    "signature": "acef0b007102000001d006ec04f0037b",
+    "isZip": false
+  }
+}

@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Hướng dẫn tự dựng prototype Axure — COMP1649 Coursework</title>
+<style>
+  :root{
+    --ink:#2b2b2b; --paper:#fafaf8; --line:#8a8a8a; --soft:#e4e2dc;
+    --accent:#1d6f8f; --note:#a05a2c; --ok:#3c7a3c;
+  }
+  *{box-sizing:border-box}
+  body{font-family:'Segoe UI',system-ui,sans-serif;background:var(--paper);color:var(--ink);
+       margin:0;padding:32px 0;max-width:980px;margin:0 auto;padding-left:16px;padding-right:16px}
+  h1{font-size:26px;border-bottom:3px solid var(--ink);padding-bottom:10px}
+  h2{font-size:20px;margin-top:48px;display:flex;align-items:center;gap:10px}
+  .pill{font-size:11px;font-weight:600;padding:3px 10px;border-radius:12px;color:#fff}
+  .rq{background:var(--accent)} .np{background:var(--note)} .fin{background:var(--ok)}
+  .frame{border:2px solid var(--line);border-radius:10px;background:#fff;overflow:hidden;
+         box-shadow:3px 3px 0 var(--soft);margin:18px 0}
+  .frame .bar{background:var(--soft);padding:6px 12px;font-size:11px;color:#555;
+              display:flex;gap:6px;align-items:center}
+  .frame .bar i{width:9px;height:9px;border-radius:50%;background:#b5ada0;display:inline-block}
+  .frame .body{padding:18px;min-height:220px;position:relative}
+  .callout{position:relative;background:#fff8ee;border:1px dashed var(--note);border-radius:8px;
+           padding:12px 14px;font-size:13px;margin:14px 0;line-height:1.55}
+  .callout b{color:var(--note)}
+  .axure{background:#eef3f5;border:1px solid var(--accent);border-radius:8px;
+         padding:12px 14px;font-size:13.5px;margin:14px 0;line-height:1.6}
+  .axure b{color:var(--accent)}
+  .axure ol{margin:6px 0 0 20px;padding:0}
+  .steps li{margin-bottom:6px}
+  /* wireframe primitives */
+  .w-btn{display:inline-block;border:2px solid var(--line);border-radius:6px;padding:6px 14px;
+         font-size:13px;background:#fff;margin-right:8px}
+  .w-btn.dark{background:#3a3a3a;color:#fff;border-color:#3a3a3a}
+  .w-btn.acc{border-color:var(--accent);color:var(--accent)}
+  .w-nav{display:flex;gap:18px;font-size:12px;border-bottom:1px solid var(--soft);
+         padding-bottom:8px;margin-bottom:14px}
+  .w-nav span:first-child{font-weight:700}
+  .w-nav .right{margin-left:auto;color:#888}
+  .w-card{border:1.5px solid var(--line);border-radius:8px;padding:12px 14px;margin-bottom:10px;
+          background:#fff;position:relative}
+  .w-card.sel{border-color:var(--accent);border-width:2px}
+  .w-card .tag{position:absolute;top:-10px;right:10px;background:var(--accent);color:#fff;
+               font-size:10px;padding:2px 8px;border-radius:10px}
+  .w-card .tagb{position:absolute;top:-10px;right:10px;background:var(--note);color:#fff;
+                font-size:10px;padding:2px 8px;border-radius:10px}
+  .w-title{font-weight:700;font-size:15px;margin-bottom:4px}
+  .w-sub{font-size:12px;color:#777}
+  .w-line{height:8px;background:var(--soft);border-radius:4px;margin:6px 0}
+  .w-line.short{width:45%}
+  .w-banner{background:#e7f0e7;border:1px solid var(--ok);border-radius:8px;padding:10px 14px;
+            font-size:13px;color:var(--ok);margin-bottom:12px}
+  .w-grid{display:flex;gap:8px;margin:12px 0}
+  .w-slot{flex:1;border:1.5px solid var(--line);border-radius:6px;padding:8px;font-size:11px;
+          text-align:center;background:#fff}
+  .w-slot.free{border-color:var(--ok);color:var(--ok)}
+  .w-slot.busy{background:var(--soft);color:#999;border-style:dashed}
+  .w-input{border:1.5px solid var(--line);border-radius:6px;padding:7px 10px;font-size:13px;
+           color:#999;background:#fff}
+  .w-note{font-size:11px;color:var(--note);border-left:3px solid var(--note);
+          padding-left:10px;margin-top:10px;font-style:italic}
+  table.cmp{width:100%;border-collapse:collapse;font-size:13px;margin:16px 0}
+  table.cmp th,table.cmp td{border:1px solid var(--soft);padding:8px 10px;text-align:left;vertical-align:top}
+  table.cmp th{background:var(--soft)}
+  .warn{background:#fdf0f0;border:1px solid #c0392b;border-radius:8px;padding:12px 14px;
+        font-size:13px;line-height:1.55;margin:14px 0}
+  .warn b{color:#c0392b}
+</style>
+</head>
+<body>
+
+<h1>Hướng dẫn TỰ TAY dựng prototype Axure RP 11</h1>
+<p><b>Phạm vi:</b> 8 trang, 3 journeys khớp 3 RQ. Thời gian dự kiến ~3–4 giờ. Đây là tài liệu
+hỗ trợ học tập/planning — bạn tự dựng, tự quyết định chi tiết cuối cùng, và những quyết định đó
+chính là nội dung bạn viết trong report (mục 3 & 4).</p>
+
+<div class="warn"><b>Vì sao phải tự dựng:</b> các file <code>studyflow-*.rp</code> là bản AI-built để luyện tập
+(file status tự ghi rõ không phải bản nộp). Nộp file đó = vi phạm quy chế AI trong brief.
+Cách an toàn duy nhất: bạn dựng file mới của mình theo hướng dẫn này, và dùng bản cũ làm tham khảo
+về bố cục. Khi tự dựng, hãy <b>chụp ảnh từng bản nháp</b> (File → Save As ra v1, v2, v3…) —
+đây là bằng chứng "design process" mà mục 3.1 của report cần.</div>
+
+<!-- SCREEN 1 -->
+<h2>Trang 1 — Welcome / Scenario <span class="pill rq">chuẩn bị</span><span class="pill np">Norman: Consistency</span></h2>
+<div class="frame">
+  <div class="bar"><i></i><i></i><i></i>&nbsp; 00-welcome</div>
+  <div class="body" style="text-align:center;padding-top:40px">
+    <div style="font-size:22px;font-weight:700">Study Plan — Prototype Demo</div>
+    <div class="w-line short" style="margin:14px auto"></div>
+    <p style="font-size:13px;color:#666;max-width:420px;margin:0 auto 18px">
+      A demo of an AI-assisted planner for coursework.<br>
+      <b>Note: AI responses in this demo are simulated examples.</b></p>
+    <span class="w-btn dark">▶&nbsp; Start</span>
+    <div class="w-note" style="text-align:left;max-width:420px;margin:26px auto 0">
+      Chữ in nghiêng chú thích này là điều giảng viên chấm muốn thấy khi test study ở mục 5 report —
+      nó nói rõ AI là mô phỏng.</div>
+  </div>
+</div>
+<div class="axure"><b>Cách làm trong Axure:</b>
+<ol class="steps">
+  <li>Trang đầu tiên đặt tên <code>00 Welcome</code>. Kéo <b>Rectangle</b> + 2 <b>Text Field</b>-style labels (Widget library cửa sổ bên trái).</li>
+  <li>Nút Start: <b>Button shape</b> → Style: nền tối, chữ trắng.</li>
+  <li>OnClick → <b>Open Link → 01 Assignment</b>.</li>
+  <li>Câu "AI responses are simulated" đặt dạng Medium-thường, không cần animation.</li>
+</ol></div>
+
+<!-- SCREEN 2 -->
+<h2>Trang 2 — Assignment <span class="pill rq">RQ1</span><span class="pill np">Norman: Affordance</span></h2>
+<div class="frame">
+  <div class="bar"><i></i><i></i><i></i>&nbsp; 01-assignment</div>
+  <div class="body">
+    <div class="w-nav"><span>Home</span><span>Plan</span><span>Schedule</span><span class="right">Alex ▾</span></div>
+    <div class="w-card">
+      <div class="w-title">CS3001 — Assignment 2: Literature Review</div>
+      <div class="w-sub">Deadline: Fri 14 Nov · 2000 words · worth 30%</div>
+      <div class="w-line"></div><div class="w-line"></div>
+    </div>
+    <div class="callout"><b>Nhu cầu từ Zhu et al.:</b> sinh viên ADHD muốn hệ thống <i>trích</i> nội dung
+    quan trọng trước (rubric, deadline) thay vì hiện nguyên 20 trang đề bài —
+    giúp giảm overload khi nhìn vào việc còn làm.</div>
+    <div style="margin-top:14px">
+      <span class="w-btn acc">Use example brief</span>
+      <span class="w-btn">Paste my own text</span>
+    </div>
+    <div class="w-note">"Use example brief" là affordance thật: màu + viền khác hệ rõ, hiển thị
+    nhấn được. Nút thứ hai chỉ để show khả năng mở rộng, không hoạt động → set Disabled.</div>
+  </div>
+</div>
+<div class="axure"><b>Cách làm trong Axure:</b>
+<ol class="steps">
+  <li>Header dùng 1 lần rồi <b>Convert to Master</b> (phải-chuột → Convert to Global Master) dùng chung 8 trang.</li>
+  <li>Card: Rectangle + 2 Text widget + 1 <b>Placeholder box</b> (dải xám giả đoạn văn).</li>
+  <li>2 Button shape. Nút "Paste my own text": chuột phải → <b>Set as Disabled</b> (nhá vào Constraints nói trong report).</li>
+  <li>OnClick "Use example brief" → Open Link 02 Requirements.</li>
+</ol></div>
+
+<!-- SCREEN 3 -->
+<h2>Trang 3 — Requirements <span class="pill rq">RQ1</span><span class="pill np">Norman: Visibility + Feedback</span></h2>
+<div class="frame">
+  <div class="bar"><i></i><i></i><i></i>&nbsp; 02-requirements</div>
+  <div class="body">
+    <div class="w-nav"><span>Home</span><span>Plan</span><span>Schedule</span><span class="right">Alex ▾</span></div>
+    <div class="w-banner">✓ From your document, I understood these requirements</div>
+    <div class="w-card">☐ 2000-word literature review, 6+ academic sources</div>
+    <div class="w-card">☐ Compare at least 2 research methods</div>
+    <div class="w-card sel"><span class="tag">Needs your input</span>☐ What is your current progress? <b>— none yet</b></div>
+    <div class="callout">Dòng thứ 3 có input cần user điền (deadline / progress) → đúng dòng kịch bản
+    "AI hỏi thêm thông tin" trong product concept của bạn.</div>
+    <div style="margin-top:12px"><span class="w-btn dark">Looks correct →&nbsp;</span>
+      <span class="w-sub">edit: click any line to change it</span></div>
+  </div>
+</div>
+<div class="axure"><b>Cách làm trong Axure:</b>
+<ol class="steps">
+  <li>3 dòng dùng <b>Checkbox widget</b> (kéo chữ vào label) — User có thể click đổi Selected state.</li>
+  <li>Nút "Looks correct" → OnClick Open Link 03 Plan.</li>
+  <li>Banner xanh hiển thị Feedback của bước trước để user chắc là AI đã "hiểu" — Visibility).</li>
+</ol></div>
+
+<!-- SCREEN 4 -->
+<h2>Trang 4 — Your Plan (steps) <span class="pill rq">RQ1 — chọn first action</span><span class="pill np">Norman: Constraints</span></h2>
+<div class="frame">
+  <div class="bar"><i></i><i></i><i></i>&nbsp; 03-plan</div>
+  <div class="body">
+    <div class="w-nav"><span>Home</span><span>Plan</span><span>Schedule</span><span class="right">Alex ▾</span></div>
+    <div class="w-card sel"><span class="tag">▶ Start here</span>
+      <div class="w-title">Step 1 · Skim 10 papers, note titles</div>
+      <div class="w-sub">⏱ 45 min · <span style="color:var(--accent);text-decoration:underline">✎ Edit</span></div>
+    </div>
+    <div class="w-card"><div class="w-title">Step 2 · Write 6 summaries</div>
+      <div class="w-sub">⏱ 2 h &nbsp;·&nbsp; ✎ Edit</div></div>
+    <div class="w-card"><div class="w-title">Step 3 · Compare methods table</div>
+      <div class="w-sub">⏱ 90 min · ✎ Edit</div></div>
+    <div class="callout"><b>Đây là tương tác chính RQ1 test:</b> chỉ 1 bước được đánh dấu
+    "Start here" (constraints — prevent overload), user phải chọn/nói which one is their
+    first action. Zhu et al.: "quá nhiều bước hiện cùng lúc gây quá tải."</div>
+    <div style="margin-top:10px"><span class="w-btn acc">Choose study times →</span></div>
+  </div>
+</div>
+<div class="axure"><b>Cách làm trong Axure:</b>
+<ol class="steps">
+  <li>4 Step card = 1 Rectangle + title + sub + tag shape (chỉ step 1 có tag).</li>
+  <li>Vùng "Start here" có 1 <b>Selection state</b>: chọn Rectangle → Interaction Style "Selected" đổi nền xanh nhạt.</li>
+  <li>Text "Step 1" để <i>không</i> dùng text Field thật (mid-fi, không cần; thay vào đó dùng label + "✎ Edit" mở 1 trang mini-edit hoặc Dynamic panel inline — xem phần "Edit inline" bên dưới).</li>
+  <li>Footer button → Open Link 04 Schedule.</li>
+</ol></div>
+<div class="axure"><b>Edit inline (đơn giản nhất để build):</b>
+<ol class="steps">
+  <li>Card step 1: cấu trúc thành <b>Dynamic Panel</b> (phải-chuột → Convert to Dynamic Panel).</li>
+  <li>State 1 = label; State 2 = <b>Text Field widget</b> + 2 nút [Save] [Cancel].</li>
+  <li>Click "✎ Edit": OnClick → <b>Set Panel State</b> → giá trị [To] State 2.</li>
+  <li>Save: OnClick → <b>Set Text</b> (widget = label text = typed value) → <b>Set Panel State</b> State 1 → <b>Set Variable</b> <code>Step1Text</code> = typed value.</li>
+</ol></div>
+
+<!-- SCREEN 5 -->
+<h2>Trang 5 — Schedule <span class="pill rq">RQ2</span><span class="pill np">Norman: Constraints + Feedback</span></h2>
+<div class="frame">
+  <div class="bar"><i></i><i></i><i></i>&nbsp; 04-schedule</div>
+  <div class="body">
+    <div class="w-nav"><span>Home</span><span>Plan</span><span>Schedule</span><span class="right">Alex ▾</span></div>
+    <div class="w-banner">✓ Study session saved — Tue 18:00–19:30</div>
+    <div class="w-grid">
+      <div class="w-slot">Mon</div>
+      <div class="w-slot busy">Tue</div>
+      <div class="w-slot free">Wed</div>
+      <div class="w-slot free">Thu</div>
+    </div>
+    <div class="callout">Slot "Tue" bị <i>disable</i> (nền xám, viền đứt) — Tue có class bận nên
+    không click được; slot Wed/Thu màu xanh hiển thị là <i>chọn được</i>.
+    Đây là minh họa trực quan cho mục 3.2 (Constraints) trong report.</div>
+    <div style="margin-top:8px">
+      <span class="w-input">Day: Wed ▾</span>&nbsp;
+      <span class="w-input">Time: 18:00 ▾</span>&nbsp;
+      <span class="w-btn dark">Save study time</span></div>
+    <div class="w-note">Banner xanh trên cùng = Feedback sau Save (trong Axure: Dynamic panel
+    ẩn hiện khi OnClick Save → Show panel + Set Variable Day/Time).</div>
+  </div>
+</div>
+<div class="axure"><b>Cách làm trong Axure:</b>
+<ol class="steps">
+  <li>4 slot = 4 Rectangle; slot bận: Style xám + dashed + chuột phải → Set as Disabled.</li>
+  <li>2 <b>Droplist widget</b> (Day / Time) với options Tuần cố định (Wed/Thu + 18:00/19:30…).</li>
+  <li>Save → OnClick:
+    <ul style="margin:6px 0 0 18px"><li>Set Variable <code>SessionDay</code> = droplist.text; <code>SessionTime</code> = time.text</li>
+    <li><b>Show</b> banner Dynamic panel ("✓ saved").</li></ul></li>
+  <li>Trang này + trang Today: <b>OnPageLoad</b> → Set banner/label text = [[SessionDay]] (giá trị nhớ).</li>
+</ol></div>
+
+<!-- SCREEN 6 -->
+<h2>Trang 6 — Step Detail + "I'm stuck" <span class="pill rq">RQ3 — nút hỗ trợ phải dễ tìm</span><span class="pill np">Norman: Signifiers</span></h2>
+<div class="frame">
+  <div class="bar"><i></i><i></i><i></i>&nbsp; 05-step-detail</div>
+  <div class="body">
+    <div class="w-nav"><span>Home</span><span>Plan</span><span>Schedule</span><span class="right">Alex ▾</span></div>
+    <div class="w-card"><div class="w-title">Step 3 · Compare methods table</div>
+      <div class="w-sub">from Step summary · due Thu</div>
+      <div class="w-line"></div><div class="w-line short"></div></div>
+    <div style="margin-top:16px"><span class="w-btn acc">💬 This step feels difficult</span></div>
+    <div class="callout">Kịch bản RQ3 cho participant: "bước này quá vague để bắt làm — dùng tính
+    năng hỗ trợ để quyết định next action". Nút cần <b>text label rõ</b> (không chỉ icon),
+    nằm ngay cạnh step — đúng cam kết UX-principle của bạn: "icons will have text labels."</div>
+  </div>
+</div>
+<div class="axure"><b>Cách làm trong Axure:</b>
+<ol class="steps">
+  <li>Nút "This step feels difficult" = Button shape + icon variants có emoji/shape bỏ qua cũng ok (chữ chính là signifier).</li>
+  <li>OnClick → Open Dynamic panel state "reason" trên trang, HOẶC open 06 Support (đơn giản hơn: sang trang mới).</li>
+</ol></div>
+
+<!-- SCREEN 7 -->
+<h2>Trang 7 — Support Flow <span class="pill rq">RQ3</span><span class="pill np">Norman: Feedback + user control</span></h2>
+<div class="frame">
+  <div class="bar"><i></i><i></i><i></i>&nbsp; 06-support</div>
+  <div class="body">
+    <div class="w-nav"><span>Home</span><span>Plan</span><span class="right">← Back</span></div>
+    <div class="w-card"><div class="w-sub">What makes this step hard?</div>
+      <div style="margin-top:8px">
+        <span class="w-btn">Not sure what it means</span>
+        <span class="w-btn">Too big to start</span>
+        <span class="w-btn">Don't have tools / files</span>
+      </div>
+    </div>
+    <div class="w-banner">✓ Suggested smaller step</div>
+    <div class="w-card sel"><span class="tagb">New</span>
+      <div class="w-title">Step 3a · List 5 rows of the table, one per method studied</div>
+      <div class="w-sub">⏱ 25 min</div></div>
+    <div style="margin-top:8px">
+      <span class="w-btn dark">Use this first action</span>
+      <span class="w-btn">Never mind</span></div>
+  </div>
+</div>
+<div class="axure"><b>Cách làm trong Axure (Khuyến nghị: đây là trang duy nhất xài Dynamic panel 3 state)</b>
+<ol class="steps">
+  <li>3 nút lý do → OnClick từng cái → <b>Set Panel State</b> (suggestion area) → State tương ứng
+      [State clarify suggestion / State smaller step / State resources]. Mỗi state đều có
+      [Accept] [Never mind].</li>
+  <li>Accept → Open Link 07 Plan-updated. Never mind → Open Link 03 Plan (quay về, không có gì đổi).</li>
+  <li>Toàn bộ nội dung "AI suggestion" là <b>text cố định</b> bạn soạn trước (simulated) — viết rõ
+      trong report là simulation để integrity.</li>
+</ol></div>
+
+<!-- SCREEN 8 -->
+<h2>Trang 8 — Plan Updated <span class="pill fin">kết cả 3 journeys</span><span class="pill np">Norman: Feedback</span></h2>
+<div class="frame">
+  <div class="bar"><i></i><i></i><i></i>&nbsp; 07-plan-updated</div>
+  <div class="body">
+    <div class="w-nav"><span>Home</span><span>Plan</span><span>Schedule</span><span class="right">Alex ▾</span></div>
+    <div class="w-banner">✓ New smaller step added to your plan</div>
+    <div class="w-card">Step 1 · Skim 10 papers, note titles</div>
+    <div class="w-card">Step 2 · Write 6 summaries</div>
+    <div class="w-card sel"><b>Step 3a</b> · List 5 rows of table <span class="w-sub">— accepted from support</span></div>
+    <div class="w-card">Step 3 · Compare methods table</div>
+    <div style="margin-top:12px"><span class="w-btn">Undo</span>&nbsp;
+      <span class="w-btn dark">Mark 3a done →</span></div>
+    <div class="w-sub" style="margin-top:8px">0 of 4 steps completed</div>
+  </div>
+</div>
+<div class="axure"><b>Cách làm trong Axure:</b>
+<ol class="steps">
+  <li>Đây chính là "prepared confirmation" như thiết kế task5 cũ — đơn giản, hợp lệ với Prototype scope.</li>
+  <li>"Done" counter tăng tự động: khi nhấn Mark done → <b>Set Text</b> counter = "1 of 4 steps completed" —
+      đủ cho scope prototype, không cần engine đếm thực.</li>
+  <li>Chốt journey bằng feedback gì thấy rõ: banner xanh + counter đổi + step 3a visible trong list.</li>
+</ol></div>
+
+<h2>Bảng so sánh giữa các bản</h2>
+<table class="cmp">
+  <tr><th></th><th>task5-edited.rp (đang có)</th><th>Bản tự dựng theo hướng dẫn này</th></tr>
+  <tr><td>Nguồn gốc</td><td>AI-built qua .NET tool — KHÔNG được nộp</td><td>Bạn tự dựng → được nộp ✓</td></tr>
+  <tr><td>Interactive</td><td>Có 48 links, nhưng chưa từng chạy Preview thật</td><td>Chỉ được đi qua khi bạn tự test Preview ✓</td></tr>
+  <tr><td>Iterations</td><td>Không có trace design-process</td><td>Save As v1 → v2 → v3, chụp ảnh — proof cho mục 3.1 report ✓</td></tr>
+  <tr><td>Nuance data logic</td><td>Có sẵn global variables</td><td>Tự set trong OnClick/OnPageLoad khi dựng xong từng trang (bảng biến ở dưới)</td></tr>
+  <tr><td>Khớp với 3 RQ</td><td>Có sẵn 3 journeys</td><td>Kiểm tra nội dung từng RQ's "Example test activity" ✓</td></tr>
+</table>
+
+<h2>Bảng Global Variables cần tạo</h2>
+<table class="cmp">
+  <tr><th>Tên biến</th><th>Set khi</th><th>Đọc khi (OnPageLoad)</th></tr>
+  <tr><td><code>Step1Text</code></td><td>Nhấn Save ở edit-step (trang 03-plan)</td><td>Trang 03 / 07 — hiển thị step mới</td></tr>
+  <tr><td><code>Step2Text</code>…<code>Step4Text</code></td><td>tương tự các step khác</td><td>tương tự</td></tr>
+  <tr><td><code>SessionDay</code></td><td>Nhấn "Save study time" (trang 04)</td><td>Trang 04 / Schedule — hiện banner ✓ + đặt label</td></tr>
+  <tr><td><code>SessionTime</code></td><td>như trên</td><td>như trên</td></tr>
+</table>
+<p style="font-size:13px;color:#666">Mở <b>Project → Global Variables</b> trong Axure để tạo các biến.
+Đặt tên hết sức ngắn gọn để dùng lại được ở nhiều trang.</p>
+
+<h2>Quy trình làm cuối cùng</h2>
+<ol style="font-size:14px;line-height:1.8">
+  <li>Axure RP 11 → <b>New File</b>. Project → Global Variables → tạo 6 biến như bảng.</li>
+  <li>Làm theo hướng dẫn từng trang 1→8, mỗi trang xong <b>File → Save As</b> thành
+      <code>coursework-prototype-v1.rp</code>, <code>…-v2.rp</code>… (bản cuối dùng để nộp).
+      Mỗi version ghi file-note xuống <code>iterations-log.md</code> bạn tự viết: "v2: added support flow panel, fixed Save not persisting day".</li>
+  <li>Preview (phím <b>F5</b>) ngay sau mỗi 2 trang — <b>chưa từng được làm</b> ở mọi bản cũ; đây là việc chỉ bạn có thể làm vì cần môi trường Axure thật.</li>
+  <li>Khi dựng xong cả 8 trang: đi lại toàn bộ 3 journeys bằng "Example test activity" đã ghi trong <code>task-05-research-questions-draft.md</code>.</li>
+  <li>Chụp screenshots dùng cho report mục 3.2 (Norman) và mục 4 (prototype).</li>
+</ol>
+
+<p style="margin-top:40px;padding-top:14px;border-top:2px solid var(--ink);font-size:13px;color:#666">
+Tài liệu hỗ trợ học tập/planning theo quy chế AI của brief. Bạn tự thao tác trong Axure, tự diễn đạt
+mọi nội dung report. File này KHÔNG phải là nội dung coursework nộp.</p>
+
+</body>
+</html>

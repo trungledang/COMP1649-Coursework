@@ -1,0 +1,55 @@
+{
+  "pages": [
+    "bf917071-97a4-4718-bb95-7d5b81de8cc6",
+    "12f4c141-9ec5-4646-bd56-ecb8768c6584",
+    "7d084d62-08fc-4588-b4de-09cee1f65333",
+    "7f7e2f66-3f4d-452f-ad3f-8b20a61fc075",
+    "e4aac2f0-51f5-4a3f-a983-8ff8e1ea2180"
+  ],
+  "items": [
+    [
+      "continue",
+      "f597071a-fcd8-4d9e-8ed2-e7b2b807b7ee"
+    ],
+    [
+      "pause",
+      "085457f4-9fd0-469d-a595-dababb451840"
+    ],
+    [
+      "stuck",
+      "cb16cd57-8d45-4fed-b4c7-f50911c2bc33"
+    ],
+    [
+      "pause",
+      "431d0117-1e7f-484f-955b-691d6b28fa93"
+    ],
+    [
+      "done",
+      "bbb3d75e-ba69-4319-8ffc-2652c7d07202"
+    ],
+    [
+      "start",
+      "560511f0-3ffa-49a7-88f7-5f336d392115"
+    ],
+    [
+      "small",
+      "d030b209-578b-48ea-95f1-b93ac260c28c"
+    ],
+    [
+      "source",
+      "85792526-cdf6-40d3-ad69-5f3020a3957e"
+    ],
+    [
+      "try",
+      "afa57a39-897b-4079-949a-6fe61ab30bec"
+    ],
+    [
+      "back",
+      "093441fb-cf2c-4a49-91a5-85b67c9bb680"
+    ]
+  ],
+  "inputs": [
+    "cf70fca7-71ac-4f22-8f2c-f31b2aec59af",
+    "91b87d72-c1f9-447b-a78c-23e8d4e94667"
+  ]
+}

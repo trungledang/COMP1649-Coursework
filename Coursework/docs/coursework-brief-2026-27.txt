@@ -1,0 +1,125 @@
+Coursework Brief (TNE)
+
+Module Code &amp; Title: COMP1649 Human-Computer Interaction
+Module Leader: Dr. Annemarie Zijlema
+Assessment Contribution to Module: 100%
+
+Assessment Name: Coursework
+Academic Year: 2026-2027
+Submission Deadline: [Day, Date Month Year]
+.
+
+Learning Outcomes Assessed
+ LO1: Deploy theory, design principles, tools and methodologies to implement
+and evaluate human-computer interactions;
+ LO2: Carry out design research to inform development of systems and
+applications;
+ LO3: Construct and create prototypes of human-computer interactions;
+ LO4: Demonstrate the origins of ideas by correctly citing and referencing
+sources used in the work.
+
+Coursework Submission Requirements
+ You must submit a single PDF document. Text must be selectable (not an
+image or scan). You can convert files to PDF using Save As PDF features in
+MS Office or equivalent.
+ A mark for the last uploaded version of your work will be recorded (this
+includes any permitted late period). The mark will be subject to regulations
+affecting capping and/or any assessment misconduct investigation.
+ Ensure your file is not corrupted, password-protected, or infected with viruses;
+otherwise, it will be treated as null.
+ Please check the file size limits displayed on the Moodle submission page.
+
+Academic Misconduct and Extenuating Circumstances
+Please refer to the following links for the University’s Academic Misconduct and
+Extenuating Circumstances policies and procedures
+- Assessment Misconduct Procedure (Taught Awards) | Documents | University of
+Greenwich
+
+- Extenuating circumstances | Student Services | University of Greenwich
+
+Use of Generative AI in this Assessment
+Generative AI may be used only to support preparation for this assessment.
+Permitted uses include learning support, planning, brainstorming, clarification,
+comprehension, feedback, and language improvement. AI must not generate
+substantive assessment content.
+All analysis, arguments, interpretations, and the final submission must be your
+own work.
+At the end of your assignment, before the references, you should write a
+reflection on your use of AI: 60-100 words, covering:
+ AI tool(s) used (e.g., Microsoft Copilot).
+ How AI supported your learning
+ How AI outputs were edited, transformed, or expanded.
+ How outputs were verified and inaccuracies corrected.
+Submitting AI-generated work as your own will be treated as assessment misconduct.
+
+Assessment Specification
+Choose one of the following topic areas for your coursework:
+A. Design a digital application (e.g. a mobile app) for neurodiverse learners in a
+higher education setting. Potential features may include: task breakdown
+and time management tools, interface customisation, mood tracking, peer
+support etc. Accessibility elements could be considered.
+B. Design a digital application (e.g. a mobile app combined with a smart watch
+app) for divers, swimmers, fishers, and sailors to report debris at sea and
+other environmental problems they encounter on the water. Potential
+features may include: logging debris sightings, alerting relevant authorities,
+and sharing information with fellow water sport enthusiasts and volunteer
+groups. Wearables connected to an app and outdoor interaction design could
+be considered.
+C. Design a digital application (e.g. a tablet app or mobile app) for children to
+encourage reading children’s stories and books (could be digital books or
+printed books). Potential features may include: search and reading
+recommendations, guided (interactive) reading, summarising and quiz
+activities, progress indicators and rewards, etc. Gamification elements could
+be considered.
+You have been commissioned to write a report and create a prototype for a new
+interactive product for one of the above options and target groups. Investigate the
+
+needs and context of the chosen target group and the product, and decide on two to
+three main features, which are supported by your literature research.
+The scope of the interactive prototype should focus on two to three main areas. You
+are asked to create a proof of concept for the interactions in this system to see if
+users find it usable and desirable. The basic brief is open for interpretation, and you
+can and should design desirable interactions as you see fit based on your
+background readings and your research activities.
+Interactive prototype
+You need to create a mid-fidelity prototype of the application that enables people to
+experience at least the core user journeys/scenarios (two or three) that are available
+in your application in an interactive manner. This prototype should be developed in
+Axure RP or Figma Design (not Figma Make), unless agreed otherwise with the
+module leader.
+You are required to describe the conceptual design and provide a description and
+visualisation of the product and its components and interactions in the report. You
+need to submit an interactive digital prototype demonstrating the interface and
+interactions of your application and explain how a user interacts with its components.
+Your design and research activities need to be in alignment with your target group
+and justifications for all your assumptions and design decisions need to be provided.
+Report
+At the beginning of your report, you need to state your choice of topic from the above
+options. In the coursework report, you document your research and design activities,
+and the required future research study and reflections on your learning. This includes
+an annotated bibliography that will inform your design, a discussion of the design for
+the product, and a discussion of how design principles will be applied. The report will
+also discuss your (design) process of developing the interactive mid-fidelity prototype
+and how relevant HCI theory has been implemented. A plan for an empirical
+research study should be proposed to investigate a research question or hypothesis,
+and the conclusion should reflect on how HCI might influence your future practice.
+More details can be found in the assessment criteria below. You may also want to
+consult the annotated table of contents available on the COMP1649 Moodle page to
+help you structure your report.
+Your report needs to be professionally and academically written and structured,
+based on your own research and reading, and written by yourself using appropriate
+in-text citations and referencing. This includes the demonstration of English
+language proficiency, appropriate level of detail, professional formatting of the report,
+and the writing should be supported by at least 8 relevant academic references
+(journal papers, conference papers, academic books - not blogs or online tutorials
+etc.). References and in-text citations should be formatted in Harvard style.
+
+The report word limit is 3000 words. Submissions that exceed this limit by more than
+10% will incur a mark deduction. Any content beyond this threshold will not be
+considered for assessment.
+Deliverables
+ Report of 2000-3000 words uploaded as a pdf file.
+ Mid-fidelity prototype uploaded as .rp or .fig (Figma Design only and not Figma
+Make, Axure RP only and not Axure Cloud with AI).
+The prototype should be submitted as an Axure RP file or Figma Design file unless
+otherwise agreed with the module leader.

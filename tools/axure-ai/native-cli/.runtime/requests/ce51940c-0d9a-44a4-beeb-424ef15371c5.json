@@ -1,0 +1,1 @@
+{"ok":true,"result":{"id":"8d788dde-905d-47ec-962d-2cf77dde2324","events":[{"type":"OnClick","cases":[{"name":"Continue to 04 Study schedule","newIfGroup":false,"condition":null,"actions":[{"type":"navigate","linkType":"Current","targetType":"Page","page":"bf389932-8aa1-42ff-9aa7-daef1c056376"}]}]}]}}
