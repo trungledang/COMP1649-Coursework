@@ -27,20 +27,23 @@ Script tự tạo bản dự phòng `final-coursework.before-brief.rp`. Muốn h
 
 ---
 
-## Mục 1: Đổi tên và sắp xếp trang
+## Mục 1: Gom trang vào 3 folder (khoảng 3 phút)
 
-1. Panel **Pages** (bên trái): double-click **Page 1** → đổi thành `01b Study desk`.
-2. Kéo thả để thứ tự trang theo đúng luồng người dùng:
-   ```
-   00 Welcome, 01 Log in, 02 Create account, 03 Set your pace,
-   04 Today, 05 Add assignment, 06 Check requirements, 07 Your plan,
-   08 Study time, 09 Study time saved, 10 Your space,
-   01b Study desk, 02 Continue your work, 03 When you are stuck,
-   04 Leave a thread, 05 Ready to return, 06 Step complete
-   ```
-3. (Tuỳ chọn) Gom 6 trang cuối vào một **folder** tên `Work session`: chuột phải trong panel Pages → **Add → Folder**.
+17 trang nằm lẫn lộn thì khó tìm. Gom thành 3 folder theo 3 phần của app:
 
-Đổi tên trang không làm hỏng link vì Axure link theo ID trang, không theo tên.
+```
+📁 1. Start            00 Welcome · 01 Log in · 02 Create account · 03 Set your pace
+📁 2. Main app         04 Today · 05 Add assignment · 06 Check requirements · 07 Your plan
+                       08 Study time · 09 Study time saved · 10 Your space
+📁 3. Work session     01 Study desk · 02 Continue your work · 03 When you are stuck
+                       04 Leave a thread · 05 Ready to return · 06 Step complete
+```
+
+1. Panel **Pages** (bên trái): double-click **Page 1** → đổi tên thành `01 Study desk`. Đây là trang **duy nhất** cần đổi tên.
+2. Tạo folder: bấm biểu tượng **thư mục có dấu +** ở đầu panel Pages (hoặc chuột phải → **Add → Folder**). Tạo 3 folder và đặt tên như trên.
+3. Kéo thả từng trang vào đúng folder, sắp theo thứ tự như sơ đồ.
+
+Đổi tên trang hay đưa trang vào folder **không làm hỏng link**: Axure nối các trang bằng mã ID riêng, không phải bằng tên.
 
 ---
 
