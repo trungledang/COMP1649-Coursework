@@ -27,6 +27,16 @@ namespace ReverseCli.Axure {
   static void Writable(object c){if(!(bool)C(c,"LImL"))throw new InvalidOperationException("NOT_WRITABLE: native editor does not permit edits; complete normal activation or unlock the project");}
   static void Clean(object c){C(c,"CommitOuterObject",true);if(Dirty(c))throw new InvalidOperationException("UNSAVED_CHANGES: save the project before new/open/close");}
   static string Str(JsonNode r,string n){return r[n]?.GetValue<string>()??throw new ArgumentException("Missing "+n);}
+  static string Prim(object v){
+   if(v==null)return null;
+   if(v is string s)return s;
+   if(v is bool b)return b?"true":"false";
+   if(v is double d)return d.ToString(System.Globalization.CultureInfo.InvariantCulture);
+   if(v is float f)return f.ToString(System.Globalization.CultureInfo.InvariantCulture);
+   if(v is int i)return i.ToString();
+   if(v is long l)return l.ToString();
+   return v.GetType().Name;
+  }
   static string Full(string path){if(!Path.IsPathFullyQualified(path))throw new ArgumentException("Path must be absolute");return Path.GetFullPath(path);}
   static IEnumerable<object> Widgets(object c){return ((IEnumerable)G(Editor(c),"DiagramObjects")).Cast<object>();}
   static object Widget(object c,string id){Guid g=Guid.Parse(id);return Widgets(c).SingleOrDefault(w=>(Guid)C(w,"Mtn3")==g)??throw new ArgumentException("Widget not found on current page: "+id);}
@@ -38,6 +48,45 @@ namespace ReverseCli.Axure {
    if(op=="status")return new{pid=Environment.ProcessId,version=Version,sha256=Hash,app=Assembly.Location,temp=Path.GetTempPath(),configuredCache=G(T("y9JG.P9bz"),"AppTemporaryPath"),project=Summary(c)};
    if(op=="inspect")return Summary(c);
    if(op=="widget.list")return Widgets(c).Select(WInfo).ToArray();
+   if(op=="debug.props"){
+    string target=r["target"]?.GetValue<string>()??"widget";
+    object subject=target=="widget"?Widget(c,Str(r,"id")):target=="editor"?Editor(c):target=="diagram"?G(Editor(c),"Diagram"):target=="page"?G(G(Editor(c),"Diagram"),"PageFragment"):null;
+    if(subject==null)throw new ArgumentException("Unknown target: "+target);
+    var props=subject.GetType().GetProperties(BF).Select(p=>{string val;try{val=Prim(p.GetValue(subject));}catch{val="<err>";}return new{name=p.Name,type=p.PropertyType.Name,value=val};}).ToArray();
+    return new{target,type=subject.GetType().FullName,props};
+   }
+   if(op=="debug.methods"){
+    string filter=r["filter"]?.GetValue<string>()??"";
+    var ed=Editor(c);var diag=G(ed,"Diagram");var doc=C(diag,"btnD");var frag=G(diag,"PageFragment");
+    Func<object,object[]> dump=t=>t.GetType().GetMethods(BF).Where(m=>m.Name.IndexOf(filter,StringComparison.OrdinalIgnoreCase)>=0).Select(m=>new{name=m.Name,ret=m.ReturnType.Name,pars=string.Join(", ",m.GetParameters().Select(p=>p.ParameterType.ToString()+" "+p.Name)),count=m.GetParameters().Length}).ToArray();
+    return new{editorType=ed.GetType().FullName,editor=dump(ed),diagramType=diag.GetType().FullName,diagram=dump(diag),docType=doc.GetType().FullName,doc=dump(doc),fragmentType=frag?.GetType().FullName,fragment=frag==null?Array.Empty<object>():dump(frag)};
+   }
+   if(op=="widget.delete"){
+    Writable(c);var w=Widget(c,Str(r,"id"));
+    string name=G(w,"Name")?.ToString();
+    Type itemType=T("kJm2.KJm7");
+    Type listType=typeof(List<>).MakeGenericType(itemType);
+    IList list=(IList)Activator.CreateInstance(listType);
+    list.Add(w);
+    bool allAdaptive=r["allAdaptiveViews"]?.GetValue<bool>()??true;
+    var mi=Editor(c).GetType().GetMethod("Delete",BF,null,new[]{typeof(bool),listType},null);
+    if(mi==null)throw new MissingMethodException(Editor(c).GetType().FullName,"Delete");
+    bool ok=(bool)mi.Invoke(Editor(c),new object[]{allAdaptive,list});
+    return new{deleted=ok,name,dirty=Dirty(c)};
+   }
+   if(op=="widget.set"){
+    Writable(c);var w=Widget(c,Str(r,"id"));string name=Str(r,"name");
+    var prop=w.GetType().GetProperty(name,BF)??throw new MissingMemberException(w.GetType().FullName,name);
+    object before=prop.GetValue(w);
+    var node=r["value"];object typed;
+    if(prop.PropertyType==typeof(bool))typed=node==null?false:node.GetValue<bool>();
+    else if(prop.PropertyType==typeof(double))typed=node==null?0d:node.GetValue<double>();
+    else if(prop.PropertyType==typeof(int))typed=node==null?0:node.GetValue<int>();
+    else if(prop.PropertyType==typeof(string))typed=node==null?"":node.GetValue<string>();
+    else typed=node;
+    var edit=New("QSc5.kSct",w);prop.SetValue(w,typed);C(edit,"YSWI");C(G(c,"Workspace"),"zImy",edit,false);
+    return new{name,before=Prim(before),after=Prim(typed),widget=w.GetType().FullName,dirty=Dirty(c)};
+   }
    if(op=="design.import"){
     Writable(c);if(Widgets(c).Any())throw new InvalidOperationException("Import requires an empty page");
     string path=Full(Str(r,"path"));string data=System.IO.File.ReadAllText(path);if(data.StartsWith("// axvg"))data=data.Substring(data.IndexOf('\n')+1);

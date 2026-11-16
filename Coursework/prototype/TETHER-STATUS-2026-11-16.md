@@ -10,10 +10,13 @@
 
 | Vai trò | Đường dẫn |
 |---|---|
-| **.rp làm việc / sẽ nộp** | `Coursework/prototype/tether-revision-2026-11-09.rp` (365 534 B, mtime 2026-11-16 06:42:54) |
+| **.rp cần nộp** (đã sửa, đã verify) | `Coursework/prototype/Tether-ADHD-Companion-Prototype.rp` (355 299 B) |
+| **Export HTML chính thức** (native, không sửa tay) | `Coursework/prototype/tether-final-build/export-tether-final-2026-11-16/` (185 file) |
+| Ảnh chụp 17 trang (cho report) | `Coursework/prototype/demo/screens-2026-11-16/*.png` |
+| **.rp làm việc / sẽ nộp** | `Coursework/prototype/tether-revision-2026-11-09.rp` (365 534 B, mtime 2026-11-16 06:42:54) — *bản trước khi sửa, giữ làm mốc iteration* |
 | **Backup trước lần sửa cuối** | `Coursework/prototype/tether-revision-2026-11-09.pre-fix.rp` (363 983 B, 2026-11-09 12:23) |
-| **Export HTML mới nhất** | `Coursework/prototype/tether-final-build/export-step-tracking-2026-11-09/` (185 file, 17 trang + 4 boilerplate) |
-| Export KHÔNG dùng (hỏng) | `Coursework/prototype/tether-final-build/bridge-research/export-step-tracking-2026-11-09/` (5 trang `width:-4570px`) |
+| Export cũ — **đã sửa tay CSS, đừng dùng** | `Coursework/prototype/tether-final-build/SUPERSEDED-export-step-tracking-2026-11-09-handpatched/` |
+| Export cũ — **hỏng width:-4570px, đừng dùng** | `Coursework/prototype/tether-final-build/bridge-research/SUPERSEDED-export-2026-11-09/` |
 | Bridge CLI đang dùng | `Coursework/prototype/tether-final-build/bridge-research/native-cli/` (bản fork, mới hơn `tools/axure-ai/native-cli/`) |
 
 ---
@@ -175,3 +178,41 @@ Brief ghi `Submission Deadline: [Day, Date Month Year]` (placeholder). `README.m
 2. Trong 3 tuần tới, phân bổ thời gian: **50% prototype / 50% report** hay **30/70**? (mình khuyên **30/70** vì prototype đã ~80% còn report là 0%)
 3. Có thể gửi email hỏi GV về mức độ AI trong prototype không?
 4. Bản .rp nộp: giữ `tether-revision-2026-11-09.rp` hay đổi tên cho "chuyên nghiệp"?
+
+---
+
+## 5. Việc đã làm trong phiên OpenCode này (16/11, 08:20 → 09:45)
+
+### P0 — bảo vệ việc đã làm ✅
+- `.gitignore` mới (`.runtime/`, `.playwright-cli/`) + **gỡ 2 277 file máy** khỏi git index (file vẫn còn trên đĩa).
+- Commit + push: file `.rp` chuẩn, script build, decision log, status doc → `origin/claude/brave-ramanujan-p2hvb2`.
+  *(Trước đó **toàn bộ** công việc từ 09/11 đến 16/11 chưa hề được commit.)*
+
+### P1 — sửa prototype cho thật ✅ (mục 2.1 đã xử lý triệt để)
+1. **Thêm `widget.delete` vào native bridge** (Axure `Editor.Delete`, có undo) + 3 op chẩn đoán
+   (`debug.props`, `debug.methods`, `widget.set`). Bridge build lại bằng pwsh 7.6.9, hash Axure vẫn khớp pin.
+2. **Xoá đúng 15 widget trùng** thay vì "park" chúng ở x=1000 — nhưng **chỉ sau khi** đối chiếu từng widget
+   với bản live (`v2_*` / `hit_save_with_variables`) để chắc chắn không mất tương tác nào.
+   Trường hợp `hit_save` (case đặt tên khác) được kiểm tra tay rồi mới xoá.
+3. **Export lại bằng generator gốc của Axure — không sửa tay CSS.** Kiểm chứng từ `data.js`:
+   **cả 17/17 trang báo `adaptive view width = 430`**, và `body{width}` trong CSS khớp đúng 430.
+4. **Task A**: đổi nhãn `What do you need to do?` → `Key requirements (one per line)` và thêm placeholder
+   `One requirement per line, e.g. Report: 2,000-3,000 words` cho ô nhập đề bài (ảnh xác nhận).
+5. **Task B1**: nút `Create my study space` giờ lưu tên người dùng vào biến toàn cục `TetherName`
+   (`storeGlobal` trước khi điều hướng). Việc hiển thị chữ cái đầu trong avatar **chưa làm được** vì
+   bridge không tạo được inline expression `[[...]]` của Axure → để lại 2 phút làm tay trong Axure.
+6. **Chụp lại ảnh 17 trang** từ bản export mới (`demo/screens-2026-11-16/`) — ảnh cũ trong `demo/`
+   chụp ngày 02/11 trên bản cũ, không khớp prototype hiện tại.
+7. **Dọn bẫy**: 2 export cũ được đổi tên thành `SUPERSEDED-...` để không ai nộp nhầm.
+
+### Task C — cố ý KHÔNG sửa, chuyển thành quyết định thiết kế
+Nhóm `02 Pause and return` không có thanh tab là **focus mode có chủ đích**, có lối thoát rõ
+("Pause and leave a thread"). Đã ghi lại thành quyết định + câu hỏi nghiên cứu RQ3 trong `DECISION-LOG.md`.
+
+### Task D — đồng hồ đếm ngược: chưa làm
+Bridge chưa hỗ trợ dynamic panel/timer; làm tay trong Axure hoặc bỏ (đã ghi trong decision log).
+
+### Còn lại (việc của Student, không phải của tool)
+- **70/100 điểm rubric** (report + bibliography + nghiên cứu) — `Coursework/report/` và `Coursework/research/` vẫn rỗng.
+- Xác nhận deadline thật; hỏi GV về mức độ AI trong prototype.
+- AI-use reflection 60–100 từ + declaration page.
