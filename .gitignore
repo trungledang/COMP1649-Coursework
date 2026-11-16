@@ -1,0 +1,9 @@
+# Axure native-bridge runtime journals (request/response logs) - machine noise
+.runtime/
+# Playwright scratch output
+.playwright-cli/
+# OS / editor noise
+Thumbs.db
+desktop.ini
+*.tmp
+*.bak
